@@ -4,6 +4,7 @@ import { loadDrawing, saveDrawing, type SavedDrawing } from '../../storage/db';
 import { colors, renderStroke, tools, type Point, type Stroke, type ToolId } from '../../engine/tools';
 
 type Snapshot = { fills: Record<string,string>; strokes: Stroke[] };
+type Sparkle = { id: number; x: number; y: number; dx: number; dy: number; color: string; size: number };
 const empty = ():Snapshot => ({fills:{},strokes:[]});
 const colorWords = {bg:'Цветове',en:'Colors'};
 export default function Editor({page,language,toddler,sound,onBack,onComplete}: {page:Page;language:'bg'|'en';toddler:boolean;sound:boolean;onBack:()=>void;onComplete:()=>void}) {
@@ -11,10 +12,14 @@ export default function Editor({page,language,toddler,sound,onBack,onComplete}: 
   const [tool,setTool]=useState<ToolId>('bucket'); const [color,setColor]=useState(colors[3]); const [size,setSize]=useState(16);
   const [opacity,setOpacity]=useState(1); const [zoom,setZoom]=useState(1); const [saved,setSaved]=useState(true);
   const [complete,setComplete]=useState(false); const [recent,setRecent]=useState<string[]>([]);
+  const [sparkles,setSparkles]=useState<Sparkle[]>([]);
   const svgRef=useRef<HTMLDivElement>(null); const canvasRef=useRef<HTMLCanvasElement>(null); const active=useRef<Stroke|null>(null);
+  const stageRef=useRef<HTMLDivElement>(null);const particleId=useRef(0);const lastTrail=useRef(0);const particleTimers=useRef(new Set<number>());
+  const audioRef=useRef<AudioContext|null>(null);const lastTone=useRef(-1000);
   const saveQueue=useRef<Promise<unknown>>(Promise.resolve());const saveVersion=useRef(0);
   const current=history[cursor] ?? empty();
   const paintedArt=useMemo(()=>{if(!art)return '';const doc=new DOMParser().parseFromString(art,'image/svg+xml');doc.querySelectorAll<SVGElement>('[data-region]').forEach(node=>node.setAttribute('fill',current.fills[node.dataset.region||'']||'#ffffff'));return doc.documentElement.outerHTML},[art,current.fills]);
+  useEffect(()=>()=>{particleTimers.current.forEach(clearTimeout);if(audioRef.current)void audioRef.current.close()},[]);
   useEffect(()=>{ let cancelled=false; setArt('');setHistory([empty()]);setCursor(0);setComplete(false);setSaved(true);
     if(page.id!=='free')fetch(`${import.meta.env.BASE_URL}${page.asset.replace(/^\//,'')}`).then(r=>r.text()).then(raw=>{if(!cancelled){const doc=new DOMParser().parseFromString(raw,'image/svg+xml');const svg=doc.querySelector('svg');if(svg){svg.querySelectorAll('script,foreignObject').forEach(node=>node.remove());setArt(svg.outerHTML)}}});
     loadDrawing(page.id).then(d=>{if(cancelled||!d)return;let strokes:Stroke[]=[];try{strokes=JSON.parse(d.strokes)}catch{ /* old drawing */ }setHistory([{fills:d.fills,strokes}]);setCursor(0);setComplete(d.completed)}).catch(()=>{});
@@ -28,12 +33,32 @@ export default function Editor({page,language,toddler,sound,onBack,onComplete}: 
   },[current,complete,page.id,history.length,cursor]);
   function commit(next:Snapshot){setSaved(false);setHistory(h=>[...h.slice(0,cursor+1),next].slice(-60));setCursor(c=>Math.min(c+1,59))}
   function chooseColor(value:string){setColor(value);setRecent(r=>[value,...r.filter(c=>c!==value)].slice(0,8))}
-  function tapSound(){if(!sound)return;try{const audio=new AudioContext();const oscillator=audio.createOscillator(),gain=audio.createGain();oscillator.type='sine';oscillator.frequency.value=520;gain.gain.setValueAtTime(0.035,audio.currentTime);gain.gain.exponentialRampToValueAtTime(0.001,audio.currentTime+0.12);oscillator.connect(gain).connect(audio.destination);oscillator.start();oscillator.stop(audio.currentTime+0.12);oscillator.onended=()=>audio.close()}catch{/* audio may be unavailable */}}
+  function playColorSound(){if(!sound||performance.now()-lastTone.current<150)return;lastTone.current=performance.now();try{
+    const audio=audioRef.current??new AudioContext();audioRef.current=audio;if(audio.state==='suspended')void audio.resume();
+    const oscillator=audio.createOscillator(),gain=audio.createGain();const hue=Number(color.match(/hsl\((\d+)/)?.[1]??180);
+    oscillator.type='sine';oscillator.frequency.value=440+Math.round(hue/360*220);
+    gain.gain.setValueAtTime(0.001,audio.currentTime);gain.gain.linearRampToValueAtTime(0.027,audio.currentTime+0.018);
+    gain.gain.exponentialRampToValueAtTime(0.001,audio.currentTime+0.15);
+    oscillator.connect(gain).connect(audio.destination);oscillator.start();oscillator.stop(audio.currentTime+0.15)
+  }catch{/* sound is optional when the browser has no audio output */}}
+  function emitSparkles(e:React.PointerEvent,burst=false){
+    if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+    const now=performance.now();if(!burst&&now-lastTrail.current<55)return;lastTrail.current=now;
+    const box=stageRef.current?.getBoundingClientRect();if(!box)return;
+    const x=(e.clientX-box.left)/box.width*100,y=(e.clientY-box.top)/box.height*100;
+    if(x<0||x>100||y<0||y>100)return;
+    const group=Array.from({length:burst?6:2},(_,i)=>({id:++particleId.current,x,y,
+      dx:Math.cos(i*2.4+now)*((burst?17:9)+i*3),dy:Math.sin(i*2.4+now)*((burst?17:9)+i*3)-12,
+      color,size:burst?16+(i%3)*4:12+(i%2)*4}));
+    setSparkles(prev=>[...prev,...group].slice(-45));
+    const timer=window.setTimeout(()=>{setSparkles(prev=>prev.filter(p=>!group.some(g=>g.id===p.id)));particleTimers.current.delete(timer)},700);
+    particleTimers.current.add(timer);
+  }
   function fill(event:React.PointerEvent<HTMLDivElement>){if(tool!=='bucket'&&tool!=='magic')return;const target=(event.target as Element).closest('[data-region]') as SVGElement|null;if(!target)return;
-    const region=target.dataset.region!;if(current.fills[region]===color)return;commit({...current,fills:{...current.fills,[region]:color}});tapSound()}
+    const region=target.dataset.region!;if(current.fills[region]===color)return;commit({...current,fills:{...current.fills,[region]:color}});playColorSound()}
   function point(e:React.PointerEvent<HTMLCanvasElement>):Point{const box=e.currentTarget.getBoundingClientRect();return {x:(e.clientX-box.left)*400/box.width,y:(e.clientY-box.top)*400/box.height}}
-  function down(e:React.PointerEvent<HTMLCanvasElement>){e.currentTarget.setPointerCapture(e.pointerId);active.current={tool,color,size,opacity,points:[point(e)]};drawActive()}
-  function move(e:React.PointerEvent<HTMLCanvasElement>){if(!active.current)return;active.current.points.push(point(e));drawActive()}
+  function down(e:React.PointerEvent<HTMLCanvasElement>){e.currentTarget.setPointerCapture(e.pointerId);active.current={tool,color,size,opacity,points:[point(e)]};drawActive();playColorSound()}
+  function move(e:React.PointerEvent<HTMLCanvasElement>){if(!active.current)return;active.current.points.push(point(e));drawActive();playColorSound()}
   function drawActive(){const ctx=canvasRef.current?.getContext('2d');if(!ctx||!active.current)return;ctx.clearRect(0,0,400,400);current.strokes.forEach(s=>renderStroke(ctx,s));renderStroke(ctx,active.current)}
   function up(){if(active.current){commit({...current,strokes:[...current.strokes,active.current]});active.current=null}}
   function exportPng(){const out=document.createElement('canvas');out.width=800;out.height=800;const ctx=out.getContext('2d')!;ctx.scale(2,2);ctx.fillStyle='white';ctx.fillRect(0,0,400,400);
@@ -43,9 +68,10 @@ export default function Editor({page,language,toddler,sound,onBack,onComplete}: 
   const text=language==='bg';const brush=tool!=='bucket'&&tool!=='magic';
   return <div className={`editor ${toddler?'toddler':''}`}>
     <header className="editor-head"><button className="round-button" aria-label={text?'Назад':'Back'} onClick={onBack}>←</button><div><strong>{page.title[language]}</strong><small>{saved?(text?'Запазено':'Saved'):(text?'Запазване…':'Saving…')}</small></div><button className="round-button" aria-label={text?'Изтегли PNG':'Download PNG'} onClick={exportPng}>⇩</button></header>
-    <div className="work-area"><div className="stage-scroll"><div className="stage" style={{width:`${zoom*100}%`,maxWidth:`${zoom*520}px`}} data-testid="drawing-stage">
+    <div className="work-area"><div className="stage-scroll"><div className="stage" ref={stageRef} style={{width:`${zoom*100}%`,maxWidth:`${zoom*520}px`}} data-testid="drawing-stage" onPointerMove={e=>emitSparkles(e)} onPointerDown={e=>emitSparkles(e,true)}>
       {page.id==='free'?<div className="blank-sheet"/>:<div className="svg-art" ref={svgRef} onPointerDown={fill} dangerouslySetInnerHTML={{__html:paintedArt}}/>}
       <canvas width="400" height="400" ref={canvasRef} aria-label={text?'Поле за рисуване':'Drawing canvas'} style={{pointerEvents:brush?'auto':'none'}} onPointerDown={down} onPointerMove={move} onPointerUp={up} onPointerCancel={up}/>
+      <div className="sparkle-layer" aria-hidden="true">{sparkles.map(p=><span key={p.id} className="sparkle" style={{left:`${p.x}%`,top:`${p.y}%`,color:p.color,fontSize:p.size,'--dx':`${p.dx}px`,'--dy':`${p.dy}px`} as React.CSSProperties}>✦</span>)}</div>
     </div></div></div>
     <div className="editor-controls"><div className="control-row"><button aria-label="Undo" disabled={cursor===0} onClick={()=>setCursor(cursor-1)}>↶</button><button aria-label="Redo" disabled={cursor>=history.length-1} onClick={()=>setCursor(cursor+1)}>↷</button><button aria-label="Zoom out" onClick={()=>setZoom(z=>Math.max(1,z-0.25))}>−</button><span>{Math.round(zoom*100)}%</span><button aria-label="Zoom in" onClick={()=>setZoom(z=>Math.min(2.5,z+0.25))}>+</button><button onClick={()=>{if(confirm(text?'Да изчистим рисунката?':'Clear the drawing?')){commit(empty());setComplete(false)}}}>{text?'Изчисти':'Reset'}</button></div>
       <div className="tool-strip" role="toolbar" aria-label={text?'Инструменти':'Tools'}>{tools.filter(t=>!toddler||['bucket','crayon','eraser'].includes(t.id)).map(t=><button key={t.id} aria-label={t[language]} aria-pressed={tool===t.id} className={tool===t.id?'selected':''} onClick={()=>setTool(t.id)}><b>{t.symbol}</b><small>{t[language]}</small></button>)}</div>

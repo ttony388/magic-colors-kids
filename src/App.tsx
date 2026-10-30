@@ -46,7 +46,7 @@ export default function App(){
           </button>)}</div>
           <div className="section-title"><h2>{bg?'Още картинки':'More pictures'}</h2><span>{pages.length} {bg?'картинки':'pictures'}</span></div>
           <div className="category-grid">{categories.map(c=>{const item=pages.find(p=>p.category===c.id)!;return <button className="category-card" key={c.id} onClick={()=>goCategory(c.id)} style={{background:c.color}}>
-            <div className="card-art"><img loading="lazy" src={asset(item)} alt=""/></div><strong>{c[language]}</strong><small>5 {bg?'картинки':'pictures'}</small>
+            <div className="card-art"><img loading="lazy" src={asset(item)} alt=""/></div><strong>{c[language]}</strong><small>{pages.filter(p=>p.category===c.id).length} {bg?'картинки':'pictures'}</small>
           </button>})}</div>
           <div className="simple-links"><button onClick={()=>open(getDailyPage(new Date()))}>{bg?'Картинка на деня':'Daily picture'} →</button><button onClick={gallery}>{bg?'Моите рисунки':'My drawings'} →</button>{!toddler&&<button onClick={()=>open(free)}>{bg?'Свободно рисуване':'Free drawing'} →</button>}</div>
         </main>}

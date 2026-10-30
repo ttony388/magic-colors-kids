@@ -138,6 +138,114 @@ art.update({
 'christmas-tree': [path('top','M200 45 L105 181 L295 181 Z'),path('middle','M200 109 L73 248 L327 248 Z'),path('bottom','M200 180 L51 328 L349 328 Z'),rect('trunk',177,326,46,42,5),circle('star',200,46,17),circle('bauble-a',128,218,14),circle('bauble-b',253,196,14),circle('bauble-c',117,295,14),circle('bauble-d',278,289,14),circle('bauble-e',200,259,14)]
 })
 
+# Larger, more natural silhouettes and layered scenes for children ready for detail.
+art.update({
+'horse': [
+  path('meadow','M25 328 Q125 303 206 326 Q305 299 375 325 L375 375 L25 375 Z'),
+  path('tail','M291 215 Q352 214 343 264 Q331 280 319 270 Q328 241 286 251 Z'),
+  ellipse('torso',209,244,98,57),
+  path('mane','M171 126 Q206 141 195 183 L184 168 L178 195 L160 177 L150 218 L140 180 Z'),
+  path('neck','M120 232 Q115 193 132 151 L171 146 Q166 195 196 218 Z'),
+  path('head','M133 149 Q143 115 169 116 Q193 121 199 148 L188 169 Q168 179 151 166 L134 172 Z'),
+  path('muzzle','M136 161 Q118 164 104 186 Q96 204 120 213 L145 203 Q157 190 152 174 Z'),
+  path('ear-one','M151 121 L146 91 Q162 98 168 117 Z'),path('ear-two','M173 120 L181 91 Q192 106 187 130 Z'),
+  *[path(f'leg-{i}',d) for i,d in enumerate(['M138 275 L164 280 L154 345 L132 345 Z','M176 284 L198 286 L193 345 L171 345 Z','M244 281 L267 279 L282 345 L259 345 Z','M277 272 L299 263 L310 345 L287 345 Z'])],
+  *[rect(f'hoof-{i}',x,342,29,15,4) for i,x in enumerate([127,168,255,283])],
+  circle('eye',169,144,6),circle('nostril',120,189,4),line('M120 205 Q130 209 137 203')],
+'forest': [
+  path('far-hill','M20 265 Q110 170 216 250 Q299 173 380 241 L380 370 L20 370 Z'),
+  path('path','M182 370 Q202 310 238 271 L273 271 Q232 308 244 370 Z'),
+  rect('left-trunk',85,166,29,161,5),rect('right-trunk',302,159,32,172,5),rect('center-trunk',208,199,22,99,5),
+  circle('left-canopy-a',79,150,50),circle('left-canopy-b',128,135,46),circle('left-canopy-top',99,95,52),
+  circle('right-canopy-a',289,138,51),circle('right-canopy-b',340,146,45),circle('right-canopy-top',319,91,52),
+  circle('center-canopy',219,186,41),circle('sun',204,74,29),
+  ellipse('bush-left',66,313,36,18),ellipse('bush-right',345,315,34,20),
+  *[ellipse(f'flower-{i}',x,y,8,11) for i,(x,y) in enumerate([(44,343),(139,340),(276,346),(363,350)])]],
+'truck': [
+  rect('cargo-box',42,127,200,154,13),rect('cargo-panel',63,145,158,118,8),
+  path('cab','M243 180 L294 180 Q312 181 324 202 L357 245 L357 289 L244 289 Z'),
+  path('cab-window','M276 197 L301 197 L330 243 L276 243 Z'),
+  rect('front-bumper',335,266,35,22,7),rect('step',242,260,41,15,4),
+  circle('wheel-rear',114,291,34),circle('hub-rear',114,291,14),circle('wheel-front',303,291,34),circle('hub-front',303,291,14),
+  ellipse('headlight',348,249,11,10),rect('road',25,344,350,9,4),
+  line('M85 169 L199 169 M85 193 L199 193 M153 213 L153 251')],
+'griffin': [
+  path('tail','M279 279 Q357 269 343 214 Q330 199 319 216 Q333 264 279 250 Z'),
+  ellipse('body',213,269,90,63),
+  path('wing-back','M184 255 Q206 129 311 118 Q298 198 256 249 Z'),
+  path('wing-front','M169 247 Q165 123 276 92 Q270 162 220 259 Z'),
+  *[path(f'feather-{i}',f'M{x} {y} Q{x+24} {y-18} {x+36} {y-60} L{x+38} {y-8} Z') for i,(x,y) in enumerate([(172,215),(199,218),(223,210)])],
+  path('neck','M129 260 Q124 214 146 160 L194 160 Q193 217 218 239 Z'),
+  path('head','M144 159 Q147 105 199 106 Q227 112 226 144 L191 180 Z'),
+  path('beak','M151 161 L91 179 L151 194 L176 178 Z'),
+  path('crest-one','M168 113 L164 72 L190 104 Z'),path('crest-two','M197 108 L219 73 L214 120 Z'),
+  ellipse('paw-left',164,329,30,23),ellipse('paw-right',264,328,30,22),
+  circle('eye',188,143,7),line('M146 333 L138 345 M162 338 L157 350 M177 334 L177 347 M255 335 L247 347 M270 338 L267 350')],
+'trex': [
+  path('rock','M22 341 L89 308 L133 340 Z'),path('tail','M263 242 Q328 220 375 155 Q355 262 280 287 Z'),
+  ellipse('body',221,253,81,71),path('neck','M152 229 L142 180 L195 149 L227 223 Z'),
+  path('head','M123 132 Q149 97 215 111 L239 141 Q230 166 190 171 L159 170 Z'),
+  path('jaw','M137 169 Q190 182 238 155 Q227 195 173 198 L138 187 Z'),
+  path('back-ridge','M204 186 L216 166 L232 185 L245 169 L259 197 Z'),
+  path('arm-left','M154 224 L111 244 L126 259 L164 247 Z'),
+  path('leg-left','M179 286 L213 293 L191 347 L155 347 Z'),path('leg-right','M240 287 L270 277 L285 347 L251 347 Z'),
+  ellipse('foot-left',170,349,32,12),ellipse('foot-right',274,349,32,12),
+  circle('eye',181,134,6),circle('spot-one',246,242,12),circle('spot-two',205,267,10),
+  *[path(f'tooth-{i}',f'M{x} 171 L{x+7} 186 L{x+13} 171 Z') for i,x in enumerate([171,192,212])]],
+'dolphin': [
+  path('wave-back','M25 284 Q75 267 125 284 Q175 301 225 284 Q275 267 325 284 Q350 291 375 281 L375 356 L25 356 Z'),
+  path('tail-fin','M305 176 Q355 135 362 167 Q352 189 329 196 Q367 202 369 231 Q347 248 302 209 Z'),
+  path('body','M72 233 Q144 134 260 154 Q306 160 323 193 Q297 223 257 229 Q185 267 100 257 Z'),
+  path('beak','M77 229 L33 243 Q59 259 103 249 Z'),
+  path('dorsal-fin','M195 159 Q198 109 241 92 Q233 139 256 160 Z'),
+  path('flipper','M183 222 Q176 273 219 293 L244 240 Z'),
+  path('belly','M95 243 Q167 255 260 208 Q212 261 107 259 Z'),
+  circle('eye',125,205,7),circle('sun',316,76,31),
+  ellipse('foam-one',75,306,26,8),ellipse('foam-two',299,316,31,8)],
+'lander': [
+  path('moon-ground','M20 314 Q94 295 166 316 Q251 286 380 318 L380 375 L20 375 Z'),
+  ellipse('crater-one',95,341,37,11),ellipse('crater-two',315,339,44,13),
+  path('leg-left','M158 243 L128 306 L151 311 L181 253 Z'),path('leg-right','M242 243 L272 306 L249 311 L219 253 Z'),
+  rect('foot-left',101,303,64,12,4),rect('foot-right',236,303,64,12,4),
+  path('module','M155 145 L245 145 L267 244 L133 244 Z'),
+  path('roof','M148 145 L169 107 L231 107 L252 145 Z'),circle('porthole',200,179,28),circle('inner-window',200,179,16),
+  rect('solar-left',62,173,70,52,4),rect('solar-right',268,173,70,52,4),
+  *[rect(f'solar-cell-{i}',x,179,9,40,2) for i,x in enumerate([79,99,291,311])],
+  rect('antenna',196,68,8,40,2),circle('antenna-tip',200,60,12),circle('earth',310,72,28),
+  circle('star-one',80,86,8),circle('star-two',348,131,7)],
+'pineapple': [
+  path('fruit','M119 145 Q200 124 281 145 Q313 235 255 346 Q200 370 145 346 Q87 235 119 145 Z'),
+  path('leaf-center','M187 156 Q171 88 200 34 Q229 88 213 156 Z'),
+  path('leaf-left','M164 153 Q106 110 114 64 Q170 84 194 152 Z'),
+  path('leaf-right','M236 153 Q294 110 286 64 Q230 84 206 152 Z'),
+  path('leaf-far-left','M144 145 L89 103 Q95 150 170 164 Z'),path('leaf-far-right','M256 145 L311 103 Q305 150 230 164 Z'),
+  *[path(f'scale-{row}-{col}',f'M{x} {y-17} L{x+20} {y} L{x} {y+17} L{x-20} {y} Z')
+    for row,(y,columns) in enumerate([(188,[155,200,245]),(230,[137,178,220,261]),(272,[155,200,245]),(313,[178,220])]) for col,x in enumerate(columns)],
+  ellipse('base-shadow',200,363,88,8)],
+'cottage': [
+  path('hill','M22 320 Q158 266 378 314 L378 374 L22 374 Z'),
+  rect('house-wall',80,170,235,152,4),
+  path('roof','M58 179 L197 66 L339 179 L317 190 L198 98 L79 190 Z'),
+  rect('chimney',259,78,33,74,4),rect('chimney-cap',251,75,49,13,3),
+  rect('door',170,235,56,87,21),circle('door-knob',210,278,6),
+  rect('window-left',105,209,46,48,8),rect('window-right',246,209,46,48,8),
+  rect('window-top',181,142,35,35,16),
+  path('stone-path','M174 320 L225 320 L272 373 L124 373 Z'),
+  ellipse('bush-left',62,297,37,27),ellipse('bush-right',337,299,36,26),
+  *[circle(f'flower-{i}',x,y,8) for i,(x,y) in enumerate([(43,332),(80,343),(324,340),(360,331)])],
+  line('M127 209 L127 257 M269 209 L269 257 M105 233 L151 233 M246 233 L292 233')],
+'autumn-park': [
+  path('ground','M23 293 Q146 281 210 302 Q302 278 377 296 L377 375 L23 375 Z'),
+  path('walkway','M149 375 Q167 312 205 290 L245 290 Q206 327 228 375 Z'),
+  rect('trunk',91,174,40,145,6),
+  circle('crown-left',72,162,44),circle('crown-center',127,117,59),circle('crown-right',181,165,46),
+  rect('bench-seat',253,284,99,16,3),rect('bench-back',262,245,80,38,5),
+  rect('bench-leg-left',266,296,12,37),rect('bench-leg-right',328,296,12,37),
+  *[path(f'falling-leaf-{i}',f'M{x} {y} Q{x+12} {y-17} {x+23} {y-3} Q{x+17} {y+13} {x} {y} Z')
+    for i,(x,y) in enumerate([(211,121),(236,193),(51,244),(160,263),(292,174),(328,213)])],
+  circle('sun',307,78,29),ellipse('cloud',78,72,38,17)]
+})
+
 for name, parts in art.items():
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="{name}">
 <rect width="400" height="400" fill="white"/>

@@ -1,6 +1,6 @@
 # Вълшебни Цветове / Magic Colors
 
-Offline-first coloring game for young children. The first playable release includes 50 original SVG pictures, five in each planned category. The Android app ID is `com.magiccolors.kids`.
+Offline-first coloring game for young children. This release includes 60 original SVG pictures, six in each planned category, including ten more detailed scenes. The Android app ID is `com.magiccolors.kids`.
 
 ## Run in a browser
 
@@ -35,12 +35,13 @@ Verified screenshots from the browser tests are committed in `docs/evidence/`, i
 ## Implementation checklist
 
 - [x] Bulgarian and English UI, category navigation, daily picture, free drawing.
-- [x] Fifty distinct original coloring SVGs with named closed regions, three difficulty labels.
+- [x] Sixty distinct original coloring SVGs with named closed regions, three difficulty labels.
 - [x] Tap fill, magic fill, pencil, crayon, felt pen, marker, brush, watercolor, glitter, spray, eraser; 64 preset colors, custom picker, size, opacity, recent colors.
 - [x] Undo/redo, reset confirmation, zoom, PNG export, IndexedDB auto-save, resume, gallery and completion animation.
 - [x] Simple mode on by default with larger controls and eight color choices; parental arithmetic gate can enable advanced tools.
+- [x] Short color-matched sparkle trail on touch and gentle color-based sound while painting, with sound toggle and reduced-motion support.
 - [x] Capacitor Android project and GitHub Actions debug APK workflow.
-- [ ] Remaining 450 unique illustrations, color by number/letter, sticker mode, original animal sounds, music controls, dedicated stay-inside-lines brush, advanced pan gestures.
+- [ ] Remaining 440 unique illustrations, color by number/letter, sticker mode, original animal sounds, music controls, dedicated stay-inside-lines brush, advanced pan gestures.
 - [ ] Gallery thumbnails that preview the saved colors, parental progress reset and storage controls, and a fuller adult verification gate.
 - [ ] A stable release signing key and APK update strategy.
 
@@ -50,4 +51,4 @@ Local lint, typecheck, two unit tests, production web build, Capacitor sync, and
 
 ## Artwork
 
-`scripts/generate_art.py` generates the 50 original SVG illustrations in `public/illustrations/`. Every fillable shape has a stable `data-region` key. Assets contain no copied franchise characters. Contributions should add a unique page ID and localized title to `src/data/pages.ts`.
+`scripts/generate_art.py` generates the 60 original SVG illustrations in `public/illustrations/`. Every fillable shape has a stable `data-region` key. Assets contain no copied franchise characters. Contributions should add a unique page ID and localized title to `src/data/pages.ts`.

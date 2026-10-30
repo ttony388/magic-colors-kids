@@ -47,3 +47,36 @@ test('simple child mode works on phone and Samsung-sized tablet orientations',as
   await page.reload();await page.getByRole('button',{name:'Кученце'}).click();
   await expect(page.locator('[data-region="head"]')).not.toHaveCSS('fill','rgb(255, 255, 255)');
 });
+test('sparkles follow the selected color, fade away, and sound obeys parent setting',async({page})=>{
+  await page.goto('/');
+  await page.evaluate(()=>{
+    const original=AudioContext.prototype.createOscillator;
+    (window as typeof window & {toneCount:number}).toneCount=0;
+    AudioContext.prototype.createOscillator=function(){(window as typeof window & {toneCount:number}).toneCount++;return original.call(this)};
+  });
+  await page.getByRole('button',{name:/Животни/}).click();
+  await page.getByRole('button',{name:/Конче на поляната/}).click();
+  await expect(page.locator('[data-region="torso"]')).toBeVisible();
+  await page.getByRole('button',{name:'Цвят 4',exact:true}).click();
+  await page.locator('[data-region="torso"]').click();
+  await expect(page.locator('.sparkle').first()).toBeVisible();
+  const filled=await page.locator('[data-region="torso"]').evaluate(el=>getComputedStyle(el).fill);
+  const star=await page.locator('.sparkle').first().evaluate(el=>getComputedStyle(el).color);
+  expect(star).toBe(filled);
+  expect(await page.evaluate(()=>(window as typeof window & {toneCount:number}).toneCount)).toBeGreaterThan(0);
+  await expect(page.locator('.sparkle')).toHaveCount(0,{timeout:2500});
+  const stage=await page.getByTestId('drawing-stage').boundingBox();expect(stage).toBeTruthy();
+  await page.mouse.move(stage!.x+stage!.width*.5,stage!.y+stage!.height*.5);
+  await expect(page.locator('.sparkle').first()).toBeVisible();
+  await page.screenshot({path:'test-results/horse-sparkles.png'});
+  await page.getByRole('button',{name:'Назад'}).click();
+  await page.getByRole('button',{name:'Назад'}).click();
+  await page.getByRole('button',{name:'За родители'}).click();
+  await page.getByLabel('Отговор').fill('7');await page.getByRole('button',{name:'Продължи'}).click();
+  await page.getByRole('checkbox',{name:'Звуци'}).uncheck();
+  await page.getByRole('button',{name:'Назад'}).click();
+  const count=await page.evaluate(()=>(window as typeof window & {toneCount:number}).toneCount);
+  await page.getByRole('button',{name:/Животни/}).click();await page.getByRole('button',{name:/Конче на поляната/}).click();
+  await page.locator('[data-region="meadow"]').click();
+  expect(await page.evaluate(()=>(window as typeof window & {toneCount:number}).toneCount)).toBe(count);
+});
