@@ -36,7 +36,7 @@ Verified screenshots from the browser tests are committed in `docs/evidence/`, i
 
 - [x] Bulgarian and English UI, category navigation, daily picture, surprise without repeats until a full cycle, free drawing.
 - [x] Seventy-two distinct original coloring SVGs with named closed regions, three difficulty labels, including Farm and Toys.
-- [x] Full-screen white drawing area with a collapsible tray of illustrated tools: bucket, magic, pencil, crayon, ballpoint, felt pen, marker, brush, watercolor, glitter, spray and eraser. 64 preset colors, custom picker, size, opacity, recent colors.
+- [x] Full-screen white drawing area with a collapsible, centered tray of illustrated tools: bucket, magic, pencil, crayon, ballpoint, felt pen, marker, brush, watercolor, glitter, spray and eraser. Centered color palette, 64 preset colors, custom picker, a five-step visual stroke thickness menu, opacity, recent colors.
 - [x] Undo/redo, reset confirmation, PNG export, IndexedDB auto-save, resume, gallery and a short picture bounce and sparkle animation on completion.
 - [x] Simple mode on by default with larger controls and eight color choices; the full tool tray remains available. Parental arithmetic gate can enable advanced color and size controls.
 - [x] Large color-matched sparkle trail on touch and a two-note toy chime while painting, with sound toggle and reduced-motion support.

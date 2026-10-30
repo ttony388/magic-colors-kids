@@ -59,3 +59,34 @@
 .editor .svg-art{height:calc(100% - 220px)}
 .editor .stage.tray-collapsed .svg-art{height:calc(100% - 44px)}
 @media(orientation:landscape) and (max-height:500px){.editor .svg-art{height:calc(100% - 175px)}.editor .editor-controls{max-height:170px!important}.editor .stage.tray-collapsed .svg-art{height:calc(100% - 44px)}}
+
+/* Center the tool and color groups when they fit; keep advanced palettes scrollable. */
+.editor .tool-strip,.editor.toddler .tool-strip{justify-content:safe center}
+.editor .palette-row{justify-content:center}
+.editor.toddler .palette-row>strong{display:none}
+.editor.toddler .palette{flex:0 1 auto;width:max-content;max-width:100%;justify-content:center;overflow-x:visible}
+@media(min-width:601px) and (max-width:900px){.editor .tool-strip button,.editor.toddler .tool-strip button{flex-basis:58px}.editor .tool-strip img{width:46px;height:46px}.editor .tool-strip small{font-size:9px}}
+@media(max-width:600px){
+  .editor.toddler .tool-strip{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));width:min(100%,440px);margin:0 auto;gap:4px;overflow:visible}
+  .editor.toddler .tool-strip button{width:100%;min-width:0;min-height:76px}
+  .editor.toddler .tool-strip small{white-space:normal;overflow-wrap:anywhere;font-size:9px}
+  .editor.toddler .palette{display:flex;flex-wrap:wrap;width:260px;max-width:100%;gap:6px;overflow:visible}
+  .editor.toddler .palette button{flex:0 0 44px;width:44px;height:44px;min-height:44px;max-height:44px}
+  .editor.toddler .custom-color{display:grid;place-items:center;flex:0 0 44px;width:44px;height:44px;padding:0}
+  .editor.toddler .editor-controls{max-height:min(49dvh,375px)!important}
+  .editor .svg-art{height:calc(100% - 345px)}
+  .editor .stage.tray-collapsed .svg-art{height:calc(100% - 44px)}
+}
+@media(orientation:landscape) and (max-height:500px){.editor .svg-art{height:calc(100% - 175px)}}
+
+.editor .editor-controls.size-open{overflow:visible}
+.editor .size-trigger{gap:5px;min-width:56px;background:#e7f6f4;color:#2d8788;font-size:12px}
+.editor .size-trigger span{display:block;flex:none;border-radius:50%;background:#31b9b2}
+.editor .size-popover{position:absolute;z-index:8;left:50%;bottom:calc(100% + 10px);transform:translateX(-50%);width:min(94vw,440px);padding:12px 14px 16px;border:2px solid #d8d2e5;border-radius:22px;background:#fff;box-shadow:0 12px 30px #2c315646;text-align:center}
+.editor .size-popover:after{content:'';position:absolute;left:calc(50% - 12px);bottom:-13px;width:21px;height:21px;transform:rotate(45deg);background:#fff;border-right:2px solid #d8d2e5;border-bottom:2px solid #d8d2e5}
+.editor .size-popover strong{display:block;margin-bottom:7px;color:#4d4a72;font-size:14px}
+.editor .size-options{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px}
+.editor .size-options button{display:grid;place-items:center;min-width:0;min-height:65px;padding:3px;border:2px solid transparent;border-radius:13px;background:#f2f0f9;color:#4d4b75;touch-action:manipulation}
+.editor .size-options button.selected{background:#30344a;color:#fff;border-color:#30344a;box-shadow:0 3px 0 #151a2b}
+.editor .size-options svg{width:100%;max-width:62px;height:48px}
+@media(max-width:600px){.editor .size-popover{padding:10px 8px 13px}.editor .size-options button{min-height:58px}.editor .size-options svg{height:44px}.editor .control-row .size-trigger{min-width:48px;padding:4px 5px;font-size:11px}}
