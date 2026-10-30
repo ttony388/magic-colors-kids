@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="turtle">
+<rect width="400" height="400" fill="white"/>
+<g fill="white" stroke="#293344" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><ellipse data-region="shell" cx="197" cy="230" rx="105" ry="72"/><ellipse data-region="shell-center" cx="197" cy="220" rx="57" ry="48"/><ellipse data-region="head" cx="313" cy="241" rx="41" ry="38"/><ellipse data-region="leg-front" cx="256" cy="300" rx="28" ry="29"/><ellipse data-region="leg-back" cx="119" cy="300" rx="28" ry="29"/><path data-region="tail" d="M95 250 L54 275 L102 278 Z"/><circle data-region="shell-spot-left" cx="131" cy="226" r="15"/><circle data-region="shell-spot-right" cx="263" cy="226" r="15"/><circle data-region="eye" cx="325" cy="229" r="7"/><path d="M322 254 Q337 265 346 252" fill="none" stroke="#293344" stroke-width="5" stroke-linecap="round" pointer-events="none"/></g>
+</svg>

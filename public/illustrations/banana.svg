@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="banana">
+<rect width="400" height="400" fill="white"/>
+<g fill="white" stroke="#293344" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path data-region="peel" d="M72 182 Q153 334 315 168 Q330 231 287 287 Q160 381 72 221 Z"/><path data-region="fruit" d="M76 170 Q172 315 315 156 Q277 277 158 287 Q104 273 76 170 Z"/><path data-region="tip-left" d="M62 165 L90 171 L87 206 L67 196 Z"/><path data-region="tip-right" d="M308 149 L338 141 L331 176 L310 183 Z"/><ellipse data-region="spot-a" cx="170" cy="307" rx="12" ry="7"/><ellipse data-region="spot-b" cx="214" cy="297" rx="10" ry="6"/><circle data-region="sun" cx="322" cy="75" r="26"/></g>
+</svg>

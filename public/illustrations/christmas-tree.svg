@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="christmas-tree">
+<rect width="400" height="400" fill="white"/>
+<g fill="white" stroke="#293344" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path data-region="top" d="M200 45 L105 181 L295 181 Z"/><path data-region="middle" d="M200 109 L73 248 L327 248 Z"/><path data-region="bottom" d="M200 180 L51 328 L349 328 Z"/><rect data-region="trunk" x="177" y="326" width="46" height="42" rx="5"/><circle data-region="star" cx="200" cy="46" r="17"/><circle data-region="bauble-a" cx="128" cy="218" r="14"/><circle data-region="bauble-b" cx="253" cy="196" r="14"/><circle data-region="bauble-c" cx="117" cy="295" r="14"/><circle data-region="bauble-d" cx="278" cy="289" r="14"/><circle data-region="bauble-e" cx="200" cy="259" r="14"/></g>
+</svg>

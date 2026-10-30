@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="mushroom">
+<rect width="400" height="400" fill="white"/>
+<g fill="white" stroke="#293344" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><rect data-region="stem" x="172" y="200" width="56" height="139" rx="20"/><path data-region="cap" d="M72 212 Q84 88 200 88 Q316 88 328 212 Z"/><circle data-region="spot-one" cx="139" cy="163" r="22"/><circle data-region="spot-two" cx="221" cy="122" r="19"/><circle data-region="spot-three" cx="268" cy="178" r="17"/><ellipse data-region="grass-left" cx="103" cy="335" rx="47" ry="16"/><ellipse data-region="grass-right" cx="302" cy="335" rx="47" ry="16"/><circle data-region="little-mushroom-cap" cx="53" cy="308" r="21"/><rect data-region="little-mushroom-stem" x="48" y="308" width="10" height="34" rx="4"/></g>
+</svg>

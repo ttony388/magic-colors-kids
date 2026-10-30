@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="saturn">
+<rect width="400" height="400" fill="white"/>
+<g fill="white" stroke="#293344" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path data-region="ring-back" d="M37 202 Q122 115 298 146 Q371 164 372 204 Q298 160 192 173 Q94 183 37 222 Z"/><circle data-region="planet" cx="201" cy="205" r="91"/><path data-region="stripe-one" d="M120 164 Q201 193 283 166 L282 188 Q201 215 121 187 Z"/><path data-region="stripe-two" d="M119 224 Q201 249 284 221 L276 246 Q201 270 126 248 Z"/><path data-region="ring-front" d="M39 225 Q129 279 259 251 Q344 232 367 204 L378 217 Q319 301 189 302 Q75 302 32 242 Z"/><circle data-region="star-a" cx="60" cy="80" r="13"/><circle data-region="star-b" cx="325" cy="86" r="15"/><circle data-region="star-c" cx="340" cy="317" r="9"/></g>
+</svg>

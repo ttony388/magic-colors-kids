@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="plane">
+<rect width="400" height="400" fill="white"/>
+<g fill="white" stroke="#293344" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path data-region="fuselage" d="M40 201 Q53 180 106 179 L273 180 L345 196 Q365 205 345 217 L269 233 L103 225 Q56 225 40 201 Z"/><path data-region="wing-top" d="M170 185 L218 84 L252 88 L234 185 Z"/><path data-region="wing-bottom" d="M172 221 L238 315 L270 312 L238 217 Z"/><path data-region="tail-top" d="M73 182 L62 132 L89 135 L117 182 Z"/><path data-region="tail-bottom" d="M76 223 L68 262 L94 257 L118 221 Z"/><circle data-region="window-one" cx="278" cy="206" r="10"/><circle data-region="window-two" cx="310" cy="206" r="10"/><circle data-region="sun" cx="330" cy="86" r="24"/></g>
+</svg>

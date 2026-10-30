@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="crown">
+<rect width="400" height="400" fill="white"/>
+<g fill="white" stroke="#293344" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path data-region="crown" d="M48 141 L105 192 L149 100 L200 191 L251 100 L295 192 L352 141 L322 308 L78 308 Z"/><rect data-region="band" x="76" y="302" width="248" height="39" rx="11"/><circle data-region="jewel-center" cx="200" cy="244" r="28"/><circle data-region="jewel-left" cx="120" cy="252" r="19"/><circle data-region="jewel-right" cx="280" cy="252" r="19"/><circle data-region="gem-top" cx="200" cy="99" r="13"/><circle data-region="gem-left" cx="104" cy="141" r="13"/><circle data-region="gem-right" cx="296" cy="141" r="13"/></g>
+</svg>

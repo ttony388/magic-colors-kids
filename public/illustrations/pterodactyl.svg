@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="pterodactyl">
+<rect width="400" height="400" fill="white"/>
+<g fill="white" stroke="#293344" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path data-region="wing-left" d="M185 195 Q122 100 39 136 L74 177 L54 215 L145 230 Z"/><path data-region="wing-right" d="M215 195 Q278 100 361 136 L326 177 L346 215 L255 230 Z"/><ellipse data-region="body" cx="200" cy="236" rx="43" ry="74"/><ellipse data-region="head" cx="199" cy="151" rx="43" ry="39"/><path data-region="beak" d="M163 163 L67 195 L176 185 Z"/><path data-region="crest" d="M206 121 L259 63 L239 142 Z"/><path data-region="foot-left" d="M176 302 L151 333 L194 322 Z"/><path data-region="foot-right" d="M224 302 L249 333 L206 322 Z"/><circle data-region="eye" cx="187" cy="150" r="7"/><circle data-region="cloud" cx="320" cy="64" r="24"/></g>
+</svg>

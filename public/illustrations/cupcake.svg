@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="cupcake">
+<rect width="400" height="400" fill="white"/>
+<g fill="white" stroke="#293344" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path data-region="cup" d="M112 209 L288 209 L260 341 L140 341 Z"/><path data-region="frosting" d="M104 213 Q82 191 105 170 Q99 145 129 134 Q126 111 162 109 Q169 72 200 83 Q231 72 238 109 Q274 111 271 134 Q301 145 295 170 Q318 191 296 213 Z"/><circle data-region="cherry" cx="200" cy="76" r="20"/><rect data-region="wrapper-stripe-left" x="164" y="231" width="15" height="98" rx="4"/><rect data-region="wrapper-stripe-right" x="221" y="231" width="15" height="98" rx="4"/><circle data-region="sprinkle-one" cx="151" cy="166" r="7"/><circle data-region="sprinkle-two" cx="244" cy="156" r="7"/><circle data-region="sprinkle-three" cx="197" cy="134" r="7"/><circle data-region="sprinkle-four" cx="265" cy="192" r="7"/></g>
+</svg>
