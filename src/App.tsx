@@ -40,7 +40,8 @@ export default function App(){
   return <div className={`app ${toddler?'toddler':''}`}>
     {screen==='editor' ? <Editor key={page.id} page={page} language={language} toddler={toddler} sound={sound}
       onBack={()=>setScreen(editorBack)}
-      onComplete={()=>{setCelebrate(true);setTimeout(()=>setCelebrate(false),2800)}}/> : <>
+      onComplete={()=>{setCelebrate(true);setTimeout(()=>setCelebrate(false),2800)}}
+      onClear={()=>setCelebrate(false)}/> : <>
       <div className="shell">
         <header className="topbar">
           <button className="brand" onClick={()=>setScreen('home')} aria-label={bg?'Начало':'Home'}><img className="brand-mark" src={`${import.meta.env.BASE_URL}logo.svg`} alt=""/><span>{bg?'Вълшебни Цветове':'Magic Colors'}</span></button>
