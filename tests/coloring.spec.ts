@@ -183,7 +183,7 @@ test('nearly colored picture animates automatically with its chosen colors',asyn
   await expect(page.getByTestId('drawing-stage')).not.toHaveClass(/alive/);
   await page.locator(`[data-region="${regions[count-1]}"]`).dispatchEvent('pointerdown',{clientX:200,clientY:200,pointerType:'touch'});
   await expect(page.getByTestId('drawing-stage')).toHaveClass(/alive/);
-  await expect(page.locator('.svg-art svg')).toHaveCSS('animation-name','picture-awake');
+  await expect(page.locator('.artwork-layer')).toHaveCSS('animation-name','picture-awake');
   await expect(page.locator(`[data-region="${regions[0]}"]`)).not.toHaveCSS('fill','rgb(255, 255, 255)');
   const chosen=await page.locator(`[data-region="${regions[0]}"]`).getAttribute('fill');
   expect(chosen).toBeTruthy();

@@ -2,9 +2,10 @@ import { useEffect, useState } from 'react';
 import Editor from './features/coloring/Editor';
 import { categories, getDailyPage, nextSurprise, pages, type Page } from './data/pages';
 import { deleteDrawing, listDrawings, type SavedDrawing } from './storage/db';
+import { artLevels, levelNames, reviewPages, reviewSubjects, type ArtLevel } from './data/artwork';
 
 const free:Page={id:'free',category:'free',title:{bg:'Свободно рисуване',en:'Free drawing'},difficulty:'easy',asset:''};
-type Screen='home'|'category'|'editor'|'gallery'|'parents';
+type Screen='home'|'category'|'editor'|'gallery'|'parents'|'art-review';
 const asset=(p:Page)=>`${import.meta.env.BASE_URL}${p.asset.slice(1)}`;
 
 export default function App(){
@@ -19,6 +20,7 @@ export default function App(){
   const [answer,setAnswer]=useState('');
   const [drawings,setDrawings]=useState<SavedDrawing[]>([]);
   const [celebrate,setCelebrate]=useState(false);
+  const [artLevel,setArtLevel]=useState<ArtLevel>('easy');
   const bg=language==='bg';
 
   useEffect(()=>{localStorage.setItem('language',language);document.documentElement.lang=language},[language]);
@@ -52,11 +54,21 @@ export default function App(){
           <div className="simple-intro"><h1>{bg?'Какво ще оцветиш?':'What will you color?'}</h1>
             <button className="surprise-button" onClick={surprise}><span aria-hidden="true">✦</span>{bg?'ИЗНЕНАДА':'SURPRISE'}<span aria-hidden="true">✦</span></button>
           </div>
+          <button className="art-review-link" onClick={()=>setScreen('art-review')}>{bg?'Нови рисунки · Преглед':'New artwork · Preview'} →</button>
           <div className="section-title"><h2>{bg?'Още картинки':'More pictures'}</h2><span>{pages.length} {bg?'картинки':'pictures'}</span></div>
           <div className="category-grid">{categories.map(c=>{const item=pages.find(p=>p.category===c.id)!;return <button className="category-card" key={c.id} onClick={()=>goCategory(c.id)} style={{background:c.color}}>
             <div className="card-art"><img loading="lazy" src={asset(item)} alt=""/></div><strong>{c[language]}</strong><small>{pages.filter(p=>p.category===c.id).length} {bg?'картинки':'pictures'}</small>
           </button>})}</div>
           <div className="simple-links"><button onClick={()=>open(getDailyPage(new Date()),'home')}>{bg?'Картинка на деня':'Daily picture'} →</button><button onClick={gallery}>{bg?'Моите рисунки':'My drawings'} →</button>{!toddler&&<button onClick={()=>open(free,'home')}>{bg?'Свободно рисуване':'Free drawing'} →</button>}</div>
+        </main>}
+
+        {screen==='art-review'&&<main className="art-review">
+          <button className="back-link" onClick={()=>setScreen('home')}>← {bg?'Назад':'Back'}</button>
+          <h1>{bg?'Нови рисунки':'New artwork'}</h1>
+          <p>{bg?'Избери колко детайли да има твоята рисунка.':'Choose how much detail you want in your picture.'}</p>
+          <div className="art-levels" role="group" aria-label={bg?'Детайли':'Art complexity'}>{artLevels.map(level=><button key={level} aria-pressed={artLevel===level} onClick={()=>setArtLevel(level)}>{levelNames[language][level]}</button>)}</div>
+          <div className="page-grid">{reviewSubjects.map(subject=>{const p=reviewPages.find(item=>item.id===`${subject.id}@v2:${artLevel}`)!;return <button className="page-card" key={p.id} onClick={()=>open(p,'art-review')}><img src={asset(p)} alt=""/><strong>{subject[language]}</strong></button>})}</div>
+          <p className="art-review-note">{bg?'Преглед на 3 нови рисунки. Твоите досегашни рисунки са запазени.':'Preview of 3 new illustrations. Your existing drawings are preserved.'}</p>
         </main>}
 
         {screen==='category'&&<main>
@@ -70,7 +82,7 @@ export default function App(){
         {screen==='gallery'&&<main>
           <button className="back-link" onClick={()=>setScreen('home')}>← {bg?'Назад':'Back'}</button><h1>{bg?'Моите рисунки':'My drawings'}</h1>
           {drawings.length===0?<div className="empty-gallery">{bg?'Тук ще се появят твоите рисунки.':'Your drawings will appear here.'}<br/><button className="primary" onClick={()=>setScreen('home')}>{bg?'Избери картинка':'Choose a picture'}</button></div>:
-            <div className="page-grid">{[...drawings].sort((a,b)=>b.updatedAt-a.updatedAt).map(d=>{const p=pages.find(p=>p.id===d.id)||free;return <div className="page-card" key={d.id}>
+            <div className="page-grid">{[...drawings].sort((a,b)=>b.updatedAt-a.updatedAt).map(d=>{const p=[...pages,...reviewPages].find(p=>p.id===d.id)||free;return <div className="page-card" key={d.id}>
               <button onClick={()=>open(p,'gallery')}>{p.id==='free'?<div className="blank-thumb">✎</div>:<img src={asset(p)} alt=""/>}<strong>{p.title[language]}</strong><span>{d.completed?'✓ ':''}{new Date(d.updatedAt).toLocaleDateString(language)}</span></button>
               {!toddler&&<button className="delete" onClick={()=>{if(confirm(bg?'Да изтрием рисунката?':'Delete this drawing?'))deleteDrawing(d.id).then(gallery)}}>{bg?'Изтрий':'Delete'}</button>}
             </div>})}</div>}

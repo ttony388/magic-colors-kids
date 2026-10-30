@@ -48,13 +48,14 @@
 .editor .control-row button,.editor.toddler .control-row button{display:inline-flex;align-items:center;justify-content:center;min-height:38px;min-width:43px;padding:6px 10px;border-radius:11px;font-size:15px}
 .editor .control-row .finish-button{display:inline-flex;margin:0;padding:7px 16px;min-height:42px;background:#8255dc;color:#fff;font-size:16px;box-shadow:0 3px 0 #6040b3}
 .editor .sliders{margin:0 auto;max-width:420px}.editor .recent{margin:2px 0}
-.editor .svg-art.alive svg,.editor .stage.alive .svg-art svg{animation:picture-awake 2.8s ease-in-out both;transform-origin:50% 72%}
-.editor .stage.alive [data-region*="tail"]{transform-box:fill-box;transform-origin:15% 65%;animation:tail-wag .27s ease-in-out 8 alternate}
+.editor .artwork-layer{position:absolute;inset:0;transform-origin:50% 50%}
+.editor .stage.alive .artwork-layer{animation:picture-awake 2.8s ease-in-out both}
+
 @keyframes picture-awake{0%,100%{transform:translateY(0) rotate(0) scale(1)}17%{transform:translateY(-18px) rotate(-3deg) scale(1.04)}32%{transform:translateY(0) rotate(3deg)}48%{transform:translateY(-14px) rotate(-2deg) scale(1.03)}64%{transform:translateY(0) rotate(2deg)}78%{transform:translateY(-7px) rotate(-1deg)}}
-@keyframes tail-wag{to{transform:rotate(15deg)}}
+
 .celebration{top:66px;padding:7px 20px;min-width:0;border:2px solid #fff;border-radius:16px;box-shadow:0 6px 18px #5f418d44;pointer-events:none}
 .celebration strong{font-size:16px}.celebration span{display:none}
-@media(prefers-reduced-motion:reduce){.editor .svg-art.alive svg,.editor .stage.alive [data-region*="tail"]{animation:none}}
+@media(prefers-reduced-motion:reduce){.editor .stage.alive .artwork-layer{animation:none}}
 @media(max-width:600px){.simple-intro{padding:28px 10px 35px;border-radius:25px}.simple-intro h1{font-size:31px}.editor .editor-controls{padding-left:6px;padding-right:6px;max-height:42dvh!important}.editor .tool-strip button,.editor.toddler .tool-strip button{flex-basis:62px;min-height:77px}.editor .tool-strip img{width:47px;height:47px}.editor .palette-row>strong{display:none}.editor .palette button,.editor.toddler .palette button{flex-basis:40px;width:40px;height:40px;min-height:40px;max-height:40px}.editor .control-row .finish-button{font-size:14px;padding:6px 10px}}
 .editor .svg-art{height:calc(100% - 220px)}
 .editor .stage.tray-collapsed .svg-art{height:calc(100% - 44px)}
@@ -90,3 +91,19 @@
 .editor .size-options button.selected{background:#30344a;color:#fff;border-color:#30344a;box-shadow:0 3px 0 #151a2b}
 .editor .size-options svg{width:100%;max-width:62px;height:48px}
 @media(max-width:600px){.editor .size-popover{padding:10px 8px 13px}.editor .size-options button{min-height:58px}.editor .size-options svg{height:44px}.editor .control-row .size-trigger{min-width:48px;padding:4px 5px;font-size:11px}}
+
+.art-review-link{display:block;margin:18px auto;padding:14px 22px;border:2px solid #d7c7f2;border-radius:18px;background:#fff;font-weight:800;color:#6847a8}
+.art-levels{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin:24px 0}.art-levels button{min-width:95px;min-height:48px;padding:12px 20px;border:2px solid #dacdf1;border-radius:24px;background:#fff;font-weight:800}.art-levels button[aria-pressed=true]{color:#fff;background:#7552b6;border-color:#7552b6}.art-review h1,.art-review>p{text-align:center}.art-review-note{color:#736882;font-size:14px;padding:16px}.art-review .page-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.art-review .page-card img{width:100%;height:auto;aspect-ratio:1;object-fit:contain}.art-review .page-card{min-width:0}@media(max-width:600px){.art-review .page-grid{grid-template-columns:1fr}.art-review .page-card img{max-height:300px}}
+
+/* Landscape phones retain a useful art area beside a centered compact tray. */
+@media(orientation:landscape) and (max-height:500px){
+.editor.art-v2 .editor-controls:not(.collapsed){left:auto;right:0;top:58px;bottom:0;width:320px;max-height:none!important;border-radius:20px 0 0 0;padding:6px 8px;backdrop-filter:none}
+.editor.art-v2 .tool-strip{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:2px;overflow:visible;width:100%;margin:0 auto}
+.editor.art-v2 .tool-strip button{min-width:0;min-height:59px;padding:2px 0;border-width:2px}
+.editor.art-v2 .tool-strip img{width:36px;height:36px}
+.editor.art-v2 .tool-strip small{font-size:8px;white-space:normal}
+.editor.art-v2 .palette{flex-wrap:wrap;justify-content:center;width:260px;flex:0 1 auto;gap:5px;margin:auto}
+.editor.art-v2 .palette button{width:40px;height:40px;min-height:40px;max-height:40px;flex-basis:40px}
+.editor.art-v2 .custom-color{width:40px;height:40px;flex-basis:40px;padding:4px}
+.editor.art-v2 .control-row{gap:4px}.editor.art-v2 .control-row button{padding:5px 7px;min-width:35px;font-size:12px}.editor.art-v2 .control-row .finish-button{font-size:12px;padding:5px 9px}
+}

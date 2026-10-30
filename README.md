@@ -52,6 +52,36 @@ Local lint, typecheck, unit tests, production web build, and Playwright browser 
 
 ## Artwork
 
+### Artwork review branch
+
+The `art-direction-review` branch adds three **review samples**, each in Easy,
+Medium and Detailed variants. Open **New artwork · Preview / Нови рисунки · Преглед**
+on the home screen. The existing 72 illustrations have not been replaced.
+
+See [the repository and artwork audit](docs/art-review/AUDIT.md) and
+[the before/after comparison](docs/art-review/comparison.png).
+
+`python3 scripts/generate_art_v2.py` reproducibly creates the nine original SVG
+samples. `python3 scripts/audit_art.py` inventories every legacy and review asset,
+reports existing defects and rejects structural defects in the new samples.
+`node scripts/render_art_review.mjs` renders the comparison and all 72 legacy
+thumbnails for inspection (requires Playwright Chromium).
+
+V2 save IDs include the artwork revision and detail level. Old saves continue to
+use the unchanged v1 artwork. Brush coordinates in v2 are relative to the SVG,
+so strokes stay aligned through device rotation and toolbar changes. The SVG and
+brush canvas share one animation parent; fills and brush marks move together.
+
+The Android workflow produces a separate review app on this branch:
+`com.magiccolors.kids.artreview`. It installs beside the existing app, with its
+own local drawings. The main branch retains its usual application ID.
+
+Run `npm run build` before `npm run test:e2e`; the offline test loads the actual
+production bundle through a local asset router with browser networking disabled.
+The review suite includes nine artwork image baselines and four responsive editor
+baselines. Update baselines only after inspecting the rendered artwork:
+`npx playwright test tests/artwork.spec.ts --update-snapshots`.
+
 `scripts/generate_art.py` generates the 72 original SVG illustrations in `public/illustrations/`. Every fillable shape has a stable `data-region` key. Assets contain no copied franchise characters. Contributions should add a unique page ID and localized title to `src/data/pages.ts`.
 
 `scripts/generate_tool_icons.py` creates the original shaded SVG tool drawings in `public/tools/`. The home screen is deliberately colorful while the editor uses a full white page and a small hideable tool tray. The completion animation respects reduced-motion settings.

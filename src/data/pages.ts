@@ -1,5 +1,5 @@
 export type Difficulty = 'easy' | 'medium' | 'advanced';
-export type Page = { id: string; category: string; title: { bg: string; en: string }; difficulty: Difficulty; asset: string };
+export type Page = { id: string; category: string; title: { bg: string; en: string }; difficulty: Difficulty; asset: string; artVersion?: 2 };
 export const categories = [
   { id:'animals', bg:'Животни', en:'Animals', color:'#ffc478' },
   { id:'nature', bg:'Природа', en:'Nature', color:'#92dfa0' },
