@@ -15,7 +15,7 @@ Open the local URL printed by Vite. `npm run build` creates production web files
 
 Push to `main` or open **Actions → Android debug APK → Run workflow**. When the job succeeds, download `magic-colors-android-debug` from the run's **Artifacts** section and extract `app-debug.apk`. On your Android phone, open the APK and allow installation from your file manager when Android asks. Keep the same app ID and debug signing key for updates; GitHub hosted runners may produce different debug keys, requiring uninstall before installing a later debug build (which deletes local drawings). Back up exported PNGs first.
 
-For local Android development: `npm run build && npx cap sync android`, then build in Android Studio or run `cd android && ./gradlew assembleDebug` with JDK 17 and Android SDK installed.
+For local Android development: `npm run build && npx cap sync android`, then build in Android Studio or run `cd android && ./gradlew assembleDebug` with JDK 21 and Android SDK installed.
 
 ## Verify
 
