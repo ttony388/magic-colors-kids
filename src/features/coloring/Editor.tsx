@@ -33,13 +33,21 @@ export default function Editor({page,language,toddler,sound,onBack,onComplete}: 
   },[current,complete,page.id,history.length,cursor]);
   function commit(next:Snapshot){setSaved(false);setHistory(h=>[...h.slice(0,cursor+1),next].slice(-60));setCursor(c=>Math.min(c+1,59))}
   function chooseColor(value:string){setColor(value);setRecent(r=>[value,...r.filter(c=>c!==value)].slice(0,8))}
-  function playColorSound(){if(!sound||performance.now()-lastTone.current<150)return;lastTone.current=performance.now();try{
+  function playColorSound(){if(!sound||performance.now()-lastTone.current<240)return;lastTone.current=performance.now();try{
     const audio=audioRef.current??new AudioContext();audioRef.current=audio;if(audio.state==='suspended')void audio.resume();
-    const oscillator=audio.createOscillator(),gain=audio.createGain();const hue=Number(color.match(/hsl\((\d+)/)?.[1]??180);
-    oscillator.type='sine';oscillator.frequency.value=440+Math.round(hue/360*220);
-    gain.gain.setValueAtTime(0.001,audio.currentTime);gain.gain.linearRampToValueAtTime(0.027,audio.currentTime+0.018);
-    gain.gain.exponentialRampToValueAtTime(0.001,audio.currentTime+0.15);
-    oscillator.connect(gain).connect(audio.destination);oscillator.start();oscillator.stop(audio.currentTime+0.15)
+    const index=Math.max(0,colors.indexOf(color));const notes=[523.25,587.33,659.25,783.99,880];
+    const root=notes[index%notes.length];
+    // A soft two-note toy chime, with a little bright overtone on each note.
+    for(const [offset,pitch,volume] of [[0,root,0.045],[0.09,root*1.5,0.03]] as const){
+      const start=audio.currentTime+offset;
+      for(const [wave,multiplier,level] of [['sine',1,1],['triangle',2.01,0.14]] as const){
+        const oscillator=audio.createOscillator(),gain=audio.createGain();oscillator.type=wave;
+        oscillator.frequency.setValueAtTime(pitch*multiplier,start);
+        gain.gain.setValueAtTime(0.0001,start);gain.gain.exponentialRampToValueAtTime(volume*level,start+0.012);
+        gain.gain.exponentialRampToValueAtTime(0.0001,start+0.32);
+        oscillator.connect(gain).connect(audio.destination);oscillator.start(start);oscillator.stop(start+0.33);
+      }
+    }
   }catch{/* sound is optional when the browser has no audio output */}}
   function emitSparkles(e:React.PointerEvent,burst=false){
     if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
@@ -47,11 +55,11 @@ export default function Editor({page,language,toddler,sound,onBack,onComplete}: 
     const box=stageRef.current?.getBoundingClientRect();if(!box)return;
     const x=(e.clientX-box.left)/box.width*100,y=(e.clientY-box.top)/box.height*100;
     if(x<0||x>100||y<0||y>100)return;
-    const group=Array.from({length:burst?6:2},(_,i)=>({id:++particleId.current,x,y,
-      dx:Math.cos(i*2.4+now)*((burst?17:9)+i*3),dy:Math.sin(i*2.4+now)*((burst?17:9)+i*3)-12,
-      color,size:burst?16+(i%3)*4:12+(i%2)*4}));
+    const group=Array.from({length:burst?8:3},(_,i)=>({id:++particleId.current,x,y,
+      dx:Math.cos(i*2.4+now)*((burst?24:15)+i*3),dy:Math.sin(i*2.4+now)*((burst?24:15)+i*3)-19,
+      color,size:burst?30+(i%3)*5:25+(i%2)*6}));
     setSparkles(prev=>[...prev,...group].slice(-45));
-    const timer=window.setTimeout(()=>{setSparkles(prev=>prev.filter(p=>!group.some(g=>g.id===p.id)));particleTimers.current.delete(timer)},700);
+    const timer=window.setTimeout(()=>{setSparkles(prev=>prev.filter(p=>!group.some(g=>g.id===p.id)));particleTimers.current.delete(timer)},850);
     particleTimers.current.add(timer);
   }
   function fill(event:React.PointerEvent<HTMLDivElement>){if(tool!=='bucket'&&tool!=='magic')return;const target=(event.target as Element).closest('[data-region]') as SVGElement|null;if(!target)return;

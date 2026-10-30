@@ -10,7 +10,9 @@ export const categories = [
   { id:'space', bg:'Космос', en:'Space', color:'#c6c8f6' },
   { id:'food', bg:'Храна и плодове', en:'Food', color:'#ffd2d1' },
   { id:'fairytales', bg:'Приказки', en:'Fairy tales', color:'#ead1f7' },
-  { id:'seasons', bg:'Сезони и празници', en:'Seasons', color:'#ffe9a7' }
+  { id:'seasons', bg:'Сезони и празници', en:'Seasons', color:'#ffe9a7' },
+  { id:'farm', bg:'Ферма', en:'Farm', color:'#d9e9a5' },
+  { id:'toys', bg:'Играчки', en:'Toys', color:'#ffc9e5' }
 ] as const;
 export const pages: Page[] = [
   ['cat','animals','Коте','Kitten','easy'], ['dog','animals','Кученце','Puppy','easy'],
@@ -42,6 +44,21 @@ export const pages: Page[] = [
   ['carriage','fairytales','Карета','Carriage','medium'], ['cottage','fairytales','Приказна къщичка','Storybook cottage','advanced'],
   ['snowman','seasons','Снежен човек','Snowman','easy'], ['pumpkin','seasons','Тиква','Pumpkin','easy'],
   ['sunflower','seasons','Слънчоглед','Sunflower','medium'], ['umbrella','seasons','Чадър','Umbrella','easy'],
-  ['christmas-tree','seasons','Коледна елха','Christmas tree','medium'], ['autumn-park','seasons','Есенен парк','Autumn park','advanced']
+  ['christmas-tree','seasons','Коледна елха','Christmas tree','medium'], ['autumn-park','seasons','Есенен парк','Autumn park','advanced'],
+  ['cow','farm','Крава','Cow','medium'], ['sheep','farm','Овца','Sheep','easy'],
+  ['pig','farm','Прасенце','Piglet','easy'], ['hen','farm','Кокошка','Hen','medium'],
+  ['barn','farm','Плевня','Barn','medium'], ['tractor','farm','Трактор','Tractor','medium'],
+  ['teddy','toys','Плюшено мече','Teddy bear','easy'], ['kite','toys','Хвърчило','Kite','easy'],
+  ['drum','toys','Барабан','Drum','medium'], ['ball','toys','Шарена топка','Colorful ball','easy'],
+  ['blocks','toys','Кубчета','Building blocks','medium'], ['rocking-horse','toys','Люлеещо се конче','Rocking horse','advanced']
 ].map(([id,category,bg,en,difficulty]) => ({ id,category,title:{bg,en},difficulty:difficulty as Difficulty,asset:`/illustrations/${id}.svg` }));
 export const getDailyPage = (date: Date) => pages[Math.floor(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate())/86400000)%pages.length];
+export function nextSurprise(seen: string[], random = Math.random): { page: Page; seen: string[] } {
+  const valid=new Set(pages.map(p=>p.id));
+  const used=[...new Set(seen.filter(id=>valid.has(id)))];
+  // At the end of a cycle, keep the last picture out of the next draw.
+  const cycle=used.length===pages.length?used.slice(-1):used;
+  const remaining=pages.filter(p=>!cycle.includes(p.id));
+  const page=remaining[Math.min(remaining.length-1,Math.floor(Math.max(0,random())*remaining.length))];
+  return {page,seen:[...cycle,page.id]};
+}

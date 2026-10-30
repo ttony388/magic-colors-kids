@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Вълшебни Цветове">
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#6c4be6"/><stop offset="1" stop-color="#ae6ff7"/></linearGradient>
+    <linearGradient id="brush" x2="1" y2="1"><stop stop-color="#45d8ea"/><stop offset="1" stop-color="#2785e9"/></linearGradient>
+    <linearGradient id="tip" x2="1" y2="1"><stop stop-color="#ffdf57"/><stop offset=".54" stop-color="#ff9e45"/><stop offset="1" stop-color="#ff5e85"/></linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="256" cy="263" r="184" fill="#fff9f1"/>
+  <path d="M144 238a122 122 0 0 1 194-83" fill="none" stroke="#ff5e85" stroke-width="27" stroke-linecap="round"/>
+  <path d="M155 258a104 104 0 0 1 166-83" fill="none" stroke="#ffc64c" stroke-width="23" stroke-linecap="round"/>
+  <path d="M167 276a84 84 0 0 1 136-80" fill="none" stroke="#4ad9bf" stroke-width="19" stroke-linecap="round"/>
+  <g transform="rotate(37 255 268)">
+    <path d="M229 214h54v177q-27 31-54 0Z" fill="url(#brush)" stroke="#313158" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M226 214h60v34h-60z" fill="#f6db67" stroke="#313158" stroke-width="10"/>
+    <path d="M228 211q-1-38 28-93 30 54 28 93Z" fill="url(#tip)" stroke="#313158" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M256 122q-13 23-11 40" fill="none" stroke="#fff5aa" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="256" cy="372" r="7" fill="#fff"/>
+  </g>
+  <path d="m370 118 12 30 30 12-30 12-12 30-12-30-30-12 30-12Z" fill="#ffe778" stroke="#fff" stroke-width="7" stroke-linejoin="round"/>
+  <path d="m120 319 8 18 18 8-18 8-8 18-8-18-18-8 18-8Z" fill="#84e8f0"/>
+  <circle cx="363" cy="327" r="13" fill="#ff7799"/>
+</svg>

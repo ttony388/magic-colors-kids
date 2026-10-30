@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="drum">
+<rect width="400" height="400" fill="white"/>
+<g fill="white" stroke="#293344" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path data-region="stick-left" d="M102 117 L208 208 L220 193 L113 103 Z"/><path data-region="stick-right" d="M294 103 L189 205 L179 190 L283 88 Z"/><ellipse data-region="top" cx="200" cy="219" rx="111" ry="35"/><path data-region="shell" d="M89 219 Q200 256 311 219 L299 332 Q200 368 101 332 Z"/><ellipse data-region="rim" cx="200" cy="327" rx="99" ry="24"/><path data-region="chevron-0" d="M104 242 L148 316 L170 249 Z"/><path data-region="chevron-1" d="M170 249 L202 321 L236 249 Z"/><path data-region="chevron-2" d="M236 249 L258 316 L297 241 Z"/><circle data-region="star" cx="200" cy="279" r="13"/></g>
+</svg>

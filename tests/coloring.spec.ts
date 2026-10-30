@@ -30,7 +30,7 @@ test('simple child mode works on phone and Samsung-sized tablet orientations',as
   await page.setViewportSize({width:412,height:915});await page.goto('/');
   await expect(page.getByRole('heading',{name:'Какво ще оцветиш?'})).toBeVisible();
   await page.screenshot({path:'test-results/phone-home.png',fullPage:true});
-  await page.getByRole('button',{name:'Кученце'}).click();
+  await page.getByRole('button',{name:/Животни/}).click();await page.getByRole('button',{name:'Кученце'}).click();
   await expect(page.getByRole('button',{name:'Цвят 1',exact:true})).toBeVisible();
   await expect(page.getByRole('button',{name:'Молив'})).toHaveCount(0);
   await page.getByRole('button',{name:'Цвят 4',exact:true}).click();
@@ -44,7 +44,7 @@ test('simple child mode works on phone and Samsung-sized tablet orientations',as
   await expect(page.getByRole('button',{name:'Цвят 4',exact:true})).toBeVisible();
   const landscape=await page.evaluate(()=>({width:document.documentElement.scrollWidth,viewport:innerWidth}));expect(landscape.width).toBeLessThanOrEqual(landscape.viewport);
   await page.screenshot({path:'test-results/tablet-landscape.png',fullPage:true});
-  await page.reload();await page.getByRole('button',{name:'Кученце'}).click();
+  await page.reload();await page.getByRole('button',{name:/Животни/}).click();await page.getByRole('button',{name:'Кученце'}).click();
   await expect(page.locator('[data-region="head"]')).not.toHaveCSS('fill','rgb(255, 255, 255)');
 });
 test('sparkles follow the selected color, fade away, and sound obeys parent setting',async({page})=>{
@@ -60,10 +60,11 @@ test('sparkles follow the selected color, fade away, and sound obeys parent sett
   await page.getByRole('button',{name:'Цвят 4',exact:true}).click();
   await page.locator('[data-region="torso"]').click();
   await expect(page.locator('.sparkle').first()).toBeVisible();
+  expect(await page.locator('.sparkle').first().evaluate(el=>parseFloat(getComputedStyle(el).fontSize))).toBeGreaterThanOrEqual(25);
   const filled=await page.locator('[data-region="torso"]').evaluate(el=>getComputedStyle(el).fill);
   const star=await page.locator('.sparkle').first().evaluate(el=>getComputedStyle(el).color);
   expect(star).toBe(filled);
-  expect(await page.evaluate(()=>(window as typeof window & {toneCount:number}).toneCount)).toBeGreaterThan(0);
+  expect(await page.evaluate(()=>(window as typeof window & {toneCount:number}).toneCount)).toBeGreaterThanOrEqual(4);
   await expect(page.locator('.sparkle')).toHaveCount(0,{timeout:2500});
   const stage=await page.getByTestId('drawing-stage').boundingBox();expect(stage).toBeTruthy();
   await page.mouse.move(stage!.x+stage!.width*.5,stage!.y+stage!.height*.5);
@@ -79,4 +80,28 @@ test('sparkles follow the selected color, fade away, and sound obeys parent sett
   await page.getByRole('button',{name:/Животни/}).click();await page.getByRole('button',{name:/Конче на поляната/}).click();
   await page.locator('[data-region="meadow"]').click();
   expect(await page.evaluate(()=>(window as typeof window & {toneCount:number}).toneCount)).toBe(count);
+});
+test('surprise opens a new picture and the new categories work on a phone',async({page})=>{
+  await page.setViewportSize({width:412,height:915});await page.goto('/');
+  await expect(page.getByRole('heading',{name:'Какво ще оцветиш?'})).toBeVisible();
+  await expect(page.getByText('Докосни картинка')).toHaveCount(0);
+  await expect(page.getByRole('button',{name:/ИЗНЕНАДА/})).toBeVisible();
+  await expect(page.getByRole('button',{name:/Ферма/})).toBeVisible();
+  await expect(page.getByRole('button',{name:/Играчки/})).toBeVisible();
+  await page.getByRole('button',{name:/ИЗНЕНАДА/}).click();
+  const first=await page.locator('.editor-head strong').innerText();
+  await page.getByRole('button',{name:'Назад'}).click();
+  await expect(page.getByRole('button',{name:/ИЗНЕНАДА/})).toBeVisible();
+  await page.getByRole('button',{name:/ИЗНЕНАДА/}).click();
+  expect(await page.locator('.editor-head strong').innerText()).not.toBe(first);
+  await page.getByRole('button',{name:'Назад'}).click();
+  await page.getByRole('button',{name:/Ферма/}).click();
+  await expect(page.locator('.page-card')).toHaveCount(6);
+  await page.getByRole('button',{name:/Крава/}).click();
+  await expect(page.locator('[data-region="body"]')).toBeVisible();
+  const stage=page.getByTestId('drawing-stage');const box=await stage.boundingBox();expect(box).toBeTruthy();
+  await stage.dispatchEvent('pointermove',{pointerType:'touch',clientX:box!.x+box!.width*.5,clientY:box!.y+box!.height*.5});
+  await expect(page.locator('.sparkle').first()).toBeVisible();
+  const width=await page.evaluate(()=>document.documentElement.scrollWidth);expect(width).toBeLessThanOrEqual(412);
+  await page.screenshot({path:'test-results/cow-touch.png',fullPage:true});
 });

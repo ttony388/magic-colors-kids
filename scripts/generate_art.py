@@ -246,6 +246,99 @@ art.update({
   circle('sun',307,78,29),ellipse('cloud',78,72,38,17)]
 })
 
+# A farm and a toy shelf, each with six independent, tap-to-color pictures.
+art.update({
+'cow': [
+  path('tail','M293 236 Q356 238 348 179 L358 173 Q371 262 299 276 Z'),
+  ellipse('body',224,245,95,63),
+  path('leg-back-left','M155 282 L180 288 L174 349 L149 349 Z'),path('leg-back-right','M257 286 L282 278 L292 349 L265 349 Z'),
+  path('neck','M142 204 L173 207 L176 269 L135 268 Z'),
+  ellipse('head',135,177,57,51),
+  path('ear-left','M93 155 L56 145 Q63 177 98 181 Z'),path('ear-right','M177 151 L210 135 Q210 171 181 181 Z'),
+  path('horn-left','M103 139 L96 109 L117 129 Z'),path('horn-right','M153 131 L170 105 L165 149 Z'),
+  ellipse('muzzle',134,201,40,24),circle('nostril-left',117,202,4),circle('nostril-right',151,202,4),
+  path('spot-back','M237 189 Q271 181 281 212 L250 234 L221 215 Z'),ellipse('spot-front',173,246,21,28),
+  path('udder','M206 300 L249 299 L242 321 L217 322 Z'),
+  rect('hoof-left',146,344,31,12,4),rect('hoof-right',266,344,31,12,4),circle('eye',122,168,5),line('M24 359 L375 359')],
+'sheep': [
+  *[circle(f'wool-{i}',x,y,r) for i,(x,y,r) in enumerate([(112,209,34),(137,175,36),(180,163,40),(226,170,39),(269,195,37),(283,235,37),(247,264,40),(198,276,42),(151,264,38)])],
+  path('leg-left','M155 274 L181 275 L176 349 L151 349 Z'),path('leg-right','M242 274 L267 264 L271 349 L247 349 Z'),
+  ellipse('face',119,211,48,58),ellipse('ear-left',77,193,23,12),ellipse('ear-right',159,189,22,12),
+  ellipse('muzzle',113,240,25,18),circle('eye-one',102,204,5),circle('eye-two',135,204,5),circle('nose',116,234,5),
+  rect('hoof-left',147,341,35,14,5),rect('hoof-right',243,341,35,14,5),line('M25 360 L375 360')],
+'pig': [
+  path('tail','M292 247 Q337 249 333 217 Q328 196 311 206 Q302 216 318 220'),
+  ellipse('body',219,248,99,68),path('leg-left','M146 290 L172 299 L168 348 L143 348 Z'),path('leg-right','M254 300 L278 291 L285 348 L259 348 Z'),
+  ellipse('head',128,206,62,58),path('ear-left','M87 169 L69 119 L117 157 Z'),path('ear-right','M139 151 L178 119 L166 185 Z'),
+  ellipse('snout',106,229,38,27),circle('nostril-one',91,229,5),circle('nostril-two',119,229,5),
+  circle('eye-one',112,190,5),circle('eye-two',150,191,5),rect('hoof-left',138,341,34,13,4),rect('hoof-right',256,341,34,13,4),
+  ellipse('mud',199,363,134,9)],
+'hen': [
+  *[path(f'tail-feather-{i}',d) for i,d in enumerate(['M250 247 Q316 193 308 124 Q277 155 227 204 Z','M257 248 Q347 221 352 161 Q312 182 232 207 Z'])],
+  ellipse('body',203,243,92,72),path('wing','M155 235 Q185 189 254 233 Q230 281 173 269 Z'),
+  path('neck','M137 241 Q121 177 153 140 L201 151 L198 213 Z'),circle('head',164,155,43),
+  path('comb','M130 127 Q114 99 133 91 Q148 95 151 113 Q158 77 177 85 Q190 99 178 121 Z'),
+  path('beak','M128 160 L83 173 L130 180 Z'),path('wattle','M139 181 Q128 213 148 213 Q157 200 151 178 Z'),
+  path('leg-left','M179 307 L190 308 L185 350 L174 350 Z'),path('leg-right','M222 305 L233 303 L236 349 L224 349 Z'),
+  circle('eye',161,150,5),line('M166 350 L199 350 M221 350 L254 350 M25 361 L375 361')],
+'barn': [
+  path('ground','M20 331 Q198 306 380 331 L380 375 L20 375 Z'),
+  rect('wall',77,166,247,165,6),path('roof','M53 172 L199 66 L346 172 L321 188 L199 101 L77 188 Z'),
+  rect('loft-window',176,121,47,45,6),rect('door-left',129,221,70,110,4),rect('door-right',200,221,70,110,4),
+  rect('window-left',90,201,30,45,5),rect('window-right',279,201,30,45,5),
+  *[rect(f'fence-post-{i}',x,271,9,60,3) for i,x in enumerate([26,45,347,366])],
+  line('M129 221 L199 331 M199 221 L129 331 M200 221 L270 331 M270 221 L200 331 M89 224 L121 224 M279 224 L311 224')],
+'tractor': [
+  path('field','M20 348 Q180 325 380 345 L380 375 L20 375 Z'),
+  rect('chassis',56,227,294,70,15),path('hood','M53 232 L72 197 L173 197 L196 234 Z'),
+  path('cab','M190 230 L208 127 L279 127 L313 229 Z'),path('window','M219 142 L267 142 L290 210 L204 210 Z'),
+  rect('exhaust',108,153,14,45,4),rect('roof',198,119,91,13,4),
+  circle('wheel-large',251,294,54),circle('hub-large',251,294,23),circle('wheel-small',92,299,37),circle('hub-small',92,299,15),
+  rect('headlight',51,219,19,15,4),line('M139 250 L174 250 M139 266 L174 266')],
+'teddy': [
+  circle('ear-left',131,109,30),circle('ear-right',269,109,30),ellipse('body',200,264,83,90),
+  ellipse('arm-left',115,242,32,61),ellipse('arm-right',285,242,32,61),
+  ellipse('foot-left',154,331,37,25),ellipse('foot-right',246,331,37,25),circle('head',200,158,82),
+  circle('ear-inner-left',131,110,15),circle('ear-inner-right',269,110,15),
+  ellipse('muzzle',200,190,36,27),circle('nose',200,178,9),circle('eye-left',171,154,7),circle('eye-right',229,154,7),
+  ellipse('belly',200,278,40,50),line('M200 188 L200 202 M200 202 Q190 211 181 204 M200 202 Q210 211 219 204')],
+'kite': [
+  path('sky','M20 22 L380 22 L380 376 L20 376 Z'),
+  path('wing-top','M201 57 L319 182 L201 193 Z'),path('wing-left','M201 57 L81 184 L201 193 Z'),
+  path('wing-bottom-left','M81 184 L201 193 L201 325 Z'),path('wing-bottom-right','M319 182 L201 193 L201 325 Z'),
+  path('bow-one','M187 325 L154 310 L158 348 L188 336 Z'),path('bow-two','M214 338 L245 313 L247 350 L216 347 Z'),
+  circle('sun',63,72,28),ellipse('cloud',321,72,47,20),line('M201 325 Q188 341 201 360 M201 360 Q223 373 206 394')],
+'drum': [
+  path('stick-left','M102 117 L208 208 L220 193 L113 103 Z'),path('stick-right','M294 103 L189 205 L179 190 L283 88 Z'),
+  ellipse('top',200,219,111,35),path('shell','M89 219 Q200 256 311 219 L299 332 Q200 368 101 332 Z'),
+  ellipse('rim',200,327,99,24),
+  *[path(f'chevron-{i}',d) for i,d in enumerate(['M104 242 L148 316 L170 249 Z','M170 249 L202 321 L236 249 Z','M236 249 L258 316 L297 241 Z'])],
+  circle('star',200,279,13)],
+'ball': [
+  circle('ball',200,203,136),path('stripe-middle','M82 137 Q188 189 318 137 L334 166 Q200 229 66 166 Z'),
+  path('stripe-lower','M70 233 Q198 176 329 234 L312 269 Q199 216 87 270 Z'),
+  path('center-spot','M167 174 Q201 144 234 174 L238 232 Q200 253 162 229 Z'),
+  circle('bubble-one',69,67,12),circle('bubble-two',340,87,18),circle('bubble-three',341,315,10)],
+'blocks': [
+  rect('block-a',58,238,95,95,9),rect('block-b',153,238,95,95,9),rect('block-c',248,238,95,95,9),
+  rect('block-d',105,141,95,95,9),rect('block-e',200,141,95,95,9),rect('block-f',153,45,95,95,9),
+  circle('shape-a',105,284,24),path('shape-b','M201 258 L226 308 L176 308 Z'),circle('shape-c',294,284,24),
+  path('shape-d','M151 155 L184 188 L151 222 L118 188 Z'),circle('shape-e',247,187,23),
+  path('shape-f','M200 63 L211 94 L244 94 L217 113 L226 136 L200 118 L174 136 L183 113 L156 94 L189 94 Z'),
+  line('M25 341 L375 341')],
+'rocking-horse': [
+  path('rocker','M39 326 Q199 385 361 326 L352 350 Q196 404 47 349 Z'),
+  path('tail','M278 210 Q339 211 326 268 L311 263 Q320 238 278 239 Z'),ellipse('body',213,239,88,53),
+  path('leg-front','M148 272 L176 274 L168 332 L137 332 Z'),path('leg-back','M263 270 L289 260 L306 331 L276 331 Z'),
+  path('neck','M123 232 Q120 185 137 145 L171 142 Q165 192 200 215 Z'),
+  path('mane','M170 148 L198 164 L177 177 L194 192 L173 205 L153 166 Z'),
+  path('head','M130 150 Q147 122 178 131 L187 154 L174 177 L143 178 Z'),
+  path('muzzle','M137 170 Q107 165 101 188 Q106 206 142 204 L157 186 Z'),
+  path('ear','M147 132 L139 96 L166 124 Z'),circle('eye',162,154,5),circle('nostril',116,188,4),
+  rect('saddle',215,203,40,13,4),rect('handle',172,164,49,8,4),
+  line('M153 327 L137 347 M291 329 L307 347')]
+})
+
 for name, parts in art.items():
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="{name}">
 <rect width="400" height="400" fill="white"/>

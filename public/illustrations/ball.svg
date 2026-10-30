@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="ball">
+<rect width="400" height="400" fill="white"/>
+<g fill="white" stroke="#293344" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><circle data-region="ball" cx="200" cy="203" r="136"/><path data-region="stripe-middle" d="M82 137 Q188 189 318 137 L334 166 Q200 229 66 166 Z"/><path data-region="stripe-lower" d="M70 233 Q198 176 329 234 L312 269 Q199 216 87 270 Z"/><path data-region="center-spot" d="M167 174 Q201 144 234 174 L238 232 Q200 253 162 229 Z"/><circle data-region="bubble-one" cx="69" cy="67" r="12"/><circle data-region="bubble-two" cx="340" cy="87" r="18"/><circle data-region="bubble-three" cx="341" cy="315" r="10"/></g>
+</svg>
