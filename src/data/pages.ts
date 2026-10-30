@@ -1,18 +1,18 @@
 export type Difficulty = 'easy' | 'medium' | 'advanced';
 export type Page = { id: string; category: string; title: { bg: string; en: string }; difficulty: Difficulty; asset: string };
 export const categories = [
-  { id:'animals', bg:'Животни', en:'Animals', color:'#ffcf95' },
-  { id:'nature', bg:'Природа', en:'Nature', color:'#b9e6ac' },
-  { id:'vehicles', bg:'Превозни средства', en:'Vehicles', color:'#b5d4ff' },
-  { id:'fantasy', bg:'Герои и фантазия', en:'Fantasy', color:'#efc7f5' },
-  { id:'dinosaurs', bg:'Динозаври', en:'Dinosaurs', color:'#bce9d3' },
-  { id:'ocean', bg:'Морски свят', en:'Ocean', color:'#a9e8ef' },
-  { id:'space', bg:'Космос', en:'Space', color:'#c6c8f6' },
-  { id:'food', bg:'Храна и плодове', en:'Food', color:'#ffd2d1' },
-  { id:'fairytales', bg:'Приказки', en:'Fairy tales', color:'#ead1f7' },
-  { id:'seasons', bg:'Сезони и празници', en:'Seasons', color:'#ffe9a7' },
-  { id:'farm', bg:'Ферма', en:'Farm', color:'#d9e9a5' },
-  { id:'toys', bg:'Играчки', en:'Toys', color:'#ffc9e5' }
+  { id:'animals', bg:'Животни', en:'Animals', color:'#ffc478' },
+  { id:'nature', bg:'Природа', en:'Nature', color:'#92dfa0' },
+  { id:'vehicles', bg:'Превозни средства', en:'Vehicles', color:'#91caff' },
+  { id:'fantasy', bg:'Герои и фантазия', en:'Fantasy', color:'#dfa4ef' },
+  { id:'dinosaurs', bg:'Динозаври', en:'Dinosaurs', color:'#9fe7ce' },
+  { id:'ocean', bg:'Морски свят', en:'Ocean', color:'#80dce9' },
+  { id:'space', bg:'Космос', en:'Space', color:'#a5adf8' },
+  { id:'food', bg:'Храна и плодове', en:'Food', color:'#ffb1ad' },
+  { id:'fairytales', bg:'Приказки', en:'Fairy tales', color:'#d6b1f5' },
+  { id:'seasons', bg:'Сезони и празници', en:'Seasons', color:'#ffe184' },
+  { id:'farm', bg:'Ферма', en:'Farm', color:'#b7df73' },
+  { id:'toys', bg:'Играчки', en:'Toys', color:'#ffa9d7' }
 ] as const;
 export const pages: Page[] = [
   ['cat','animals','Коте','Kitten','easy'], ['dog','animals','Кученце','Puppy','easy'],

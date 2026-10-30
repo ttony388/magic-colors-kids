@@ -36,9 +36,9 @@ Verified screenshots from the browser tests are committed in `docs/evidence/`, i
 
 - [x] Bulgarian and English UI, category navigation, daily picture, surprise without repeats until a full cycle, free drawing.
 - [x] Seventy-two distinct original coloring SVGs with named closed regions, three difficulty labels, including Farm and Toys.
-- [x] Tap fill, magic fill, pencil, crayon, felt pen, marker, brush, watercolor, glitter, spray, eraser; 64 preset colors, custom picker, size, opacity, recent colors.
-- [x] Undo/redo, reset confirmation, zoom, PNG export, IndexedDB auto-save, resume, gallery and completion animation.
-- [x] Simple mode on by default with larger controls and eight color choices; parental arithmetic gate can enable advanced tools.
+- [x] Full-screen white drawing area with a collapsible tray of illustrated tools: bucket, magic, pencil, crayon, ballpoint, felt pen, marker, brush, watercolor, glitter, spray and eraser. 64 preset colors, custom picker, size, opacity, recent colors.
+- [x] Undo/redo, reset confirmation, PNG export, IndexedDB auto-save, resume, gallery and a short picture bounce and sparkle animation on completion.
+- [x] Simple mode on by default with larger controls and eight color choices; the full tool tray remains available. Parental arithmetic gate can enable advanced color and size controls.
 - [x] Large color-matched sparkle trail on touch and a two-note toy chime while painting, with sound toggle and reduced-motion support.
 - [x] Custom rainbow paintbrush logo for the app header, browser tab and Android launcher.
 - [x] Capacitor Android project and GitHub Actions debug APK workflow.
@@ -53,3 +53,5 @@ Local lint, typecheck, unit tests, production web build, and Playwright browser 
 ## Artwork
 
 `scripts/generate_art.py` generates the 72 original SVG illustrations in `public/illustrations/`. Every fillable shape has a stable `data-region` key. Assets contain no copied franchise characters. Contributions should add a unique page ID and localized title to `src/data/pages.ts`.
+
+`scripts/generate_tool_icons.py` creates the original shaded SVG tool drawings in `public/tools/`. The home screen is deliberately colorful while the editor uses a full white page and a small hideable tool tray. The completion animation respects reduced-motion settings.

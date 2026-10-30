@@ -3,7 +3,8 @@ export const tools = [
   {id:'magic',bg:'Магия',en:'Magic',symbol:'✦'},
   {id:'pencil',bg:'Молив',en:'Pencil',symbol:'✎'},
   {id:'crayon',bg:'Пастел',en:'Crayon',symbol:'▥'},
-  {id:'pen',bg:'Флумастер',en:'Felt pen',symbol:'╱'},
+  {id:'pen',bg:'Химикалка',en:'Ballpoint pen',symbol:'╱'},
+  {id:'felt',bg:'Флумастер',en:'Felt pen',symbol:'╱'},
   {id:'marker',bg:'Маркер',en:'Marker',symbol:'▮'},
   {id:'brush',bg:'Четка',en:'Brush',symbol:'⌁'},
   {id:'watercolor',bg:'Акварел',en:'Watercolor',symbol:'◒'},
@@ -30,7 +31,7 @@ export function renderStroke(ctx:CanvasRenderingContext2D,s:Stroke) {
       ctx.beginPath();ctx.arc(x,y,s.tool==='glitter'?(i%3?0.7:1.8):s.tool==='crayon'?1.1:0.7,0,Math.PI*2);ctx.fill();
     }});
   } else {
-    ctx.lineWidth=s.size*(s.tool==='pencil'?0.35:s.tool==='pen'?0.65:s.tool==='marker'?2.2:s.tool==='watercolor'?2.5:1);
+    ctx.lineWidth=s.size*(s.tool==='pencil'?0.35:s.tool==='pen'?0.45:s.tool==='felt'?0.85:s.tool==='marker'?2.2:s.tool==='watercolor'?2.5:1);
     ctx.beginPath();ctx.moveTo(pts[0].x,pts[0].y);pts.slice(1).forEach(p=>ctx.lineTo(p.x,p.y));
     if(pts.length===1){ctx.lineTo(pts[0].x+0.01,pts[0].y+0.01)}ctx.stroke();
     if(s.tool==='watercolor'){ctx.lineWidth*=0.55;ctx.globalAlpha=s.opacity*0.18;ctx.stroke()}

@@ -32,10 +32,24 @@ test('simple child mode works on phone and Samsung-sized tablet orientations',as
   await page.screenshot({path:'test-results/phone-home.png',fullPage:true});
   await page.getByRole('button',{name:/Животни/}).click();await page.getByRole('button',{name:'Кученце'}).click();
   await expect(page.getByRole('button',{name:'Цвят 1',exact:true})).toBeVisible();
-  await expect(page.getByRole('button',{name:'Молив'})).toHaveCount(0);
+  for(const name of ['Кофичка','Пастел','Молив','Химикалка','Флумастер','Маркер','Гума'])
+    await expect(page.getByRole('button',{name,exact:true})).toHaveCount(1);
+  const stageBox=await page.getByTestId('drawing-stage').boundingBox();expect(stageBox).toBeTruthy();
+  expect(stageBox!.width).toBeGreaterThanOrEqual(410);
+  expect(stageBox!.height).toBeGreaterThan(700);
+  await expect(page.getByTestId('drawing-stage')).toHaveCSS('background-color','rgb(255, 255, 255)');
+  expect(await page.locator('.tool-strip img').evaluateAll(nodes=>nodes.every(node=>(node as HTMLImageElement).naturalWidth>0))).toBe(true);
   await page.getByRole('button',{name:'Цвят 4',exact:true}).click();
   await page.locator('[data-region="head"]').click();
   await expect(page.locator('[data-region="head"]')).not.toHaveCSS('fill','rgb(255, 255, 255)');
+  await page.getByRole('button',{name:'Молив',exact:true}).click();
+  const canvas=page.getByLabel('Поле за рисуване');const canvasBox=await canvas.boundingBox();expect(canvasBox).toBeTruthy();
+  await page.mouse.move(canvasBox!.x+20,canvasBox!.y+25);await page.mouse.down();await page.mouse.move(canvasBox!.x+90,canvasBox!.y+25,{steps:4});await page.mouse.up();
+  expect(await canvas.evaluate(el=>(el as HTMLCanvasElement).getContext('2d')!.getImageData(50,12,1,1).data[3])).toBeGreaterThan(0);
+  await page.getByRole('button',{name:'Скрий инструментите'}).click();
+  await expect(page.getByRole('button',{name:'Покажи инструментите'})).toBeVisible();
+  await expect(page.getByRole('button',{name:'Молив',exact:true})).toHaveCount(0);
+  await page.getByRole('button',{name:'Покажи инструментите'}).click();
   await page.setViewportSize({width:800,height:1340});
   await expect(page.locator('[data-region="head"]')).not.toHaveCSS('fill','rgb(255, 255, 255)');
   const portrait=await page.evaluate(()=>({width:document.documentElement.scrollWidth,viewport:innerWidth}));expect(portrait.width).toBeLessThanOrEqual(portrait.viewport);
@@ -104,4 +118,9 @@ test('surprise opens a new picture and the new categories work on a phone',async
   await expect(page.locator('.sparkle').first()).toBeVisible();
   const width=await page.evaluate(()=>document.documentElement.scrollWidth);expect(width).toBeLessThanOrEqual(412);
   await page.screenshot({path:'test-results/cow-touch.png',fullPage:true});
+  await page.locator('[data-region="body"]').click();
+  await page.getByRole('button',{name:/Съживи/}).click();
+  await expect(page.getByTestId('drawing-stage')).toHaveClass(/alive/);
+  await expect(page.getByText('Чудесна рисунка!')).toBeVisible();
+  await expect(page.getByTestId('drawing-stage')).not.toHaveClass(/alive/,{timeout:4500});
 });
