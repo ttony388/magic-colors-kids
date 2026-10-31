@@ -85,3 +85,14 @@ baselines. Update baselines only after inspecting the rendered artwork:
 `scripts/generate_art.py` generates the 72 original SVG illustrations in `public/illustrations/`. Every fillable shape has a stable `data-region` key. Assets contain no copied franchise characters. Contributions should add a unique page ID and localized title to `src/data/pages.ts`.
 
 `scripts/generate_tool_icons.py` creates the original shaded SVG tool drawings in `public/tools/`. The home screen is deliberately colorful while the editor uses a full white page and a small hideable tool tray. The completion animation respects reduced-motion settings.
+
+### Detailed library update (1.1)
+
+All 72 pictures now open in Detailed style by default, including Daily and Surprise.
+Existing saved drawings continue to open with their original SVG and coordinates;
+new artwork has separate document IDs. The three approved samples also retain
+Easy and Medium variants. Recovery notes: `docs/art-review/RECOVERY.md`.
+
+Run `npm run check:art` after installing Playwright Chromium to validate every
+Detailed region. `scripts/detailed_library.py SUBJECT...` regenerates only the
+specified new masters; it never rewrites the approved cat, car or mountain.

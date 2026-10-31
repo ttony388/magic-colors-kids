@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Carriage — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="coach" d="M106 165 Q106 133 144 129 L238 129 Q274 133 274 165 L274 253 Q267 277 239 277 L142 277 Q108 273 106 253 Z"/>
+<path data-region="roof" d="M92 139 Q111 112 151 112 L230 112 Q265 111 289 139 Z"/>
+<path data-region="door" d="M155 152 L231 152 L231 264 L155 264 Z"/>
+<path data-region="door-window" d="M166 163 L220 163 L220 214 L166 214 Z"/>
+<path data-region="left-window" d="M118 160 L144 160 L144 216 L118 216 Z"/>
+<path data-region="right-window" d="M244 160 L262 160 L262 216 L244 216 Z"/>
+<path data-region="driver-seat" d="M279 218 L327 218 L327 232 L292 232 L292 265 L279 265 Z"/>
+<path data-region="chassis" d="M86 269 L315 269 L315 281 L86 281 Z"/>
+<path data-region="rear-tire" d="M78 291 a39 39 0 1 0 78 0 a39 39 0 1 0 -78 0 Z"/>
+<path data-region="rear-rim" d="M91.65 291 a25.35 25.35 0 1 0 50.7 0 a25.35 25.35 0 1 0 -50.7 0 Z"/>
+<path data-region="rear-axle" d="M109.59 291 a7.41 7.41 0 1 0 14.82 0 a7.41 7.41 0 1 0 -14.82 0 Z"/>
+<path d="M127.53 291.0 L138.84 291.0" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M124.44583440589435 298.44583440589435 L132.4432121011142 306.4432121011142" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M117.0 301.53 L117.0 312.84000000000003" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M109.55416559410565 298.44583440589435 L101.5567878988858 306.4432121011142" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M106.47 291.0 L95.16 291.0" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M109.55416559410565 283.55416559410565 L101.5567878988858 275.5567878988858" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M117.0 280.47 L117.0 269.15999999999997" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M124.44583440589435 283.55416559410565 L132.4432121011142 275.5567878988858" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="front-tire" d="M241 297 a33 33 0 1 0 66 0 a33 33 0 1 0 -66 0 Z"/>
+<path data-region="front-rim" d="M252.55 297 a21.45 21.45 0 1 0 42.9 0 a21.45 21.45 0 1 0 -42.9 0 Z"/>
+<path data-region="front-axle" d="M267.73 297 a6.2700000000000005 6.2700000000000005 0 1 0 12.540000000000001 0 a6.2700000000000005 6.2700000000000005 0 1 0 -12.540000000000001 0 Z"/>
+<path d="M282.91 297.0 L292.48 297.0" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M280.30032142037214 303.30032142037214 L287.0673333163274 310.0673333163274" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M274.0 305.91 L274.0 315.48" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M267.69967857962786 303.30032142037214 L260.9326666836726 310.0673333163274" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M265.09 297.0 L255.52 297.0" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M267.69967857962786 290.69967857962786 L260.9326666836726 283.9326666836726" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M274.0 288.09 L274.0 278.52" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M280.30032142037214 290.69967857962786 L287.0673333163274 283.9326666836726" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="crown-finial" d="M173 111 L165 88 L183 97 L192 78 L204 97 L220 88 L213 111 Z"/>
+<path d="M212 226 h9 M174 237 q19 -12 36 0 M178 249 q15 -8 27 0 M309 236 l32 23 M88 146 v41 M292 146 v41" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M46 350 Q100 343 143 349 M251 349 Q300 343 355 350 M72 340 l4 -9 l5 10 M307 338 l5 -10 l5 10" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Apple — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="stem" d="M193 130 Q185 91 203 71 L218 76 Q203 98 207 132 Z"/>
+<g transform="translate(207 116) rotate(95) scale(1.4)">
+<path data-region="leaf" d="M0 0 C-23 -6 -31 -25 -28 -42 C-6 -38 8 -18 0 0 Z"/>
+<path d="M0 0 Q-14 -19 -23 -33 M-11 -18 L-23 -20 M-16 -26 L-16 -34" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+<path data-region="fruit" d="M199 142 C144 99 77 127 75 193 C69 256 111 329 156 331 Q180 326 200 329 Q227 340 251 326 C295 305 332 229 321 181 C307 122 247 108 199 142 Z"/>
+<path d="M167 146 Q198 162 229 143 M99 202 Q92 258 129 291 M174 312 Q197 302 222 314" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="slice-flesh" d="M282 270 Q321 263 350 301 Q326 345 279 350 Q305 315 282 270 Z"/>
+<path data-region="slice-peel" d="M279 350 Q326 345 350 301 L359 306 Q334 355 277 359 Z"/>
+<path data-region="seed" d="M316 307 Q330 311 319 325 Q310 322 316 307 Z"/>
+</g>
+</svg>

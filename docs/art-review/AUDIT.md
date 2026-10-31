@@ -96,3 +96,24 @@ outside this art-direction review.
 | Seasons | Snowman, umbrella, sunflower, pumpkin, Christmas tree, autumn park: seasonal silhouettes and balanced contextual detail. |
 | Farm | Cow, sheep, pig, hen, barn, tractor: species anatomy, correct closed pig tail, feathers/fleece and agricultural construction. |
 | Toys | Teddy, kite, drum, ball, blocks, rocking horse: seams, perspective, stable construction and noncrossing surface patterns. |
+
+## Detailed rollout — 2026-10-31
+
+The 69 interrupted drafts were recovered, then completed with authored silhouettes in
+`scripts/detailed_library.py`. The previously approved cat, car and mountain masters
+and their Easy/Medium variants were preserved byte-for-byte. All 72 normal catalog
+entries now use Detailed artwork and version-specific save IDs. Gallery resolution
+retains all legacy documents and their original geometry. Easy and Medium remain
+available for the three review subjects; this rollout specifically targets Detailed.
+
+Six full-library contact sheets were rendered and inspected. Browser geometry QA
+checks every colorable region for reachability, sampled self-intersection and frame
+bounds. Hidden fill targets, forest clipping and the pig tail were corrected during
+review. Intentional foreground occlusion is retained; open decorative lines do not
+receive pointer events. `npm run check:art` repeats this check. Visual regression
+baselines cover all 72 Detailed illustrations plus the original nine review levels.
+
+The Android package keeps `com.magiccolors.kids`, with versionCode 2 / versionName
+1.1, so it upgrades the existing normal debug application using the same signing key.
+The separate Art Review package remains a separate installation. All artwork is
+bundled locally for offline use. No service or raster-image dependency was added.

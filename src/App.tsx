@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Editor from './features/coloring/Editor';
-import { categories, getDailyPage, nextSurprise, pages, type Page } from './data/pages';
+import { categories, getDailyPage, nextSurprise, pages, legacyPages, type Page } from './data/pages';
 import { deleteDrawing, listDrawings, type SavedDrawing } from './storage/db';
 import { artLevels, levelNames, reviewPages, reviewSubjects, type ArtLevel } from './data/artwork';
 
@@ -20,7 +20,7 @@ export default function App(){
   const [answer,setAnswer]=useState('');
   const [drawings,setDrawings]=useState<SavedDrawing[]>([]);
   const [celebrate,setCelebrate]=useState(false);
-  const [artLevel,setArtLevel]=useState<ArtLevel>('easy');
+  const [artLevel,setArtLevel]=useState<ArtLevel>('detailed');
   const bg=language==='bg';
 
   useEffect(()=>{localStorage.setItem('language',language);document.documentElement.lang=language},[language]);
@@ -82,7 +82,7 @@ export default function App(){
         {screen==='gallery'&&<main>
           <button className="back-link" onClick={()=>setScreen('home')}>← {bg?'Назад':'Back'}</button><h1>{bg?'Моите рисунки':'My drawings'}</h1>
           {drawings.length===0?<div className="empty-gallery">{bg?'Тук ще се появят твоите рисунки.':'Your drawings will appear here.'}<br/><button className="primary" onClick={()=>setScreen('home')}>{bg?'Избери картинка':'Choose a picture'}</button></div>:
-            <div className="page-grid">{[...drawings].sort((a,b)=>b.updatedAt-a.updatedAt).map(d=>{const p=[...pages,...reviewPages].find(p=>p.id===d.id)||free;return <div className="page-card" key={d.id}>
+            <div className="page-grid">{[...drawings].sort((a,b)=>b.updatedAt-a.updatedAt).map(d=>{const p=[...pages,...reviewPages,...legacyPages].find(p=>p.id===d.id)||free;return <div className="page-card" key={d.id}>
               <button onClick={()=>open(p,'gallery')}>{p.id==='free'?<div className="blank-thumb">✎</div>:<img src={asset(p)} alt=""/>}<strong>{p.title[language]}</strong><span>{d.completed?'✓ ':''}{new Date(d.updatedAt).toLocaleDateString(language)}</span></button>
               {!toddler&&<button className="delete" onClick={()=>{if(confirm(bg?'Да изтрием рисунката?':'Delete this drawing?'))deleteDrawing(d.id).then(gallery)}}>{bg?'Изтрий':'Delete'}</button>}
             </div>})}</div>}

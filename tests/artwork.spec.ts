@@ -1,6 +1,7 @@
 import { test, expect, type Page } from '@playwright/test';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
+import { pages } from '../src/data/pages';
 
 const levels = ['easy', 'medium', 'detailed'];
 const subjects = ['cat', 'car', 'mountain'];
@@ -151,6 +152,10 @@ test('production bundle opens every review level with networking offline', async
   for (const level of levels) for (const subject of subjects) {
     const result = await page.evaluate(async path => { const response = await fetch(path); return response.text(); }, `/illustrations/v2/${level}/${subject}.svg`);
     expect(result).toContain('data-art-version="2"');
+  }
+  for (const p of pages) {
+    const svg = await page.evaluate(async path => (await fetch(path)).text(), p.asset);
+    expect(svg).toContain('data-complexity="detailed"');
   }
   await page.getByRole('button', { name: 'Нови рисунки · Преглед' }).click();
   await page.getByRole('button', { name: 'Коте в градината', exact: true }).click();

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Fairy — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(200 0) scale(-1 1)">
+<path data-region="upper-wing--1" d="M20 188 C54 122 119 116 122 157 Q121 203 35 213 Z"/>
+<path data-region="lower-wing--1" d="M27 213 C103 196 122 245 89 265 Q54 276 22 236 Z"/>
+<path d="M36 195 Q73 146 103 155 M42 224 Q78 220 91 246" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+<g transform="translate(200 0) scale(1 1)">
+<path data-region="upper-wing-1" d="M20 188 C54 122 119 116 122 157 Q121 203 35 213 Z"/>
+<path data-region="lower-wing-1" d="M27 213 C103 196 122 245 89 265 Q54 276 22 236 Z"/>
+<path d="M36 195 Q73 146 103 155 M42 224 Q78 220 91 246" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+<path data-region="arm-left" d="M146 187 C124 185 113 209 101 244 L121 255 L156 219 Z"/>
+<path data-region="arm-right" d="M253 189 C278 185 286 212 298 238 L280 253 L247 221 Z"/>
+<path data-region="hand-left" d="M93 259 a15 18 0 1 0 30 0 a15 18 0 1 0 -30 0 Z"/>
+<path data-region="hand-right" d="M277 254 a15 18 0 1 0 30 0 a15 18 0 1 0 -30 0 Z"/>
+<path data-region="foot-0" d="M156 315 Q171 309 185 319 L191 339 Q166 351 146 339 Z"/>
+<path data-region="foot-1" d="M211 315 Q226 309 240 319 L246 339 Q221 351 201 339 Z"/>
+<path data-region="torso" d="M151 182 Q198 163 249 184 L265 277 Q199 302 138 277 Z"/>
+<path data-region="skirt" d="M155 222 L244 222 L278 308 Q201 326 125 308 Z"/>
+<path d="M170 246 L151 301 M199 245 v64 M227 245 L250 300" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="head" d="M146 119 C142 67 253 65 256 119 C266 154 237 187 200 187 C160 188 137 154 146 119 Z"/>
+<path data-region="eye-left" d="M170 129 a7 5.04 0 1 0 14 0 a7 5.04 0 1 0 -14 0 Z"/>
+<ellipse cx="178" cy="129" rx="2.6" ry="3.5" fill="#202024" stroke="none" pointer-events="none"/>
+<path data-region="eye-right" d="M217 129 a7 5.04 0 1 0 14 0 a7 5.04 0 1 0 -14 0 Z"/>
+<ellipse cx="225" cy="129" rx="2.6" ry="3.5" fill="#202024" stroke="none" pointer-events="none"/>
+<path d="M184 158 Q200 170 216 157 M198 140 l-4 9 h7" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="hair" d="M143 132 C123 90 157 60 195 67 C237 50 275 87 260 135 L246 144 L242 111 Q212 115 191 89 Q175 111 153 115 L153 145 Z"/>
+<path data-region="bodice" d="M157 185 Q199 207 243 185 L236 228 L166 228 Z"/>
+<path data-region="wand" d="M297 252 L323 191 L329 194 L303 255 Z"/>
+<path data-region="wand-star" d="M329 156 L334 171 L350 171 L338 181 L343 197 L329 187 L316 197 L320 181 L308 171 L324 171 Z"/>
+<g transform="translate(247 86) scale(0.38)">
+<g transform="rotate(0)">
+<path data-region="hair-flower-petal-0" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(60)">
+<path data-region="hair-flower-petal-1" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(120)">
+<path data-region="hair-flower-petal-2" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(180)">
+<path data-region="hair-flower-petal-3" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(240)">
+<path data-region="hair-flower-petal-4" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(300)">
+<path data-region="hair-flower-petal-5" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<path data-region="hair-flower-center" d="M-10 0 a10 10 0 1 0 20 0 a10 10 0 1 0 -20 0 Z"/>
+</g>
+<path d="M46 350 Q100 343 143 349 M251 349 Q300 343 355 350 M72 340 l4 -9 l5 10 M307 338 l5 -10 l5 10" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

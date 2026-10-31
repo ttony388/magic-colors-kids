@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Pterodactyl — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="left-wing" d="M185 191 L68 109 L32 225 Q84 202 103 241 Q139 221 178 253 Z"/>
+<path data-region="right-wing" d="M210 190 L330 108 L370 224 Q319 201 296 242 Q257 219 219 255 Z"/>
+<path data-region="body" d="M188 156 C163 183 172 222 189 264 L181 299 L195 302 L203 274 L211 301 L225 298 L216 262 C236 219 234 184 214 157 Z"/>
+<path data-region="head" d="M186 165 Q171 143 186 127 L203 106 L213 127 Q235 131 230 151 L282 163 L230 173 Q206 187 186 165 Z"/>
+<path data-region="eye" d="M204 146 a6 4.32 0 1 0 12 0 a6 4.32 0 1 0 -12 0 Z"/>
+<ellipse cx="211" cy="146" rx="2.6" ry="3.5" fill="#202024" stroke="none" pointer-events="none"/>
+<path d="M185 192 L68 109 L103 241 M181 213 L46 214 M215 193 L330 108 L296 242 M221 213 L354 213 M231 163 L271 163" fill="none" stroke-width="1.25" pointer-events="none"/>
+<g transform="translate(58 302) scale(0.7)">
+<path data-region="cloud-left" d="M0 25 C-17 25 -19 7 -5 4 C-4 -13 18 -19 28 -5 C42 -16 60 -6 60 9 C77 4 88 23 72 28 Z"/>
+</g>
+<g transform="translate(277 290) scale(0.7)">
+<path data-region="cloud-right" d="M0 25 C-17 25 -19 7 -5 4 C-4 -13 18 -19 28 -5 C42 -16 60 -6 60 9 C77 4 88 23 72 28 Z"/>
+</g>
+</g>
+</svg>

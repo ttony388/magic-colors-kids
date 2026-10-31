@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Knight — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="arm-left" d="M146 187 C124 185 113 209 101 244 L121 255 L156 219 Z"/>
+<path data-region="arm-right" d="M253 189 C278 185 286 212 298 238 L280 253 L247 221 Z"/>
+<path data-region="hand-right" d="M277 254 a15 18 0 1 0 30 0 a15 18 0 1 0 -30 0 Z"/>
+<path data-region="leg-0" d="M161 271 L187 271 L185 321 L157 321 Z"/>
+<path data-region="foot-0" d="M156 315 Q171 309 185 319 L191 339 Q166 351 146 339 Z"/>
+<path data-region="leg-1" d="M216 271 L242 271 L240 321 L212 321 Z"/>
+<path data-region="foot-1" d="M211 315 Q226 309 240 319 L246 339 Q221 351 201 339 Z"/>
+<path data-region="torso" d="M151 182 Q198 163 249 184 L265 277 Q199 302 138 277 Z"/>
+<path data-region="helmet" d="M147 150 L147 104 Q150 65 200 65 Q250 65 253 104 L253 150 L223 178 L177 178 Z"/>
+<path data-region="visor" d="M147 112 L253 112 L253 145 L147 145 Z"/>
+<path d="M164 120 v16 M181 120 v16 M198 120 v16 M215 120 v16 M232 120 v16 M200 69 v41" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="breastplate" d="M155 190 L244 190 L253 264 Q199 290 147 264 Z"/>
+<path data-region="shield" d="M81 220 L134 201 L186 220 L177 285 Q157 317 134 330 Q100 306 89 283 Z"/>
+<path data-region="shield-emblem" d="M128 224 h13 v26 h24 v13 h-24 v37 h-13 v-37 h-24 v-13 h24 Z"/>
+<path data-region="sword" d="M288 228 L288 135 L297 112 L306 135 L306 228 Z"/>
+<path data-region="guard" d="M274 229 L320 229 L320 241 L274 241 Z"/>
+<path d="M297 130 v94" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M46 350 Q100 343 143 349 M251 349 Q300 343 355 350 M72 340 l4 -9 l5 10 M307 338 l5 -10 l5 10" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

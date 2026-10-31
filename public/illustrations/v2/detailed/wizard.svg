@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Wizard — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="arm-left" d="M146 187 C124 185 113 209 101 244 L121 255 L156 219 Z"/>
+<path data-region="arm-right" d="M253 189 C278 185 286 212 298 238 L280 253 L247 221 Z"/>
+<path data-region="hand-left" d="M93 259 a15 18 0 1 0 30 0 a15 18 0 1 0 -30 0 Z"/>
+<path data-region="hand-right" d="M277 254 a15 18 0 1 0 30 0 a15 18 0 1 0 -30 0 Z"/>
+<path data-region="foot-0" d="M156 315 Q171 309 185 319 L191 339 Q166 351 146 339 Z"/>
+<path data-region="foot-1" d="M211 315 Q226 309 240 319 L246 339 Q221 351 201 339 Z"/>
+<path data-region="torso" d="M151 182 Q198 163 249 184 L265 277 Q199 302 138 277 Z"/>
+<path data-region="skirt" d="M155 222 L244 222 L278 308 Q201 326 125 308 Z"/>
+<path d="M170 246 L151 301 M199 245 v64 M227 245 L250 300" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="head" d="M146 119 C142 67 253 65 256 119 C266 154 237 187 200 187 C160 188 137 154 146 119 Z"/>
+<path data-region="eye-left" d="M170 129 a7 5.04 0 1 0 14 0 a7 5.04 0 1 0 -14 0 Z"/>
+<ellipse cx="178" cy="129" rx="2.6" ry="3.5" fill="#202024" stroke="none" pointer-events="none"/>
+<path data-region="eye-right" d="M217 129 a7 5.04 0 1 0 14 0 a7 5.04 0 1 0 -14 0 Z"/>
+<ellipse cx="225" cy="129" rx="2.6" ry="3.5" fill="#202024" stroke="none" pointer-events="none"/>
+<path d="M184 158 Q200 170 216 157 M198 140 l-4 9 h7" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="beard" d="M156 149 Q167 163 182 159 Q200 175 220 158 Q236 161 246 149 C250 196 225 215 200 237 C176 214 152 195 156 149 Z"/>
+<path data-region="hat" d="M133 104 L178 37 Q195 35 211 58 L247 104 Z"/>
+<path data-region="brim" d="M114 105 Q199 87 280 105 L276 116 Q199 103 117 116 Z"/>
+<path d="M178 182 L188 207 M213 185 L207 218" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="staff" d="M306 328 L306 155 L315 155 L315 328 Z"/>
+<path data-region="staff-orb" d="M292 140 a18 18 0 1 0 36 0 a18 18 0 1 0 -36 0 Z"/>
+<path d="M46 350 Q100 343 143 349 M251 349 Q300 343 355 350 M72 340 l4 -9 l5 10 M307 338 l5 -10 l5 10" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

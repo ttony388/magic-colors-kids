@@ -6,7 +6,7 @@ test('paint, undo, redo, save, reload and gallery in Bulgarian',async({page})=>{
   await expect(page.getByText('Коте')).toBeVisible();
   const regions=page.locator('[data-region]');await expect(regions.first()).toBeVisible();
   await page.getByRole('button',{name:'Цвят 2',exact:true}).click();
-  await page.locator('[data-region="body"]').last().click();
+  await page.locator('[data-region="body"]').last().dispatchEvent('pointerdown',{pointerType:'touch'});
   await expect(page.locator('[data-region="body"]').last()).not.toHaveCSS('fill','rgb(255, 255, 255)');
   await page.getByRole('button',{name:'Undo'}).click();await expect(page.locator('[data-region="body"]').last()).toHaveCSS('fill','rgb(255, 255, 255)');
   await page.getByRole('button',{name:'Redo'}).click();
@@ -14,7 +14,7 @@ test('paint, undo, redo, save, reload and gallery in Bulgarian',async({page})=>{
   await page.getByRole('button',{name:'Молив'}).click();const canvas=page.getByLabel('Поле за рисуване');const box=await canvas.boundingBox();expect(box).toBeTruthy();
   await page.mouse.move(box!.x+box!.width*.5,box!.y+box!.height*.65);await page.mouse.down();await page.mouse.move(box!.x+box!.width*.55,box!.y+box!.height*.7,{steps:5});await page.mouse.up();
   await expect(page.getByText('Запазено')).toBeVisible();await page.screenshot({path:'test-results/colored-cat.png',fullPage:true});
-  const stored = await page.evaluate(async()=>new Promise<{fills:Record<string,string>,strokes:string}|undefined>((resolve)=>{const req=indexedDB.open('magic-colors',1);req.onsuccess=()=>{const read=req.result.transaction('drawings').objectStore('drawings').get('cat');read.onsuccess=()=>resolve(read.result)}}));
+  const stored = await page.evaluate(async()=>new Promise<{fills:Record<string,string>,strokes:string}|undefined>((resolve)=>{const req=indexedDB.open('magic-colors',1);req.onsuccess=()=>{const read=req.result.transaction('drawings').objectStore('drawings').get('cat@v2:detailed');read.onsuccess=()=>resolve(read.result)}}));
   expect(stored?.fills.body).toBeTruthy();
   await page.reload();await expect(page.getByText('Вълшебни Цветове')).toBeVisible();
   await page.getByRole('button',{name:/Моите рисунки/}).click();await expect(page.getByRole('button',{name:/Коте/})).toBeVisible();
@@ -59,12 +59,12 @@ test('simple child mode works on phone and Samsung-sized tablet orientations',as
   await expect(page.getByRole('button',{name:'Дебелина на линията: 4'})).toBeVisible();
   const canvas=page.getByLabel('Поле за рисуване');const canvasBox=await canvas.boundingBox();expect(canvasBox).toBeTruthy();
   await page.mouse.move(canvasBox!.x+20,canvasBox!.y+25);await page.mouse.down();await page.mouse.move(canvasBox!.x+90,canvasBox!.y+25,{steps:4});await page.mouse.up();
-  expect(await canvas.evaluate(el=>(el as HTMLCanvasElement).getContext('2d')!.getImageData(50,12,1,1).data[3])).toBeGreaterThan(0);
+  expect(await canvas.evaluate(el=>(el as HTMLCanvasElement).getContext('2d')!.getImageData(Math.round(50*(el as HTMLCanvasElement).width/(el as HTMLCanvasElement).getBoundingClientRect().width),Math.round(25*(el as HTMLCanvasElement).height/(el as HTMLCanvasElement).getBoundingClientRect().height),1,1).data[3])).toBeGreaterThan(0);
   await page.getByRole('button',{name:'Дебелина на линията: 4'}).click();
   await page.getByRole('button',{name:'Много дебела'}).click();
   await page.mouse.move(canvasBox!.x+20,canvasBox!.y+65);await page.mouse.down();await page.mouse.move(canvasBox!.x+90,canvasBox!.y+65,{steps:4});await page.mouse.up();
   await expect(page.getByText('Запазено')).toBeVisible();
-  await expect.poll(async()=>page.evaluate(async()=>new Promise<number[]>((resolve)=>{const req=indexedDB.open('magic-colors',1);req.onsuccess=()=>{const read=req.result.transaction('drawings').objectStore('drawings').get('dog');read.onsuccess=()=>resolve(JSON.parse(read.result.strokes).map((stroke:{size:number})=>stroke.size).slice(-2))}}))).toEqual([4,42]);
+  await expect.poll(async()=>page.evaluate(async()=>new Promise<number[]>((resolve)=>{const req=indexedDB.open('magic-colors',1);req.onsuccess=()=>{const read=req.result.transaction('drawings').objectStore('drawings').get('dog@v2:detailed');read.onsuccess=()=>resolve(JSON.parse(read.result.strokes).map((stroke:{size:number})=>stroke.size).slice(-2))}}))).toEqual([4,42]);
   await page.getByRole('button',{name:'Скрий инструментите'}).click();
   await expect(page.getByRole('button',{name:'Покажи инструментите'})).toBeVisible();
   await expect(page.getByRole('button',{name:'Молив',exact:true})).toHaveCount(0);
@@ -96,12 +96,12 @@ test('sparkles follow the selected color, fade away, and sound obeys parent sett
   });
   await page.getByRole('button',{name:/Животни/}).click();
   await page.getByRole('button',{name:/Конче на поляната/}).click();
-  await expect(page.locator('[data-region="torso"]')).toBeVisible();
+  await expect(page.locator('[data-region="body-neck"]')).toBeVisible();
   await page.getByRole('button',{name:'Цвят 4',exact:true}).click();
-  await page.locator('[data-region="torso"]').click();
+  await page.locator('[data-region="body-neck"]').click();
   await expect(page.locator('.sparkle').first()).toBeVisible();
   expect(await page.locator('.sparkle').first().evaluate(el=>parseFloat(getComputedStyle(el).fontSize))).toBeGreaterThanOrEqual(25);
-  const filled=await page.locator('[data-region="torso"]').evaluate(el=>getComputedStyle(el).fill);
+  const filled=await page.locator('[data-region="body-neck"]').evaluate(el=>getComputedStyle(el).fill);
   const star=await page.locator('.sparkle').first().evaluate(el=>getComputedStyle(el).color);
   expect(star).toBe(filled);
   expect(await page.evaluate(()=>(window as typeof window & {toneCount:number}).toneCount)).toBeGreaterThanOrEqual(4);
@@ -118,7 +118,7 @@ test('sparkles follow the selected color, fade away, and sound obeys parent sett
   await page.getByRole('button',{name:'Назад'}).click();
   const count=await page.evaluate(()=>(window as typeof window & {toneCount:number}).toneCount);
   await page.getByRole('button',{name:/Животни/}).click();await page.getByRole('button',{name:/Конче на поляната/}).click();
-  await page.locator('[data-region="meadow"]').click();
+  await page.locator('[data-region="tail"]').dispatchEvent('pointerdown',{pointerType:'touch'});
   expect(await page.evaluate(()=>(window as typeof window & {toneCount:number}).toneCount)).toBe(count);
 });
 test('surprise opens a new picture and the new categories work on a phone',async({page})=>{
@@ -144,7 +144,7 @@ test('surprise opens a new picture and the new categories work on a phone',async
   await expect(page.locator('.sparkle').first()).toBeVisible();
   const width=await page.evaluate(()=>document.documentElement.scrollWidth);expect(width).toBeLessThanOrEqual(412);
   await page.screenshot({path:'test-results/cow-touch.png',fullPage:true});
-  await page.locator('[data-region="body"]').click();
+  await page.locator('[data-region="body"]').dispatchEvent('pointerdown',{pointerType:'touch'});
   await page.getByRole('button',{name:/Съживи/}).click();
   await expect(page.getByTestId('drawing-stage')).toHaveClass(/alive/);
   await expect(page.getByText('Чудесна рисунка!')).toBeVisible();
@@ -170,7 +170,7 @@ test('clear removes fills, strokes, background, completion and saved drawing',as
   expect(await canvas.evaluate(el=>(el as HTMLCanvasElement).getContext('2d')!.getImageData(55,14,1,1).data[3])).toBe(0);
   await expect(page.getByRole('button',{name:'Undo'})).toBeDisabled();
   await expect(page.getByRole('button',{name:/Съживи/})).toBeDisabled();
-  await expect.poll(async()=>page.evaluate(async()=>new Promise<boolean>((resolve)=>{const req=indexedDB.open('magic-colors',1);req.onsuccess=()=>{const read=req.result.transaction('drawings').objectStore('drawings').get('cat');read.onsuccess=()=>resolve(read.result===undefined)}}))).toBe(true);
+  await expect.poll(async()=>page.evaluate(async()=>new Promise<boolean>((resolve)=>{const req=indexedDB.open('magic-colors',1);req.onsuccess=()=>{const read=req.result.transaction('drawings').objectStore('drawings').get('cat@v2:detailed');read.onsuccess=()=>resolve(read.result===undefined)}}))).toBe(true);
   await page.reload();await page.getByRole('button',{name:/Моите рисунки/}).click();
   await expect(page.getByText('Тук ще се появят твоите рисунки.')).toBeVisible();
 });
@@ -187,7 +187,7 @@ test('nearly colored picture animates automatically with its chosen colors',asyn
   await expect(page.locator(`[data-region="${regions[0]}"]`)).not.toHaveCSS('fill','rgb(255, 255, 255)');
   const chosen=await page.locator(`[data-region="${regions[0]}"]`).getAttribute('fill');
   expect(chosen).toBeTruthy();
-  await expect.poll(async()=>page.evaluate(async()=>new Promise<boolean>((resolve)=>{const req=indexedDB.open('magic-colors',1);req.onsuccess=()=>{const read=req.result.transaction('drawings').objectStore('drawings').get('cat');read.onsuccess=()=>resolve(read.result?.completed===true)}}))).toBe(true);
+  await expect.poll(async()=>page.evaluate(async()=>new Promise<boolean>((resolve)=>{const req=indexedDB.open('magic-colors',1);req.onsuccess=()=>{const read=req.result.transaction('drawings').objectStore('drawings').get('cat@v2:detailed');read.onsuccess=()=>resolve(read.result?.completed===true)}}))).toBe(true);
   await expect(page.getByTestId('drawing-stage')).not.toHaveClass(/alive/,{timeout:4500});
   await expect(page.locator(`[data-region="${regions[0]}"]`)).toHaveAttribute('fill',chosen!);
 });

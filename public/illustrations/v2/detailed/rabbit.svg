@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Rabbit — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="ear-left" d="M169 145 C145 119 132 51 153 39 C180 35 187 103 185 141 Z"/>
+<path data-region="ear-right" d="M204 140 C203 101 227 44 246 54 C266 67 233 121 222 147 Z"/>
+<path data-region="inner-ear-left" d="M165 119 Q148 72 157 54 Q172 66 174 120 Z"/>
+<path data-region="inner-ear-right" d="M219 122 Q226 80 241 68 Q245 86 227 124 Z"/>
+<path data-region="tail" d="M255 282 a25 23 0 1 0 50 0 a25 23 0 1 0 -50 0 Z"/>
+<path data-region="body" d="M168 202 C138 226 131 273 145 311 Q176 338 257 329 C300 310 290 252 251 225 L227 196 Z"/>
+<path data-region="haunch" d="M239 260 C276 251 296 300 266 321 L216 330 Q202 319 222 307 C207 287 219 268 239 260 Z"/>
+<path data-region="head" d="M154 152 C165 125 212 123 235 146 C251 162 252 189 236 207 C219 230 179 232 159 211 C141 196 139 174 154 152 Z"/>
+<path data-region="front-paw" d="M173 226 Q189 217 196 237 L195 305 Q216 319 201 331 L158 331 Q143 320 161 310 Z"/>
+<path data-region="muzzle" d="M173 192 Q184 181 196 190 Q211 180 224 190 C236 210 181 222 173 202 Z"/>
+<path data-region="nose" d="M190 187 Q199 182 208 188 L200 197 Z"/>
+<path data-region="eye-left" d="M162 173 a7 5.04 0 1 0 14 0 a7 5.04 0 1 0 -14 0 Z"/>
+<ellipse cx="170" cy="173" rx="2.6" ry="3.5" fill="#202024" stroke="none" pointer-events="none"/>
+<path data-region="eye-right" d="M218 172 a7 5.04 0 1 0 14 0 a7 5.04 0 1 0 -14 0 Z"/>
+<ellipse cx="226" cy="172" rx="2.6" ry="3.5" fill="#202024" stroke="none" pointer-events="none"/>
+<path d="M200 197 v8 M181 200 L137 190 M181 207 L139 212 M217 199 L260 190 M217 206 L260 214 M167 320 v8 M179 320 v8 M239 316 l5 7 M252 312 l5 8 M163 245 l4 7 M154 260 l5 5" fill="none" stroke-width="1.25" pointer-events="none"/>
+<g transform="translate(94 326) rotate(0) scale(0.7)">
+<path data-region="clover-left" d="M0 0 C-23 -6 -31 -25 -28 -42 C-6 -38 8 -18 0 0 Z"/>
+<path d="M0 0 Q-14 -19 -23 -33 M-11 -18 L-23 -20 M-16 -26 L-16 -34" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+<g transform="translate(97 329) rotate(95) scale(0.7)">
+<path data-region="clover-right" d="M0 0 C-23 -6 -31 -25 -28 -42 C-6 -38 8 -18 0 0 Z"/>
+<path d="M0 0 Q-14 -19 -23 -33 M-11 -18 L-23 -20 M-16 -26 L-16 -34" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+<path d="M46 350 Q100 343 143 349 M251 349 Q300 343 355 350 M72 340 l4 -9 l5 10 M307 338 l5 -10 l5 10" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

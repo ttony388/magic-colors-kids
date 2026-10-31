@@ -1,6 +1,6 @@
 {
   "legacy_count": 72,
-  "review_count": 9,
+  "review_count": 78,
   "issues": [
     "pig.svg: open region: tail"
   ],
@@ -1382,6 +1382,239 @@
       "errors": []
     },
     {
+      "file": "public/illustrations/v2/detailed/alien.svg",
+      "regions": [
+        "arm-left",
+        "arm-right",
+        "hand-left",
+        "hand-right",
+        "leg-0",
+        "foot-0",
+        "leg-1",
+        "foot-1",
+        "torso",
+        "head",
+        "eye-left",
+        "eye-right",
+        "belt",
+        "badge"
+      ],
+      "count": 14,
+      "sha256": "74f97c86fa8fff4f8b729c1373e65f614e45b032beea46174a33c37e791b6c05",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/apple.svg",
+      "regions": [
+        "stem",
+        "leaf",
+        "fruit",
+        "slice-flesh",
+        "slice-peel",
+        "seed"
+      ],
+      "count": 6,
+      "sha256": "cef7cfbcff5463f284215fd1c4aa92b85ad4dbf4935c5e0fc041150069e2165e",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/astronaut.svg",
+      "regions": [
+        "backpack",
+        "arm-left",
+        "arm-right",
+        "hand-left",
+        "hand-right",
+        "leg-0",
+        "foot-0",
+        "leg-1",
+        "foot-1",
+        "torso",
+        "helmet",
+        "visor",
+        "chest-console",
+        "console-dial",
+        "flag-patch"
+      ],
+      "count": 15,
+      "sha256": "3ce20d13efeb4ca231397f96c1a956f2084024c5cd65763218e8da436f17bc78",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/autumn-park.svg",
+      "regions": [
+        "cloud",
+        "sun",
+        "far-meadow",
+        "left-tree-trunk",
+        "left-tree-crown",
+        "right-tree-trunk",
+        "right-tree-crown",
+        "path",
+        "bench-back",
+        "bench-seat",
+        "bench-leg-0",
+        "bench-leg-1",
+        "fallen-leaf-one",
+        "fallen-leaf-two"
+      ],
+      "count": 14,
+      "sha256": "36e6ca0843fb1566fcec50f1f75422be5c71dfed01def30d1a34fdacbcc5d95f",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/ball.svg",
+      "regions": [
+        "ball",
+        "center-panel",
+        "top-panel",
+        "left-panel",
+        "right-panel",
+        "bottom-panel"
+      ],
+      "count": 6,
+      "sha256": "69af32cf725b4f29136983ed53ab81208d97d8efe0f36cd91401c13d083f2fd6",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/banana.svg",
+      "regions": [
+        "back-fruit",
+        "middle-fruit",
+        "front-fruit",
+        "stem",
+        "stem-tip"
+      ],
+      "count": 5,
+      "sha256": "3472a48007977653a0d1746012c069e94ac0fa7514a8edf581f68e34304c924d",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/barn.svg",
+      "regions": [
+        "side-wall",
+        "front-wall",
+        "side-roof",
+        "front-roof",
+        "door-left",
+        "door-right",
+        "loft",
+        "side-window",
+        "path"
+      ],
+      "count": 9,
+      "sha256": "9967b0e151a3a2538919a767dd9c41b651e3862377421c9064d3fdb06ff7551d",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/blocks.svg",
+      "regions": [
+        "front-0",
+        "top-0",
+        "side-0",
+        "circle-inset",
+        "front-1",
+        "top-1",
+        "side-1",
+        "triangle-inset",
+        "front-2",
+        "top-2",
+        "side-2",
+        "square-inset",
+        "front-3",
+        "top-3",
+        "side-3",
+        "diamond-inset"
+      ],
+      "count": 16,
+      "sha256": "b4d3d8632a844f1507cee5e3342c4c68cdff6ff9fd3118dd7e8f2d0c5c91dd54",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/boat.svg",
+      "regions": [
+        "hull",
+        "hull-stripe",
+        "mast",
+        "sail-left",
+        "sail-right",
+        "cabin",
+        "porthole",
+        "cloud"
+      ],
+      "count": 8,
+      "sha256": "81a47190aab7e3a877f9667ab6cf999657e613f39b8231afe554f77a551ccb5c",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/brontosaurus.svg",
+      "regions": [
+        "tail",
+        "far-leg-0",
+        "far-leg-1",
+        "body",
+        "neck-head",
+        "eye",
+        "near-leg-0",
+        "near-leg-1"
+      ],
+      "count": 8,
+      "sha256": "59f4e7bf5edce36ad36994ac0f3f346a06aa9dc6643cdcc6289aa38f5d1a7abb",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/bus.svg",
+      "regions": [
+        "body",
+        "belt",
+        "window-0",
+        "window-1",
+        "window-2",
+        "window-3",
+        "windscreen",
+        "door",
+        "front-tire",
+        "front-rim",
+        "front-axle",
+        "rear-tire",
+        "rear-rim",
+        "rear-axle",
+        "headlight"
+      ],
+      "count": 15,
+      "sha256": "86e5c3bc0cbff60337b18ea14ccd11587667b2e3622425136ed51d75d8491c5b",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/butterfly.svg",
+      "regions": [
+        "upper-wing-left",
+        "upper-wing-right",
+        "lower-wing-left",
+        "lower-wing-right",
+        "upper-panel--1",
+        "lower-panel--1",
+        "wing-eye--1",
+        "lower-spot--1",
+        "upper-panel-1",
+        "lower-panel-1",
+        "wing-eye-1",
+        "lower-spot-1",
+        "body",
+        "head",
+        "flower-petal-0",
+        "flower-petal-1",
+        "flower-petal-2",
+        "flower-petal-3",
+        "flower-petal-4",
+        "flower-petal-5",
+        "flower-center"
+      ],
+      "count": 21,
+      "sha256": "692c43162952bfb0e937cac0bfb20bb2805e6ae9a389458797ebf4fcc81655cc",
+      "errors": []
+    },
+    {
       "file": "public/illustrations/v2/detailed/car.svg",
       "regions": [
         "car-body",
@@ -1406,6 +1639,49 @@
       ],
       "count": 19,
       "sha256": "f3d7204fdccaaf74ec5f8a7c02c076473e81ebeb4103ec62a57c92e3a662d4cc",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/carriage.svg",
+      "regions": [
+        "coach",
+        "roof",
+        "door",
+        "door-window",
+        "left-window",
+        "right-window",
+        "driver-seat",
+        "chassis",
+        "rear-tire",
+        "rear-rim",
+        "rear-axle",
+        "front-tire",
+        "front-rim",
+        "front-axle",
+        "crown-finial"
+      ],
+      "count": 15,
+      "sha256": "9f4d5760d257707a2a63050e9977d81e5b57b94ecd411bed880bff609a383f64",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/castle.svg",
+      "regions": [
+        "central-wall",
+        "keep",
+        "keep-roof",
+        "tower-0",
+        "roof-0",
+        "window-0",
+        "tower-1",
+        "roof-1",
+        "window-1",
+        "gate",
+        "flag",
+        "approach"
+      ],
+      "count": 12,
+      "sha256": "c6cb9a101cadedf349d5f1d969d8bb980eef61c14c7d948928c3c8c83d83466a",
       "errors": []
     },
     {
@@ -1437,6 +1713,472 @@
       "errors": []
     },
     {
+      "file": "public/illustrations/v2/detailed/christmas-tree.svg",
+      "regions": [
+        "trunk",
+        "tree",
+        "star",
+        "bauble-0",
+        "bauble-1",
+        "bauble-2",
+        "bauble-3",
+        "bauble-4",
+        "bauble-5",
+        "present-left",
+        "ribbon-left",
+        "present-right",
+        "ribbon-right"
+      ],
+      "count": 13,
+      "sha256": "0300286685a36d9655f7104e6e9d7e68deb5252fd7934100cffddf3ab7a496af",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/cottage.svg",
+      "regions": [
+        "side-wall",
+        "front-wall",
+        "side-roof",
+        "front-roof",
+        "chimney",
+        "door",
+        "window-left",
+        "window-right",
+        "attic-window",
+        "side-window",
+        "path"
+      ],
+      "count": 11,
+      "sha256": "f09d625e4b522979d9be84fa0ed8cd08d8557b80bea53d29d0b5a6449708c56b",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/cow.svg",
+      "regions": [
+        "tail",
+        "far-leg-0",
+        "far-leg-1",
+        "body",
+        "near-leg-0",
+        "near-leg-1",
+        "horn-left",
+        "horn-right",
+        "patch-one",
+        "patch-two",
+        "ear-left",
+        "ear-right",
+        "head",
+        "muzzle",
+        "nostril-left",
+        "nostril-right",
+        "eye-left",
+        "eye-right"
+      ],
+      "count": 18,
+      "sha256": "afe6d366d6ad8a2c48d94bf796912fcda92a1ea8cc58004ba61decb6434d6191",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/crab.svg",
+      "regions": [
+        "leg--1-0",
+        "leg--1-1",
+        "leg--1-2",
+        "arm--1",
+        "claw--1",
+        "eye-stalk--1",
+        "eye--1",
+        "leg-1-0",
+        "leg-1-1",
+        "leg-1-2",
+        "arm-1",
+        "claw-1",
+        "eye-stalk-1",
+        "eye-1",
+        "shell"
+      ],
+      "count": 15,
+      "sha256": "ac38eb2aef5146b660e38e6b855dc408c51b3b7928ea6b753203be46ebc15571",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/crown.svg",
+      "regions": [
+        "crown",
+        "band",
+        "center-gem",
+        "left-gem",
+        "right-gem",
+        "finial-0",
+        "finial-1",
+        "finial-2",
+        "finial-3"
+      ],
+      "count": 9,
+      "sha256": "07003a6c744810e5cf1397230a792d6feb5b6e8d4414d4a54275f20f4ba7dbac",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/cupcake.svg",
+      "regions": [
+        "wrapper",
+        "icing",
+        "cherry",
+        "icing-drop",
+        "wrapper-medallion",
+        "medallion-heart"
+      ],
+      "count": 6,
+      "sha256": "7910ff711263ea7d04019897bba9cf9e2ce283f124ac81f109cc3e019320b985",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/dino.svg",
+      "regions": [
+        "tail",
+        "far-leg-1",
+        "body",
+        "neck-head",
+        "jaw",
+        "eye",
+        "arm",
+        "near-leg-1",
+        "back-spot-one",
+        "back-spot-two"
+      ],
+      "count": 10,
+      "sha256": "5db5914bec366add2acf668aee5e7c6ffa0f707ac7840c1fff63e962eb66194b",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/dog.svg",
+      "regions": [
+        "tail",
+        "body",
+        "hind-leg",
+        "chest",
+        "front-leg-left",
+        "front-leg-right",
+        "head",
+        "ear-left",
+        "ear-right",
+        "muzzle",
+        "nose",
+        "eye-left",
+        "eye-right",
+        "collar",
+        "tag"
+      ],
+      "count": 15,
+      "sha256": "1d0b98f2a23f4f315c4b37cdb68ab264c6677f2d0c4d678798be80cc977aa966",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/dolphin.svg",
+      "regions": [
+        "dorsal-fin",
+        "body",
+        "belly",
+        "flipper",
+        "eye",
+        "cloud"
+      ],
+      "count": 6,
+      "sha256": "3d7fe071bc758683dba26366017fc6726783a6558a2814cec108600c7e9268d7",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/dragon.svg",
+      "regions": [
+        "tail",
+        "far-leg-0",
+        "far-leg-1",
+        "far-wing",
+        "body",
+        "neck-head",
+        "eye",
+        "near-wing",
+        "horn",
+        "flame",
+        "near-leg-0",
+        "near-leg-1"
+      ],
+      "count": 12,
+      "sha256": "595f3a74f4c8fbfbc1cbe789b482a2d16af885f7760c3c579eb1d1f4fb628a06",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/drum.svg",
+      "regions": [
+        "bottom-rim",
+        "side",
+        "top-rim",
+        "skin",
+        "cord-0",
+        "cord-1",
+        "cord-2",
+        "cord-3",
+        "cord-4",
+        "stick-left",
+        "stick-right"
+      ],
+      "count": 11,
+      "sha256": "3999028879729d17d9dcacb6b275e4eed76763d0829b9e3ff12518d47238ad89",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/fairy.svg",
+      "regions": [
+        "upper-wing--1",
+        "lower-wing--1",
+        "upper-wing-1",
+        "lower-wing-1",
+        "arm-left",
+        "arm-right",
+        "hand-left",
+        "hand-right",
+        "foot-0",
+        "foot-1",
+        "torso",
+        "skirt",
+        "head",
+        "eye-left",
+        "eye-right",
+        "hair",
+        "bodice",
+        "wand",
+        "wand-star",
+        "hair-flower-petal-0",
+        "hair-flower-petal-1",
+        "hair-flower-petal-2",
+        "hair-flower-petal-3",
+        "hair-flower-petal-4",
+        "hair-flower-petal-5",
+        "hair-flower-center"
+      ],
+      "count": 26,
+      "sha256": "9c25b075a05bbda81ac10aa6c68829dc5da9076b6b6d955e8fc9b620e8e75b41",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/fish.svg",
+      "regions": [
+        "tail",
+        "dorsal-fin",
+        "lower-fin",
+        "body",
+        "gill",
+        "pectoral-fin",
+        "eye",
+        "bubble-0",
+        "bubble-1",
+        "bubble-2",
+        "seaweed-left",
+        "seaweed-right"
+      ],
+      "count": 12,
+      "sha256": "14f0e66d80b301cb34ec65a7faa2f6bebafda5246cc76191f98bcf768ec43126",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/forest.svg",
+      "regions": [
+        "cloud",
+        "sun",
+        "far-meadow",
+        "far-left-crown",
+        "far-right-crown",
+        "path",
+        "near-left-trunk",
+        "near-left-crown",
+        "near-right-trunk",
+        "near-right-crown"
+      ],
+      "count": 10,
+      "sha256": "a7cdda89775d04a3ad1a03d925efaebe8c871b7805798de5129ac4bd45ed8dcd",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/garden.svg",
+      "regions": [
+        "cloud",
+        "sun",
+        "far-meadow",
+        "garden-bed",
+        "bed-rim",
+        "stem-0",
+        "leaf-0",
+        "flower-0-petal-0",
+        "flower-0-petal-1",
+        "flower-0-petal-2",
+        "flower-0-petal-3",
+        "flower-0-petal-4",
+        "flower-0-petal-5",
+        "flower-0-center",
+        "stem-1",
+        "leaf-1",
+        "flower-1-petal-0",
+        "flower-1-petal-1",
+        "flower-1-petal-2",
+        "flower-1-petal-3",
+        "flower-1-petal-4",
+        "flower-1-petal-5",
+        "flower-1-center",
+        "stem-2",
+        "leaf-2",
+        "flower-2-petal-0",
+        "flower-2-petal-1",
+        "flower-2-petal-2",
+        "flower-2-petal-3",
+        "flower-2-petal-4",
+        "flower-2-petal-5",
+        "flower-2-center",
+        "watering-can",
+        "spout",
+        "handle"
+      ],
+      "count": 35,
+      "sha256": "40360284f48d684620a3c5f5def2b0bd7f84ebd8f091a9a30a0702a9d92b6046",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/griffin.svg",
+      "regions": [
+        "tail",
+        "far-leg-0",
+        "far-leg-1",
+        "far-wing",
+        "body",
+        "neck-head",
+        "eagle-head",
+        "eagle-eye",
+        "beak",
+        "feather-wing",
+        "near-leg-0",
+        "near-leg-1"
+      ],
+      "count": 12,
+      "sha256": "7ffafc52187c0528039b5bcaf8df5e4611196e7b0089c7d65a0bf2672caa277d",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/hen.svg",
+      "regions": [
+        "tail-feather-0",
+        "tail-feather-1",
+        "tail-feather-2",
+        "body",
+        "neck",
+        "comb",
+        "beak",
+        "wattle",
+        "wing",
+        "eye",
+        "leg-left",
+        "leg-right"
+      ],
+      "count": 12,
+      "sha256": "637037c733973f85a98f15deb80ee519a2a841b8a626cb04bd071b557ccd49dc",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/horse.svg",
+      "regions": [
+        "tail",
+        "far-hind-leg",
+        "far-front-leg",
+        "body-neck",
+        "near-hind-leg",
+        "near-front-leg",
+        "mane",
+        "head",
+        "muzzle",
+        "eye",
+        "meadow-leaf"
+      ],
+      "count": 11,
+      "sha256": "1011b2427c501e506177de4437f7b2d1dd864dfafe6c3982ff57cb13d97cd087",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/kite.svg",
+      "regions": [
+        "kite",
+        "panel-left",
+        "panel-right",
+        "bow-one",
+        "bow-two",
+        "cloud-left",
+        "cloud-right"
+      ],
+      "count": 7,
+      "sha256": "d97948a2cac03702986240bc0c779d23b13c96c5374408a1764800926d339318",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/knight.svg",
+      "regions": [
+        "arm-left",
+        "arm-right",
+        "hand-right",
+        "leg-0",
+        "foot-0",
+        "leg-1",
+        "foot-1",
+        "torso",
+        "helmet",
+        "visor",
+        "breastplate",
+        "shield",
+        "shield-emblem",
+        "sword",
+        "guard"
+      ],
+      "count": 15,
+      "sha256": "c4907985738383ff6af5848e1edbe6b7d059e1997df91112253f16b81ea9e164",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/lander.svg",
+      "regions": [
+        "left-leg",
+        "right-leg",
+        "left-foot",
+        "right-foot",
+        "body",
+        "cabin",
+        "hatch",
+        "engine",
+        "left-panel",
+        "right-panel",
+        "antenna",
+        "dish",
+        "moon-surface",
+        "crater-left",
+        "crater-right"
+      ],
+      "count": 15,
+      "sha256": "2ac630dabf78783c7896b7ff9db3930b6309045cbfcea45f7ca0dd6e17b7ae34",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/moon.svg",
+      "regions": [
+        "moon",
+        "crater-0",
+        "crater-1",
+        "crater-2",
+        "crater-3",
+        "crater-4",
+        "crater-5",
+        "crater-6",
+        "passing-cloud"
+      ],
+      "count": 9,
+      "sha256": "88154ca4558096e5d3cf6c8574f1cb5e733cd63ed8024ece6b79298d24bcc320",
+      "errors": []
+    },
+    {
       "file": "public/illustrations/v2/detailed/mountain.svg",
       "regions": [
         "sun",
@@ -1462,6 +2204,693 @@
       ],
       "count": 20,
       "sha256": "a4438704c7e137f6478c6e740de3c96806b54e576fb5f5afd04f88336b1b940a",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/mushroom.svg",
+      "regions": [
+        "stem",
+        "gills",
+        "cap",
+        "cap-spot-0",
+        "cap-spot-1",
+        "cap-spot-2",
+        "cap-spot-3",
+        "leaf-left",
+        "leaf-right"
+      ],
+      "count": 9,
+      "sha256": "c3ab29f0e9f9085992308488e3ca05fa6a97c0cedab4254fb5d74cf6d05eb574",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/octopus.svg",
+      "regions": [
+        "arm-1",
+        "arm-2",
+        "arm-3",
+        "arm-4",
+        "arm-5",
+        "arm-6",
+        "arm-7",
+        "arm-8",
+        "mantle",
+        "eye-left",
+        "eye-right",
+        "bubble-0",
+        "bubble-1",
+        "bubble-2"
+      ],
+      "count": 14,
+      "sha256": "9383ba901a0ec6d8188fde92ebdcb7e6cc82e6613e7534fa9b74e7c6b1529b39",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/pig.svg",
+      "regions": [
+        "tail",
+        "far-leg-0",
+        "far-leg-1",
+        "body",
+        "near-leg-0",
+        "near-leg-1",
+        "ear-left",
+        "ear-right",
+        "head",
+        "ear-fold-left",
+        "ear-fold-right",
+        "muzzle",
+        "nostril-left",
+        "nostril-right",
+        "eye-left",
+        "eye-right"
+      ],
+      "count": 16,
+      "sha256": "d466abeef63f7017b40870f0f72804e062d25526fbd87e09ee903a88f78da4bc",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/pineapple.svg",
+      "regions": [
+        "fruit",
+        "crown-left",
+        "crown-right",
+        "crown-back",
+        "crown-front",
+        "diamond-0-0",
+        "diamond-0-1",
+        "diamond-0-2",
+        "diamond-1-0",
+        "diamond-1-1",
+        "diamond-1-2",
+        "diamond-2-0",
+        "diamond-2-1",
+        "diamond-2-2",
+        "diamond-3-0",
+        "diamond-3-1",
+        "diamond-3-2",
+        "diamond-4-0",
+        "diamond-4-1",
+        "diamond-4-2"
+      ],
+      "count": 20,
+      "sha256": "f0a7dda515afc6af240b167c408eab34d2aa023bcc473c3dd69b72f18c48d7fe",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/pizza.svg",
+      "regions": [
+        "cheese",
+        "crust",
+        "tomato-0",
+        "tomato-1",
+        "tomato-2",
+        "tomato-3",
+        "tomato-4",
+        "mushroom-0",
+        "mushroom-1",
+        "mushroom-2"
+      ],
+      "count": 10,
+      "sha256": "c83ca90b765919592f4ae195b1e5f4a75519fff47360318419cb6a1528e78824",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/plane.svg",
+      "regions": [
+        "far-wing",
+        "tail-fin",
+        "fuselage",
+        "near-wing",
+        "tailplane",
+        "cockpit",
+        "engine",
+        "engine-intake",
+        "window-0",
+        "window-1",
+        "window-2",
+        "window-3",
+        "window-4",
+        "window-5",
+        "cloud-left",
+        "cloud-right"
+      ],
+      "count": 16,
+      "sha256": "94616b0767507f397699e8545e990cb8f2a44ed597fe473c844b6abd2cba650e",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/pterodactyl.svg",
+      "regions": [
+        "left-wing",
+        "right-wing",
+        "body",
+        "head",
+        "eye",
+        "cloud-left",
+        "cloud-right"
+      ],
+      "count": 7,
+      "sha256": "ce8d162980820d64f08710b81a59e53d0ceb53ce7fc319b4f663ff4eb9016c61",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/pumpkin.svg",
+      "regions": [
+        "stem",
+        "left-lobe",
+        "right-lobe",
+        "middle-left",
+        "middle-right",
+        "center",
+        "leaf"
+      ],
+      "count": 7,
+      "sha256": "ded2860b748eaf4c192ff8ebc53a88613efbe34881c2e51934683f0e86053405",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/rabbit.svg",
+      "regions": [
+        "ear-left",
+        "ear-right",
+        "inner-ear-left",
+        "inner-ear-right",
+        "tail",
+        "body",
+        "haunch",
+        "head",
+        "front-paw",
+        "muzzle",
+        "nose",
+        "eye-left",
+        "eye-right",
+        "clover-left",
+        "clover-right"
+      ],
+      "count": 15,
+      "sha256": "97a16f2b7cf10a41d19368f657e8a725926af4256e038e7c724ca991e45bc862",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/rainbow.svg",
+      "regions": [
+        "band-0",
+        "band-1",
+        "band-2",
+        "band-3",
+        "band-4",
+        "band-5",
+        "band-6",
+        "cloud-left",
+        "cloud-right",
+        "meadow",
+        "daisy-left-petal-0",
+        "daisy-left-petal-1",
+        "daisy-left-petal-2",
+        "daisy-left-petal-3",
+        "daisy-left-petal-4",
+        "daisy-left-petal-5",
+        "daisy-left-center",
+        "daisy-right-petal-0",
+        "daisy-right-petal-1",
+        "daisy-right-petal-2",
+        "daisy-right-petal-3",
+        "daisy-right-petal-4",
+        "daisy-right-petal-5",
+        "daisy-right-center"
+      ],
+      "count": 24,
+      "sha256": "0a9c17ca1aafd3185560028f5df0ba6f9d415889ab20cd88b53850b2daf9fde9",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/robot.svg",
+      "regions": [
+        "arm-left",
+        "arm-right",
+        "hand-left",
+        "hand-right",
+        "leg-0",
+        "foot-0",
+        "leg-1",
+        "foot-1",
+        "torso",
+        "head",
+        "eye-left",
+        "eye-right",
+        "mouth",
+        "panel",
+        "dial",
+        "button",
+        "antenna",
+        "antenna-ball"
+      ],
+      "count": 18,
+      "sha256": "bf53ebdb43d3a624eb42b9ec7d509c9dd5569af216e713e6c89c572288871827",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/rocket.svg",
+      "regions": [
+        "left-fin",
+        "right-fin",
+        "body",
+        "nose",
+        "engine",
+        "window-rim",
+        "window",
+        "flame",
+        "planet",
+        "moon"
+      ],
+      "count": 10,
+      "sha256": "16ee84b5efa04af91abc903306dc45f789270d0df5dca0964cb231145dd9c2f4",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/rocking-horse.svg",
+      "regions": [
+        "tail",
+        "far-hind-leg",
+        "far-front-leg",
+        "body-neck",
+        "near-hind-leg",
+        "near-front-leg",
+        "mane",
+        "head",
+        "muzzle",
+        "eye",
+        "saddle",
+        "rocker",
+        "handle"
+      ],
+      "count": 13,
+      "sha256": "28c5a469fb2873cf76c5517b7212e85c32661fcebfe643028df242dff36bc6bb",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/saturn.svg",
+      "regions": [
+        "planet",
+        "outer-ring",
+        "inner-ring",
+        "moon-left",
+        "moon-right"
+      ],
+      "count": 5,
+      "sha256": "eb0c368cc725765ef0dd9560f70883068ca7203027e991da521aaa24696b4eaa",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/seahorse.svg",
+      "regions": [
+        "dorsal-fin",
+        "body",
+        "crest",
+        "belly",
+        "eye",
+        "kelp-left",
+        "kelp-right"
+      ],
+      "count": 7,
+      "sha256": "9ae30b63425f6a7c58e68adfe9bbee2082c06686d24ffc64e77bc37d7e946bca",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/sheep.svg",
+      "regions": [
+        "tail",
+        "far-leg-0",
+        "far-leg-1",
+        "body",
+        "near-leg-0",
+        "near-leg-1",
+        "ear-left",
+        "ear-right",
+        "head",
+        "eye-left",
+        "eye-right",
+        "muzzle"
+      ],
+      "count": 12,
+      "sha256": "794756f5352839cbd7b12a20ac825105236d3c6ca610160e3aed7c67818c775b",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/snowman.svg",
+      "regions": [
+        "arm-left",
+        "arm-right",
+        "body",
+        "head",
+        "hat",
+        "hat-band",
+        "brim",
+        "scarf",
+        "scarf-tail",
+        "nose",
+        "eye-left",
+        "eye-right",
+        "button-0",
+        "button-1",
+        "button-2"
+      ],
+      "count": 15,
+      "sha256": "00b64593dbcff778037c7e8b7a09faeb73731f3021f90560462aaf80536fac4f",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/stegosaurus.svg",
+      "regions": [
+        "tail",
+        "far-leg-0",
+        "far-leg-1",
+        "body",
+        "neck-head",
+        "eye",
+        "plate-0",
+        "plate-1",
+        "plate-2",
+        "plate-3",
+        "plate-4",
+        "plate-5",
+        "near-leg-0",
+        "near-leg-1"
+      ],
+      "count": 14,
+      "sha256": "0378fcc8fbee7ba0a920a39a467f6c110d6853fa4f42c712793173984cb454a6",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/strawberry.svg",
+      "regions": [
+        "fruit",
+        "calyx",
+        "stem",
+        "seed-0",
+        "seed-1",
+        "seed-2",
+        "seed-3",
+        "seed-4",
+        "seed-5",
+        "seed-6",
+        "seed-7",
+        "seed-8",
+        "seed-9",
+        "seed-10",
+        "seed-11"
+      ],
+      "count": 15,
+      "sha256": "79ecf225822c11fa460690cb0806dc28f505611806f4c2964c9150c8ef30fa9b",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/sunflower.svg",
+      "regions": [
+        "stem",
+        "leaf-left",
+        "leaf-right",
+        "petal-0",
+        "petal-1",
+        "petal-2",
+        "petal-3",
+        "petal-4",
+        "petal-5",
+        "petal-6",
+        "petal-7",
+        "petal-8",
+        "petal-9",
+        "petal-10",
+        "petal-11",
+        "flower-center"
+      ],
+      "count": 16,
+      "sha256": "7d9bb2108f0971f5dde8e80078cf73bb3f3a8e9c2da4878dfe8d0c276fb759a9",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/teddy.svg",
+      "regions": [
+        "ear-left",
+        "ear-right",
+        "inner-ear-left",
+        "inner-ear-right",
+        "arm-left",
+        "arm-right",
+        "hand-left",
+        "hand-right",
+        "leg-0",
+        "foot-0",
+        "leg-1",
+        "foot-1",
+        "torso",
+        "head",
+        "eye-left",
+        "eye-right",
+        "muzzle",
+        "nose",
+        "belly",
+        "bow-left",
+        "bow-right",
+        "bow-knot"
+      ],
+      "count": 22,
+      "sha256": "64953b755b8209bd028d27b606fe571f9b89691fa071190e1b707378990d8384",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/tower.svg",
+      "regions": [
+        "tower-0",
+        "roof-0",
+        "window-0",
+        "gate",
+        "flag",
+        "approach"
+      ],
+      "count": 6,
+      "sha256": "7f1132c8bf0426592bbd91dbf79b72d05b6e3d831e42ce4cafbecba59dffeaa6",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/tractor.svg",
+      "regions": [
+        "cab",
+        "roof",
+        "window",
+        "engine",
+        "exhaust",
+        "fender",
+        "rear-tire",
+        "rear-rim",
+        "rear-axle",
+        "front-tire",
+        "front-rim",
+        "front-axle"
+      ],
+      "count": 12,
+      "sha256": "f3d54b8755b649ad3079541f9570ec43ae96b3e70f7ec73544d0d181871400a1",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/train.svg",
+      "regions": [
+        "cab",
+        "roof",
+        "cab-window",
+        "boiler",
+        "chimney",
+        "front",
+        "cowcatcher",
+        "chassis",
+        "rear-tire",
+        "rear-rim",
+        "middle-tire",
+        "middle-rim",
+        "front-wheel-tire",
+        "front-wheel-rim",
+        "connecting-rod",
+        "steam-one",
+        "steam-two"
+      ],
+      "count": 17,
+      "sha256": "7f568b6eb96f5d958c03ca4868dda4630302a6161fd331f783949c59966bde54",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/tree.svg",
+      "regions": [
+        "cloud",
+        "sun",
+        "far-meadow",
+        "oak-trunk",
+        "oak-crown",
+        "ground-leaf",
+        "acorn",
+        "acorn-cap"
+      ],
+      "count": 8,
+      "sha256": "a08d229e2965d134a54ef5530e82a632f8e60afd24922671590c543405cdd4d3",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/trex.svg",
+      "regions": [
+        "tail",
+        "far-leg",
+        "body",
+        "neck-head",
+        "jaw",
+        "eye",
+        "arm",
+        "near-leg"
+      ],
+      "count": 8,
+      "sha256": "d5084a404e5b5e3477ec7f3ae8e5f5a63f047f590bf8f6322123f1e34790a22a",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/triceratops.svg",
+      "regions": [
+        "tail",
+        "far-leg-0",
+        "far-leg-1",
+        "body",
+        "frill",
+        "head",
+        "horn-top",
+        "horn-front",
+        "eye",
+        "near-leg-0",
+        "near-leg-1"
+      ],
+      "count": 11,
+      "sha256": "136ce1ffa742f4d08092c908fe25d875c2b390d8f9c4843d92deffe86aad2196",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/truck.svg",
+      "regions": [
+        "cargo",
+        "cab",
+        "window",
+        "door",
+        "chassis",
+        "headlight",
+        "rear-a-tire",
+        "rear-a-rim",
+        "rear-a-axle",
+        "rear-b-tire",
+        "rear-b-rim",
+        "rear-b-axle",
+        "front-tire",
+        "front-rim",
+        "front-axle"
+      ],
+      "count": 15,
+      "sha256": "f50a4b412eb30d429f7f5884667da0ff526d357f25ac8c14804037fd6918a47b",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/turtle.svg",
+      "regions": [
+        "tail",
+        "far-foot",
+        "hind-foot",
+        "front-foot",
+        "neck",
+        "shell",
+        "shell-rim",
+        "central-scute",
+        "eye"
+      ],
+      "count": 9,
+      "sha256": "59fd9041f7dcaeca64b863b3780cf5cde0ef39f8774fe3e5abb6ae40753867ca",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/umbrella.svg",
+      "regions": [
+        "handle",
+        "canopy",
+        "panel-left",
+        "panel-right",
+        "tip",
+        "drop-0",
+        "drop-1",
+        "drop-2",
+        "drop-3"
+      ],
+      "count": 9,
+      "sha256": "e3af2e6b0fb5d5ad356a0d17124d1038964887f60a8f0d67be0e47eec92e1600",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/unicorn.svg",
+      "regions": [
+        "tail",
+        "far-hind-leg",
+        "far-front-leg",
+        "body-neck",
+        "near-hind-leg",
+        "near-front-leg",
+        "mane",
+        "head",
+        "muzzle",
+        "eye",
+        "horn",
+        "mane-lock",
+        "flower-petal-0",
+        "flower-petal-1",
+        "flower-petal-2",
+        "flower-petal-3",
+        "flower-petal-4",
+        "flower-petal-5",
+        "flower-center",
+        "cloud"
+      ],
+      "count": 20,
+      "sha256": "a514c64bdff453d934b54479fa89feaba04e26b14ad451b6cf2bd904be9fa530",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/whale.svg",
+      "regions": [
+        "body",
+        "belly",
+        "flipper",
+        "eye",
+        "spout-left",
+        "spout-right",
+        "cloud"
+      ],
+      "count": 7,
+      "sha256": "27a2a2971e1fdef3d5018a6f24a6f4bcfd25014b48cb3d32c40377fe78f851f9",
+      "errors": []
+    },
+    {
+      "file": "public/illustrations/v2/detailed/wizard.svg",
+      "regions": [
+        "arm-left",
+        "arm-right",
+        "hand-left",
+        "hand-right",
+        "foot-0",
+        "foot-1",
+        "torso",
+        "skirt",
+        "head",
+        "eye-left",
+        "eye-right",
+        "beard",
+        "hat",
+        "brim",
+        "staff",
+        "staff-orb"
+      ],
+      "count": 16,
+      "sha256": "91b16c4a9697475e64e553675d297b6eb192f07cac5af9cc8a5c2ef42135c684",
       "errors": []
     },
     {

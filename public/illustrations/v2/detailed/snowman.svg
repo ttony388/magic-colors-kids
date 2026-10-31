@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Snowman — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="arm-left" d="M136 224 L78 185 L59 190 L56 182 L74 177 L69 156 L78 153 L87 181 L143 213 Z"/>
+<path data-region="arm-right" d="M264 223 L316 184 L320 155 L329 155 L326 180 L347 171 L351 178 L322 192 L270 234 Z"/>
+<path data-region="body" d="M115 277 a86 74 0 1 0 172 0 a86 74 0 1 0 -172 0 Z"/>
+<path data-region="head" d="M143 172 a58 54 0 1 0 116 0 a58 54 0 1 0 -116 0 Z"/>
+<path data-region="hat" d="M155 127 L149 66 L250 66 L244 127 Z"/>
+<path data-region="hat-band" d="M153 103 L247 103 L245 122 L155 122 Z"/>
+<path data-region="brim" d="M126 123 Q200 111 276 123 L275 139 Q201 128 127 139 Z"/>
+<path data-region="scarf" d="M150 205 Q200 228 251 205 L260 224 Q207 249 142 224 Z"/>
+<path data-region="scarf-tail" d="M225 233 L248 231 L260 282 L235 286 Z"/>
+<path data-region="nose" d="M198 168 L259 182 L201 190 Z"/>
+<path data-region="eye-left" d="M175 162 a5 3.5999999999999996 0 1 0 10 0 a5 3.5999999999999996 0 1 0 -10 0 Z"/>
+<ellipse cx="181" cy="162" rx="2.6" ry="3.5" fill="#202024" stroke="none" pointer-events="none"/>
+<path data-region="eye-right" d="M217 162 a5 3.5999999999999996 0 1 0 10 0 a5 3.5999999999999996 0 1 0 -10 0 Z"/>
+<ellipse cx="223" cy="162" rx="2.6" ry="3.5" fill="#202024" stroke="none" pointer-events="none"/>
+<path data-region="button-0" d="M190 255 a7 7 0 1 0 14 0 a7 7 0 1 0 -14 0 Z"/>
+<path data-region="button-1" d="M190 280 a7 7 0 1 0 14 0 a7 7 0 1 0 -14 0 Z"/>
+<path data-region="button-2" d="M190 305 a7 7 0 1 0 14 0 a7 7 0 1 0 -14 0 Z"/>
+<path d="M178 197 Q193 207 213 198 M239 274 l2 9 M247 272 l3 10" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M46 350 Q100 343 143 349 M251 349 Q300 343 355 350 M72 340 l4 -9 l5 10 M307 338 l5 -10 l5 10" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

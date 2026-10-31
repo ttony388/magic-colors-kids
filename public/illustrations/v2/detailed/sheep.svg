@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Sheep — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="tail" d="M287 202 Q327 208 320 253 L310 256 Q316 220 284 214 Z"/>
+<path data-region="far-leg-0" d="M126 269 h19 l-3 54 h-19 Z"/>
+<path data-region="far-leg-1" d="M246 269 h19 l-3 54 h-19 Z"/>
+<path data-region="body" d="M112 181 C104 159 127 147 145 157 C155 134 183 140 194 150 C213 133 238 146 241 158 C265 143 283 163 279 179 C308 177 319 199 307 219 C327 242 309 266 287 264 C284 289 252 292 239 277 C219 298 196 285 187 278 C166 297 142 281 142 270 C112 282 94 259 104 243 C82 224 88 193 112 181 Z"/>
+<path d="M139 180 q12 -15 23 0 M187 167 q13 -13 25 1 M240 185 q12 -14 22 1 M157 239 q12 -13 24 1 M215 254 q12 -14 23 0 M273 236 q12 -15 22 0" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="near-leg-0" d="M148 253 Q160 260 170 254 L165 330 L145 330 Z"/>
+<path d="M146 318 h20 M155 320 v9" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="near-leg-1" d="M271 253 Q283 260 293 254 L288 330 L268 330 Z"/>
+<path d="M269 318 h20 M278 320 v9" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="ear-left" d="M89 153 Q59 135 50 151 Q57 175 86 174 Z"/>
+<path data-region="ear-right" d="M138 151 Q166 133 173 150 Q165 172 142 173 Z"/>
+<path data-region="head" d="M84 160 C86 130 131 128 145 154 L142 204 Q135 234 112 235 Q87 234 83 209 Z"/>
+<path data-region="eye-left" d="M91 177 a6 4.32 0 1 0 12 0 a6 4.32 0 1 0 -12 0 Z"/>
+<ellipse cx="98" cy="177" rx="2.6" ry="3.5" fill="#202024" stroke="none" pointer-events="none"/>
+<path data-region="eye-right" d="M127 177 a6 4.32 0 1 0 12 0 a6 4.32 0 1 0 -12 0 Z"/>
+<ellipse cx="134" cy="177" rx="2.6" ry="3.5" fill="#202024" stroke="none" pointer-events="none"/>
+<path d="M101 229 Q113 235 125 228 M117 150 l-5 5 l-5 -3" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M46 350 Q100 343 143 349 M251 349 Q300 343 355 350 M72 340 l4 -9 l5 10 M307 338 l5 -10 l5 10" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="muzzle" d="M97 207 Q113 195 129 207 Q131 224 113 231 Q95 223 97 207 Z"/>
+<path d="M106 211 l7 5 l7 -5 M113 216 v8" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

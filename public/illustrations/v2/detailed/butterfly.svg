@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Butterfly — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="upper-wing-left" d="M188 196 C131 97 40 55 37 133 C36 188 104 213 181 220 Z"/>
+<path data-region="upper-wing-right" d="M212 196 C269 97 360 55 363 133 C364 188 296 213 219 220 Z"/>
+<path data-region="lower-wing-left" d="M185 214 C108 194 58 234 80 289 C101 337 158 299 190 242 Z"/>
+<path data-region="lower-wing-right" d="M215 214 C292 194 342 234 320 289 C299 337 242 299 210 242 Z"/>
+<g transform="translate(200 0) scale(-1 1)">
+<path data-region="upper-panel--1" d="M23 193 C59 137 119 101 139 121 Q151 165 23 208 Z"/>
+<path data-region="lower-panel--1" d="M24 233 Q99 215 107 262 Q95 302 24 244 Z"/>
+<path data-region="wing-eye--1" d="M97 151 a14 19 0 1 0 28 0 a14 19 0 1 0 -28 0 Z"/>
+<path data-region="lower-spot--1" d="M66 261 a12 15 0 1 0 24 0 a12 15 0 1 0 -24 0 Z"/>
+<path d="M34 191 L91 138 M40 202 L120 177 M36 239 L82 246" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+<g transform="translate(200 0) scale(1 1)">
+<path data-region="upper-panel-1" d="M23 193 C59 137 119 101 139 121 Q151 165 23 208 Z"/>
+<path data-region="lower-panel-1" d="M24 233 Q99 215 107 262 Q95 302 24 244 Z"/>
+<path data-region="wing-eye-1" d="M97 151 a14 19 0 1 0 28 0 a14 19 0 1 0 -28 0 Z"/>
+<path data-region="lower-spot-1" d="M66 261 a12 15 0 1 0 24 0 a12 15 0 1 0 -24 0 Z"/>
+<path d="M34 191 L91 138 M40 202 L120 177 M36 239 L82 246" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+<path data-region="body" d="M191 184 Q201 169 209 184 L214 239 Q210 270 201 280 Q190 263 187 238 Z"/>
+<path data-region="head" d="M188 171 a12 12 0 1 0 24 0 a12 12 0 1 0 -24 0 Z"/>
+<path d="M194 163 Q180 144 174 147 M206 163 Q220 143 226 147 M191 209 h20 M190 224 h22 M192 239 h19" fill="none" stroke-width="1.25" pointer-events="none"/>
+<g transform="translate(200 346) scale(0.5)">
+<g transform="rotate(0)">
+<path data-region="flower-petal-0" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(60)">
+<path data-region="flower-petal-1" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(120)">
+<path data-region="flower-petal-2" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(180)">
+<path data-region="flower-petal-3" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(240)">
+<path data-region="flower-petal-4" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(300)">
+<path data-region="flower-petal-5" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<path data-region="flower-center" d="M-10 0 a10 10 0 1 0 20 0 a10 10 0 1 0 -20 0 Z"/>
+</g>
+</g>
+</svg>

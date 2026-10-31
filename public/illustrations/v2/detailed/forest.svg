@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Forest — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(64 63) scale(0.75)">
+<path data-region="cloud" d="M0 25 C-17 25 -19 7 -5 4 C-4 -13 18 -19 28 -5 C42 -16 60 -6 60 9 C77 4 88 23 72 28 Z"/>
+</g>
+<path data-region="sun" d="M286 63 a22 22 0 1 0 44 0 a22 22 0 1 0 -44 0 Z"/>
+<path data-region="far-meadow" d="M30 267 Q100 216 200 253 Q290 215 370 254 L370 365 L30 365 Z"/>
+<g transform="translate(93 280) scale(0.8)">
+<path data-region="far-left-crown" d="M-48 -83 C-73 -83 -82 -112 -60 -128 C-65 -155 -42 -170 -20 -161 C-10 -188 26 -185 39 -161 C67 -169 91 -146 76 -123 C99 -95 67 -67 41 -78 C17 -59 -12 -65 -24 -80 C-33 -74 -44 -76 -48 -83 Z"/>
+<path d="M-40 -131 Q-26 -148 -12 -135 M18 -149 Q33 -160 47 -142 M-22 -100 Q-4 -112 10 -98 M45 -109 Q58 -122 67 -109 M0 -15 L0 -54" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+<g transform="translate(297 277) scale(0.85)">
+<path data-region="far-right-crown" d="M-48 -83 C-73 -83 -82 -112 -60 -128 C-65 -155 -42 -170 -20 -161 C-10 -188 26 -185 39 -161 C67 -169 91 -146 76 -123 C99 -95 67 -67 41 -78 C17 -59 -12 -65 -24 -80 C-33 -74 -44 -76 -48 -83 Z"/>
+<path d="M-40 -131 Q-26 -148 -12 -135 M18 -149 Q33 -160 47 -142 M-22 -100 Q-4 -112 10 -98 M45 -109 Q58 -122 67 -109 M0 -15 L0 -54" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+<path data-region="path" d="M185 259 L213 260 Q184 290 258 365 L134 365 Q194 299 185 259 Z"/>
+<g transform="translate(94 335) scale(0.93)">
+<path data-region="near-left-trunk" d="M-8 0 L-6 -80 L-23 -104 L-14 -109 L2 -88 L20 -117 L27 -111 L9 -76 L11 0 Z"/>
+<path data-region="near-left-crown" d="M-48 -83 C-73 -83 -82 -112 -60 -128 C-65 -155 -42 -170 -20 -161 C-10 -188 26 -185 39 -161 C67 -169 91 -146 76 -123 C99 -95 67 -67 41 -78 C17 -59 -12 -65 -24 -80 C-33 -74 -44 -76 -48 -83 Z"/>
+<path d="M-40 -131 Q-26 -148 -12 -135 M18 -149 Q33 -160 47 -142 M-22 -100 Q-4 -112 10 -98 M45 -109 Q58 -122 67 -109 M0 -15 L0 -54" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+<g transform="translate(300 338) scale(0.93)">
+<path data-region="near-right-trunk" d="M-8 0 L-6 -80 L-23 -104 L-14 -109 L2 -88 L20 -117 L27 -111 L9 -76 L11 0 Z"/>
+<path data-region="near-right-crown" d="M-48 -83 C-73 -83 -82 -112 -60 -128 C-65 -155 -42 -170 -20 -161 C-10 -188 26 -185 39 -161 C67 -169 91 -146 76 -123 C99 -95 67 -67 41 -78 C17 -59 -12 -65 -24 -80 C-33 -74 -44 -76 -48 -83 Z"/>
+<path d="M-40 -131 Q-26 -148 -12 -135 M18 -149 Q33 -160 47 -142 M-22 -100 Q-4 -112 10 -98 M45 -109 Q58 -122 67 -109 M0 -15 L0 -54" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+<path d="M185 282 l9 -4 M176 334 l12 -3 M224 346 l11 5" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M42 348 l5 -8 l5 8 M331 358 l5 -8 l5 8 M161 351 l5 -8 l5 8" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

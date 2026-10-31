@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Lander — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="left-leg" d="M149 249 L105 316 L89 316 L133 241 Z"/>
+<path data-region="right-leg" d="M251 249 L295 316 L311 316 L267 241 Z"/>
+<path data-region="left-foot" d="M77 315 L117 315 L123 328 L71 328 Z"/>
+<path data-region="right-foot" d="M283 315 L323 315 L329 328 L277 328 Z"/>
+<path data-region="body" d="M140 133 L259 133 L285 215 L269 258 L131 258 L115 215 Z"/>
+<path data-region="cabin" d="M158 150 L241 150 L257 202 L143 202 Z"/>
+<path data-region="hatch" d="M170 216 L230 216 L230 258 L170 258 Z"/>
+<path data-region="engine" d="M179 258 L222 258 L229 281 L172 281 Z"/>
+<path data-region="left-panel" d="M31 164 L109 179 L109 229 L31 214 Z"/>
+<path data-region="right-panel" d="M291 179 L369 164 L369 214 L291 229 Z"/>
+<path data-region="antenna" d="M195 133 L195 82 L203 82 L203 133 Z"/>
+<path data-region="dish" d="M163 66 Q199 55 235 66 Q220 104 199 104 Q178 104 163 66 Z"/>
+<path d="M44 167 v50 M65 171 v50 M87 175 v50 M32 188 l76 15 M307 176 v50 M328 172 v50 M350 167 v50 M293 203 l75 -15 M200 151 v50 M179 226 h12 M211 226 h12 M181 273 h40 M196 59 v-15" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="moon-surface" d="M28 342 Q200 308 372 342 L372 370 L28 370 Z"/>
+<path data-region="crater-left" d="M100 349 a25 7 0 1 0 50 0 a25 7 0 1 0 -50 0 Z"/>
+<path data-region="crater-right" d="M252 354 a32 8 0 1 0 64 0 a32 8 0 1 0 -64 0 Z"/>
+</g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Seahorse — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="dorsal-fin" d="M233 171 Q279 182 263 231 L236 242 L222 205 Z"/>
+<path data-region="body" d="M166 136 L130 145 L116 134 L123 122 L158 112 C156 76 191 60 219 79 Q250 98 229 135 C214 156 228 172 241 199 C266 247 227 276 208 298 C196 316 211 337 228 323 C242 309 224 300 218 309 L210 301 C231 279 264 307 242 335 C213 371 168 335 179 304 C186 280 209 263 208 244 C203 223 171 217 170 187 Q164 166 180 147 Z"/>
+<path data-region="crest" d="M177 83 L172 64 L190 68 L199 49 L209 68 L230 67 L226 84 Q201 69 177 83 Z"/>
+<path data-region="belly" d="M185 161 C172 190 196 208 213 227 Q234 255 199 290 Q219 259 201 240 C185 224 170 211 170 187 Q169 171 178 157 Z"/>
+<path data-region="eye" d="M189 110 a9 6.4799999999999995 0 1 0 18 0 a9 6.4799999999999995 0 1 0 -18 0 Z"/>
+<ellipse cx="199" cy="110" rx="2.6" ry="3.5" fill="#202024" stroke="none" pointer-events="none"/>
+<path d="M130 131 L155 126 M211 142 Q195 148 192 163 M193 191 l24 -6 M201 207 l23 -8 M215 225 l23 -7 M219 243 l23 -5 M214 260 l19 3 M204 277 l14 6 M241 192 l17 5 M245 207 l16 3 M244 222 l13 0" fill="none" stroke-width="1.25" pointer-events="none"/>
+<g transform="translate(87 344) rotate(0) scale(1.7)">
+<path data-region="kelp-left" d="M0 0 C-23 -6 -31 -25 -28 -42 C-6 -38 8 -18 0 0 Z"/>
+<path d="M0 0 Q-14 -19 -23 -33 M-11 -18 L-23 -20 M-16 -26 L-16 -34" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+<g transform="translate(312 340) rotate(80) scale(1.4)">
+<path data-region="kelp-right" d="M0 0 C-23 -6 -31 -25 -28 -42 C-6 -38 8 -18 0 0 Z"/>
+<path d="M0 0 Q-14 -19 -23 -33 M-11 -18 L-23 -20 M-16 -26 L-16 -34" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+<path d="M46 355 Q160 341 353 355" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

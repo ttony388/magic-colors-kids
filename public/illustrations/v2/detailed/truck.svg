@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Truck — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="cargo" d="M43 128 L226 128 L226 258 L43 258 Z"/>
+<path data-region="cab" d="M239 161 L301 161 L328 207 L349 215 L349 272 L237 272 Z"/>
+<path data-region="window" d="M251 174 L291 174 L312 207 L251 207 Z"/>
+<path data-region="door" d="M249 217 L319 217 L319 262 L249 262 Z"/>
+<path data-region="chassis" d="M43 259 L350 259 L350 277 L43 277 Z"/>
+<path data-region="headlight" d="M332 223 h16 v15 h-16 Z"/>
+<path data-region="rear-a-tire" d="M58 278 a26 26 0 1 0 52 0 a26 26 0 1 0 -52 0 Z"/>
+<path data-region="rear-a-rim" d="M67.1 278 a16.900000000000002 16.900000000000002 0 1 0 33.800000000000004 0 a16.900000000000002 16.900000000000002 0 1 0 -33.800000000000004 0 Z"/>
+<path data-region="rear-a-axle" d="M79.06 278 a4.94 4.94 0 1 0 9.88 0 a4.94 4.94 0 1 0 -9.88 0 Z"/>
+<path d="M91.02 278.0 L98.56 278.0" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M88.96388960392956 282.96388960392954 L94.29547473407614 288.29547473407615" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M84.0 285.02 L84.0 292.56" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M79.03611039607044 282.96388960392954 L73.70452526592386 288.29547473407615" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M76.98 278.0 L69.44 278.0" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M79.03611039607044 273.03611039607046 L73.70452526592386 267.70452526592385" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M84.0 270.98 L84.0 263.44" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M88.96388960392956 273.03611039607046 L94.29547473407612 267.70452526592385" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="rear-b-tire" d="M120 278 a26 26 0 1 0 52 0 a26 26 0 1 0 -52 0 Z"/>
+<path data-region="rear-b-rim" d="M129.1 278 a16.900000000000002 16.900000000000002 0 1 0 33.800000000000004 0 a16.900000000000002 16.900000000000002 0 1 0 -33.800000000000004 0 Z"/>
+<path data-region="rear-b-axle" d="M141.06 278 a4.94 4.94 0 1 0 9.88 0 a4.94 4.94 0 1 0 -9.88 0 Z"/>
+<path d="M153.02 278.0 L160.56 278.0" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M150.96388960392957 282.96388960392954 L156.29547473407612 288.29547473407615" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M146.0 285.02 L146.0 292.56" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M141.03611039607043 282.96388960392954 L135.70452526592388 288.29547473407615" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M138.98 278.0 L131.44 278.0" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M141.03611039607043 273.03611039607046 L135.70452526592388 267.70452526592385" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M146.0 270.98 L146.0 263.44" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M150.96388960392957 273.03611039607046 L156.29547473407612 267.70452526592385" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="front-tire" d="M266 278 a26 26 0 1 0 52 0 a26 26 0 1 0 -52 0 Z"/>
+<path data-region="front-rim" d="M275.1 278 a16.900000000000002 16.900000000000002 0 1 0 33.800000000000004 0 a16.900000000000002 16.900000000000002 0 1 0 -33.800000000000004 0 Z"/>
+<path data-region="front-axle" d="M287.06 278 a4.94 4.94 0 1 0 9.88 0 a4.94 4.94 0 1 0 -9.88 0 Z"/>
+<path d="M299.02 278.0 L306.56 278.0" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M296.96388960392954 282.96388960392954 L302.29547473407615 288.29547473407615" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M292.0 285.02 L292.0 292.56" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M287.03611039607046 282.96388960392954 L281.70452526592385 288.29547473407615" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M284.98 278.0 L277.44 278.0" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M287.03611039607046 273.03611039607046 L281.70452526592385 267.70452526592385" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M292.0 270.98 L292.0 263.44" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M296.96388960392954 273.03611039607046 L302.29547473407615 267.70452526592385" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M61 142 v100 M86 142 v100 M111 142 v100 M136 142 v100 M161 142 v100 M186 142 v100 M211 142 v100 M258 228 h15 M257 188 l10 -10" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M38 318 L365 318 M58 334 L128 334 M157 334 L230 334 M260 334 L343 334" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

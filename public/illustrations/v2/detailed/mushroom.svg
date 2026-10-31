@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Mushroom — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="stem" d="M170 194 Q181 252 158 318 Q199 345 240 318 Q216 253 230 194 Z"/>
+<path data-region="gills" d="M76 196 Q200 153 326 196 Q217 249 76 196 Z"/>
+<path data-region="cap" d="M65 196 C83 129 131 82 196 81 C265 79 315 124 338 196 Q198 226 65 196 Z"/>
+<path data-region="cap-spot-0" d="M108 149 a22 17 0 1 0 44 0 a22 17 0 1 0 -44 0 Z"/>
+<path data-region="cap-spot-1" d="M172 116 a25 15 0 1 0 50 0 a25 15 0 1 0 -50 0 Z"/>
+<path data-region="cap-spot-2" d="M243 152 a24 18 0 1 0 48 0 a24 18 0 1 0 -48 0 Z"/>
+<path data-region="cap-spot-3" d="M185 183 a23 13 0 1 0 46 0 a23 13 0 1 0 -46 0 Z"/>
+<path d="M110 212 l48 13 M136 216 l29 13 M248 223 l42 -12 M240 231 l24 -7 M190 243 Q200 277 186 307 M222 274 l4 29" fill="none" stroke-width="1.25" pointer-events="none"/>
+<g transform="translate(92 335) rotate(25) scale(0.9)">
+<path data-region="leaf-left" d="M0 0 C-23 -6 -31 -25 -28 -42 C-6 -38 8 -18 0 0 Z"/>
+<path d="M0 0 Q-14 -19 -23 -33 M-11 -18 L-23 -20 M-16 -26 L-16 -34" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+<g transform="translate(292 338) rotate(100) scale(0.9)">
+<path data-region="leaf-right" d="M0 0 C-23 -6 -31 -25 -28 -42 C-6 -38 8 -18 0 0 Z"/>
+<path d="M0 0 Q-14 -19 -23 -33 M-11 -18 L-23 -20 M-16 -26 L-16 -34" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+<path d="M46 350 Q100 343 143 349 M251 349 Q300 343 355 350 M72 340 l4 -9 l5 10 M307 338 l5 -10 l5 10" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

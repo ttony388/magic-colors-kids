@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Rocket — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="left-fin" d="M157 226 Q117 241 104 307 L152 286 L173 261 Z"/>
+<path data-region="right-fin" d="M243 226 Q283 241 296 307 L248 286 L227 261 Z"/>
+<path data-region="body" d="M153 263 C141 162 163 92 200 54 C239 92 260 163 247 263 Z"/>
+<path data-region="nose" d="M166 109 Q180 74 200 54 Q224 80 235 109 Z"/>
+<path data-region="engine" d="M165 263 L235 263 L228 284 L173 284 Z"/>
+<path data-region="window-rim" d="M170 165 a30 30 0 1 0 60 0 a30 30 0 1 0 -60 0 Z"/>
+<path data-region="window" d="M179 165 a21 21 0 1 0 42 0 a21 21 0 1 0 -42 0 Z"/>
+<path data-region="flame" d="M176 285 Q170 311 184 338 L194 322 L202 362 L217 325 L226 341 Q238 314 224 285 Z"/>
+<path d="M158 236 h87 M172 248 h18 M210 248 h18 M185 148 l13 -3 M190 155 l14 -4" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="planet" d="M43 101 a23 23 0 1 0 46 0 a23 23 0 1 0 -46 0 Z"/>
+<path data-region="moon" d="M311 182 a16 16 0 1 0 32 0 a16 16 0 1 0 -32 0 Z"/>
+</g>
+</svg>

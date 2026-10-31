@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Trex — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="tail" d="M246 220 Q303 222 368 183 Q352 241 269 265 L236 259 Z"/>
+<path data-region="far-leg" d="M211 253 Q242 240 251 266 L230 295 L248 323 L204 323 L204 311 L213 290 L197 274 Z"/>
+<path data-region="body" d="M126 157 C151 141 176 177 195 187 C235 181 271 210 265 243 C263 271 231 282 198 271 L148 228 Z"/>
+<path data-region="neck-head" d="M145 208 C124 183 120 163 115 148 L71 149 Q41 147 41 122 L42 94 Q76 72 119 83 C154 86 164 114 158 145 L174 178 Z"/>
+<path data-region="jaw" d="M42 125 L116 126 L124 145 Q79 168 48 145 Z"/>
+<path data-region="eye" d="M114 106 a8 5.76 0 1 0 16 0 a8 5.76 0 1 0 -16 0 Z"/>
+<ellipse cx="123" cy="106" rx="2.6" ry="3.5" fill="#202024" stroke="none" pointer-events="none"/>
+<path data-region="arm" d="M162 188 Q140 189 136 207 L124 216 L133 225 L149 215 L156 205 L173 207 Z"/>
+<path data-region="near-leg" d="M226 226 C251 230 254 255 238 269 L214 292 L226 320 L239 327 L238 338 L183 338 L182 326 L193 291 L193 254 Q200 231 226 226 Z"/>
+<path d="M51 109 h9 M59 128 l5 8 l6 -8 M78 128 l6 9 l6 -9 M100 128 l6 7 l5 -7 M199 329 v8 M213 329 v8 M228 329 v8 M211 244 Q229 238 238 250 M278 246 Q319 231 340 215" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M46 350 Q100 343 143 349 M251 349 Q300 343 355 350 M72 340 l4 -9 l5 10 M307 338 l5 -10 l5 10" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

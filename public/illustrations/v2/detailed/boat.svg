@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Boat — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="hull" d="M47 254 L355 254 Q333 302 298 317 L101 317 Q68 301 47 254 Z"/>
+<path data-region="hull-stripe" d="M58 271 L346 271 L336 285 L70 285 Z"/>
+<path data-region="mast" d="M196 66 L205 66 L205 254 L196 254 Z"/>
+<path data-region="sail-left" d="M187 83 L187 233 L62 233 Q133 156 187 83 Z"/>
+<path data-region="sail-right" d="M215 98 Q294 163 333 232 L215 232 Z"/>
+<path data-region="cabin" d="M133 224 L183 224 L183 253 L122 253 Z"/>
+<path d="M173 111 L173 220 L89 220 M230 125 Q284 174 309 218 L230 218 M151 235 h19 v10 h-19 Z M218 247 L337 246 M106 297 h184" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="porthole" d="M225 299 a8 8 0 1 0 16 0 a8 8 0 1 0 -16 0 Z"/>
+<path d="M35 335 Q74 322 111 335 T187 335 T263 335 T363 335 M75 354 Q113 344 147 354 M250 355 Q281 343 324 355" fill="none" stroke-width="1.25" pointer-events="none"/>
+<g transform="translate(57 81) scale(0.75)">
+<path data-region="cloud" d="M0 25 C-17 25 -19 7 -5 4 C-4 -13 18 -19 28 -5 C42 -16 60 -6 60 9 C77 4 88 23 72 28 Z"/>
+</g>
+</g>
+</svg>

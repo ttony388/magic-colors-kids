@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Dolphin — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="dorsal-fin" d="M181 173 Q175 123 199 99 Q208 141 239 164 Z"/>
+<path data-region="body" d="M41 222 L85 205 C106 157 181 149 234 170 Q277 186 315 215 Q326 184 354 174 L350 210 L375 223 Q345 243 317 233 C259 252 181 261 127 241 Q92 241 79 230 L43 231 Z"/>
+<path data-region="belly" d="M78 228 Q176 249 282 227 L317 233 Q214 278 127 241 Q92 241 78 228 Z"/>
+<path data-region="flipper" d="M178 229 Q198 257 193 290 Q161 281 151 242 Z"/>
+<path data-region="eye" d="M106 206 a6 4.32 0 1 0 12 0 a6 4.32 0 1 0 -12 0 Z"/>
+<ellipse cx="113" cy="206" rx="2.6" ry="3.5" fill="#202024" stroke="none" pointer-events="none"/>
+<path d="M46 227 L86 224 Q107 231 124 221 M204 185 Q242 189 273 211" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M41 319 Q84 302 122 319 T204 319 T286 319 T365 319 M77 340 Q100 333 125 340 M248 341 Q280 333 310 340" fill="none" stroke-width="1.25" pointer-events="none"/>
+<g transform="translate(71 72) scale(0.65)">
+<path data-region="cloud" d="M0 25 C-17 25 -19 7 -5 4 C-4 -13 18 -19 28 -5 C42 -16 60 -6 60 9 C77 4 88 23 72 28 Z"/>
+</g>
+</g>
+</svg>

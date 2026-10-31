@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Train — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="cab" d="M63 134 L152 134 L152 259 L63 259 Z"/>
+<path data-region="roof" d="M54 122 L162 122 L169 139 L48 139 Z"/>
+<path data-region="cab-window" d="M77 150 L137 150 L137 196 L77 196 Z"/>
+<path data-region="boiler" d="M151 191 Q214 178 282 191 L282 254 L151 254 Z"/>
+<path data-region="chimney" d="M242 190 L240 144 L232 138 L232 126 L268 126 L268 138 L259 144 L260 190 Z"/>
+<path data-region="front" d="M282 190 Q306 190 306 222 Q306 255 282 254 Z"/>
+<path data-region="cowcatcher" d="M303 245 L343 283 L300 283 Z"/>
+<path data-region="chassis" d="M52 250 L306 250 L306 271 L52 271 Z"/>
+<path data-region="rear-tire" d="M67 275 a27 27 0 1 0 54 0 a27 27 0 1 0 -54 0 Z"/>
+<path data-region="rear-rim" d="M76.45 275 a17.55 17.55 0 1 0 35.1 0 a17.55 17.55 0 1 0 -35.1 0 Z"/>
+<path d="M101.29 275.0 L109.12 275.0" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M99.15480843484993 280.15480843484994 L104.6914545315406 285.6914545315406" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M94.0 282.29 L94.0 290.12" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M88.84519156515007 280.15480843484994 L83.3085454684594 285.6914545315406" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M86.71 275.0 L78.88 275.0" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M88.84519156515006 269.84519156515006 L83.3085454684594 264.3085454684594" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M94.0 267.71 L94.0 259.88" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M99.15480843484993 269.84519156515006 L104.6914545315406 264.3085454684594" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="middle-tire" d="M138 275 a27 27 0 1 0 54 0 a27 27 0 1 0 -54 0 Z"/>
+<path data-region="middle-rim" d="M147.45 275 a17.55 17.55 0 1 0 35.1 0 a17.55 17.55 0 1 0 -35.1 0 Z"/>
+<path d="M172.29 275.0 L180.12 275.0" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M170.15480843484994 280.15480843484994 L175.69145453154061 285.6914545315406" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M165.0 282.29 L165.0 290.12" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M159.84519156515006 280.15480843484994 L154.3085454684594 285.6914545315406" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M157.71 275.0 L149.88 275.0" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M159.84519156515006 269.84519156515006 L154.30854546845939 264.3085454684594" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M165.0 267.71 L165.0 259.88" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M170.15480843484994 269.84519156515006 L175.6914545315406 264.3085454684594" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="front-wheel-tire" d="M211 275 a27 27 0 1 0 54 0 a27 27 0 1 0 -54 0 Z"/>
+<path data-region="front-wheel-rim" d="M220.45 275 a17.55 17.55 0 1 0 35.1 0 a17.55 17.55 0 1 0 -35.1 0 Z"/>
+<path d="M245.29 275.0 L253.12 275.0" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M243.15480843484994 280.15480843484994 L248.69145453154061 285.6914545315406" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M238.0 282.29 L238.0 290.12" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M232.84519156515006 280.15480843484994 L227.3085454684594 285.6914545315406" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M230.71 275.0 L222.88 275.0" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M232.84519156515006 269.84519156515006 L227.30854546845939 264.3085454684594" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M238.0 267.71 L238.0 259.88" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M243.15480843484994 269.84519156515006 L248.6914545315406 264.3085454684594" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="connecting-rod" d="M93 271 L239 271 Q246 275 239 279 L93 279 Q86 275 93 271 Z"/>
+<path d="M179 190 v60 M221 190 v60 M78 216 h51 M315 260 v20 M325 270 v10" fill="none" stroke-width="1.25" pointer-events="none"/>
+<g transform="translate(269 97) scale(0.65)">
+<path data-region="steam-one" d="M0 25 C-17 25 -19 7 -5 4 C-4 -13 18 -19 28 -5 C42 -16 60 -6 60 9 C77 4 88 23 72 28 Z"/>
+</g>
+<g transform="translate(319 64) scale(0.45)">
+<path data-region="steam-two" d="M0 25 C-17 25 -19 7 -5 4 C-4 -13 18 -19 28 -5 C42 -16 60 -6 60 9 C77 4 88 23 72 28 Z"/>
+</g>
+<path d="M38 318 L365 318 M58 334 L128 334 M157 334 L230 334 M260 334 L343 334" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

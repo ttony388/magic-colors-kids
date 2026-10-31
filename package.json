@@ -1,6 +1,6 @@
 {
   "name": "magic-colors-kids",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -11,7 +11,8 @@
     "lint": "eslint .",
     "test": "vitest run",
     "test:e2e": "playwright test",
-    "android:sync": "npx cap sync android"
+    "android:sync": "npx cap sync android",
+    "check:art": "python3 scripts/audit_art.py && node scripts/check_detailed.mjs"
   },
   "dependencies": {
     "@capacitor/android": "7.4.4",
