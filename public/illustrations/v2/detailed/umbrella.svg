@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Umbrella — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="handle" d="M193 164 L205 164 L205 312 C205 349 153 350 153 315 L165 315 C165 334 193 334 193 312 Z"/>
+<path data-region="canopy" d="M38 216 C59 61 337 61 362 216 Q332 194 307 216 Q278 192 251 215 Q226 191 201 215 Q174 192 148 215 Q119 194 93 216 Q65 195 38 216 Z"/>
+<path data-region="panel-left" d="M201 98 Q111 117 93 216 Q120 194 148 215 Q156 133 201 98 Z"/>
+<path data-region="panel-right" d="M201 98 Q287 117 307 216 Q278 192 251 215 Q246 133 201 98 Z"/>
+<path data-region="tip" d="M194 99 L194 83 Q200 73 206 83 L206 99 Z"/>
+<path data-region="drop-0" d="M70 251 Q52 273 70 280 Q88 273 70 251 Z"/>
+<path data-region="drop-1" d="M302 268 Q284 290 302 297 Q320 290 302 268 Z"/>
+<path data-region="drop-2" d="M116 55 Q98 77 116 84 Q134 77 116 55 Z"/>
+<path data-region="drop-3" d="M300 42 Q282 64 300 71 Q318 64 300 42 Z"/>
+</g>
+</svg>

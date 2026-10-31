@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Whale — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="body" d="M58 235 C40 175 92 131 158 143 C211 145 237 199 276 215 Q291 190 319 177 L319 206 Q341 195 364 196 Q351 227 319 235 C290 272 233 291 164 282 C106 288 67 269 58 235 Z"/>
+<path data-region="belly" d="M58 235 Q123 267 195 252 Q255 248 296 239 C247 278 207 290 164 282 Q86 289 58 235 Z"/>
+<path data-region="flipper" d="M171 229 Q216 233 236 268 C201 276 173 261 158 245 Z"/>
+<path data-region="eye" d="M87 207 a7 5.04 0 1 0 14 0 a7 5.04 0 1 0 -14 0 Z"/>
+<ellipse cx="95" cy="207" rx="2.6" ry="3.5" fill="#202024" stroke="none" pointer-events="none"/>
+<path d="M59 233 Q85 247 119 236 M92 254 Q116 269 145 269 M119 259 Q145 276 171 273 M122 148 Q129 139 138 145" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="spout-left" d="M129 128 C111 112 96 96 104 86 Q114 77 121 92 L137 123 Z"/>
+<path data-region="spout-right" d="M140 126 C142 96 158 84 165 94 Q171 106 149 130 Z"/>
+<path d="M41 319 Q84 302 122 319 T204 319 T286 319 T365 319 M77 340 Q100 333 125 340 M248 341 Q280 333 310 340" fill="none" stroke-width="1.25" pointer-events="none"/>
+<g transform="translate(71 72) scale(0.65)">
+<path data-region="cloud" d="M0 25 C-17 25 -19 7 -5 4 C-4 -13 18 -19 28 -5 C42 -16 60 -6 60 9 C77 4 88 23 72 28 Z"/>
+</g>
+</g>
+</svg>

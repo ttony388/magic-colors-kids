@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Teddy — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="ear-left" d="M110 104 a27 27 0 1 0 54 0 a27 27 0 1 0 -54 0 Z"/>
+<path data-region="ear-right" d="M235 104 a27 27 0 1 0 54 0 a27 27 0 1 0 -54 0 Z"/>
+<path data-region="inner-ear-left" d="M121 104 a16 16 0 1 0 32 0 a16 16 0 1 0 -32 0 Z"/>
+<path data-region="inner-ear-right" d="M246 104 a16 16 0 1 0 32 0 a16 16 0 1 0 -32 0 Z"/>
+<path data-region="arm-left" d="M146 187 C124 185 113 209 101 244 L121 255 L156 219 Z"/>
+<path data-region="arm-right" d="M253 189 C278 185 286 212 298 238 L280 253 L247 221 Z"/>
+<path data-region="hand-left" d="M93 259 a15 18 0 1 0 30 0 a15 18 0 1 0 -30 0 Z"/>
+<path data-region="hand-right" d="M277 254 a15 18 0 1 0 30 0 a15 18 0 1 0 -30 0 Z"/>
+<path data-region="leg-0" d="M161 271 L187 271 L185 321 L157 321 Z"/>
+<path data-region="foot-0" d="M156 315 Q171 309 185 319 L191 339 Q166 351 146 339 Z"/>
+<path data-region="leg-1" d="M216 271 L242 271 L240 321 L212 321 Z"/>
+<path data-region="foot-1" d="M211 315 Q226 309 240 319 L246 339 Q221 351 201 339 Z"/>
+<path data-region="torso" d="M151 182 Q198 163 249 184 L265 277 Q199 302 138 277 Z"/>
+<path data-region="head" d="M146 119 C142 67 253 65 256 119 C266 154 237 187 200 187 C160 188 137 154 146 119 Z"/>
+<path data-region="eye-left" d="M170 129 a7 5.04 0 1 0 14 0 a7 5.04 0 1 0 -14 0 Z"/>
+<ellipse cx="178" cy="129" rx="2.6" ry="3.5" fill="#202024" stroke="none" pointer-events="none"/>
+<path data-region="eye-right" d="M217 129 a7 5.04 0 1 0 14 0 a7 5.04 0 1 0 -14 0 Z"/>
+<ellipse cx="225" cy="129" rx="2.6" ry="3.5" fill="#202024" stroke="none" pointer-events="none"/>
+<path d="M184 158 Q200 170 216 157 M198 140 l-4 9 h7" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="muzzle" d="M175 153 a25 18 0 1 0 50 0 a25 18 0 1 0 -50 0 Z"/>
+<path data-region="nose" d="M187 145 Q200 139 213 145 Q211 156 200 158 Q189 155 187 145 Z"/>
+<path data-region="belly" d="M164 244 a37 35 0 1 0 74 0 a37 35 0 1 0 -74 0 Z"/>
+<path data-region="bow-left" d="M197 193 L169 178 L168 207 Z"/>
+<path data-region="bow-right" d="M203 193 L232 178 L232 207 Z"/>
+<path data-region="bow-knot" d="M192 194 a8 8 0 1 0 16 0 a8 8 0 1 0 -16 0 Z"/>
+<path d="M200 159 v8 M189 268 l4 -3 l4 3 l4 -3 l4 3 M163 328 l5 -3 l5 3 M219 328 l5 -3 l5 3" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M46 350 Q100 343 143 349 M251 349 Q300 343 355 350 M72 340 l4 -9 l5 10 M307 338 l5 -10 l5 10" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

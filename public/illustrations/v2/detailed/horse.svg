@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Horse — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="tail" d="M105 213 C68 206 60 242 48 270 Q76 273 91 254 L115 229 Z"/>
+<path data-region="far-hind-leg" d="M128 246 L137 285 L119 324 L102 324 L113 282 L105 250 Z"/>
+<path data-region="far-front-leg" d="M239 239 L258 280 L263 324 L247 324 L237 284 L221 255 Z"/>
+<path data-region="body-neck" d="M91 219 C101 185 154 187 195 194 C219 179 226 146 240 120 L268 115 C287 141 282 167 266 190 L255 223 C241 258 203 267 155 254 C117 264 90 249 91 219 Z"/>
+<path data-region="near-hind-leg" d="M125 240 Q145 241 151 255 L146 285 L157 322 L139 328 L124 288 L112 262 Z"/>
+<path data-region="near-front-leg" d="M218 240 L238 242 L226 282 L224 329 L205 329 L207 280 Z"/>
+<path data-region="mane" d="M232 148 C219 179 217 194 196 203 L214 212 C236 197 251 158 254 140 Z"/>
+<path data-region="head" d="M240 124 L242 88 L251 97 L260 78 L266 98 C284 100 290 123 308 139 Q321 156 303 166 L276 158 Q257 155 250 137 Z"/>
+<path data-region="muzzle" d="M294 133 Q321 149 310 161 Q303 173 282 157 L277 147 Z"/>
+<path data-region="eye" d="M267 120 a6 4.32 0 1 0 12 0 a6 4.32 0 1 0 -12 0 Z"/>
+<ellipse cx="274" cy="120" rx="2.6" ry="3.5" fill="#202024" stroke="none" pointer-events="none"/>
+<path d="M301 148 q5 -5 8 0 M291 159 l11 2 M244 101 l5 13 M132 209 Q160 202 180 211 M111 230 Q121 223 130 228 M225 180 l13 -22 M65 257 Q75 233 91 225 M212 320 h12 M140 318 l14 -4 M249 315 h13 M107 316 h15" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M46 350 Q100 343 143 349 M251 349 Q300 343 355 350 M72 340 l4 -9 l5 10 M307 338 l5 -10 l5 10" fill="none" stroke-width="1.25" pointer-events="none"/>
+<g transform="translate(328 324) rotate(20) scale(0.7)">
+<path data-region="meadow-leaf" d="M0 0 C-23 -6 -31 -25 -28 -42 C-6 -38 8 -18 0 0 Z"/>
+<path d="M0 0 Q-14 -19 -23 -33 M-11 -18 L-23 -20 M-16 -26 L-16 -34" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</g>
+</svg>

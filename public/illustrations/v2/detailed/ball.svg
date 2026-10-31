@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Ball — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="ball" d="M74 203 a127 127 0 1 0 254 0 a127 127 0 1 0 -254 0 Z"/>
+<path data-region="center-panel" d="M174 161 L224 161 L247 205 L200 237 L155 205 Z"/>
+<path data-region="top-panel" d="M160 83 L147 119 L173 142 L224 142 L251 117 L238 82 Q200 71 160 83 Z"/>
+<path data-region="left-panel" d="M83 158 L118 163 L137 205 L110 243 L77 239 Q69 199 83 158 Z"/>
+<path data-region="right-panel" d="M319 158 L284 163 L265 205 L292 243 L325 239 Q333 199 319 158 Z"/>
+<path data-region="bottom-panel" d="M172 324 L153 290 L174 256 L226 256 L249 291 L230 326 Q199 335 172 324 Z"/>
+<path d="M147 119 L118 163 M251 117 L284 163 M110 243 L153 290 M292 243 L249 291 M174 161 L173 142 M224 161 L224 142 M155 205 L137 205 M247 205 L265 205 M200 237 L200 256" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Crab — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(200 0) scale(-1 1)">
+<path data-region="leg--1-0" d="M63 226 L113 230 L145 269 L135 274 L105 244 L60 238 Z"/>
+<path data-region="leg--1-1" d="M63 246 L113 250 L145 289 L135 294 L105 264 L60 258 Z"/>
+<path data-region="leg--1-2" d="M63 265 L113 269 L145 308 L135 313 L105 283 L60 277 Z"/>
+<path data-region="arm--1" d="M62 225 Q112 200 108 162 L123 161 Q133 206 78 246 Z"/>
+<path data-region="claw--1" d="M100 174 C70 158 76 120 103 110 L99 140 L120 148 L137 128 L127 103 C158 110 167 145 144 167 Q129 181 100 174 Z"/>
+<path data-region="eye-stalk--1" d="M23 199 L28 169 L38 169 L36 202 Z"/>
+<path data-region="eye--1" d="M22 162 a11 11 0 1 0 22 0 a11 11 0 1 0 -22 0 Z"/>
+<ellipse cx="33" cy="161" rx="4" ry="5" fill="#202024" stroke="none" pointer-events="none"/>
+</g>
+<g transform="translate(200 0) scale(1 1)">
+<path data-region="leg-1-0" d="M63 226 L113 230 L145 269 L135 274 L105 244 L60 238 Z"/>
+<path data-region="leg-1-1" d="M63 246 L113 250 L145 289 L135 294 L105 264 L60 258 Z"/>
+<path data-region="leg-1-2" d="M63 265 L113 269 L145 308 L135 313 L105 283 L60 277 Z"/>
+<path data-region="arm-1" d="M62 225 Q112 200 108 162 L123 161 Q133 206 78 246 Z"/>
+<path data-region="claw-1" d="M100 174 C70 158 76 120 103 110 L99 140 L120 148 L137 128 L127 103 C158 110 167 145 144 167 Q129 181 100 174 Z"/>
+<path data-region="eye-stalk-1" d="M23 199 L28 169 L38 169 L36 202 Z"/>
+<path data-region="eye-1" d="M22 162 a11 11 0 1 0 22 0 a11 11 0 1 0 -22 0 Z"/>
+<ellipse cx="33" cy="161" rx="4" ry="5" fill="#202024" stroke="none" pointer-events="none"/>
+</g>
+<path data-region="shell" d="M112 245 C107 200 159 186 200 192 C249 184 296 209 289 245 C282 285 120 290 112 245 Z"/>
+<path d="M135 231 Q151 211 176 214 M224 215 Q250 212 267 231 M185 258 Q200 268 215 257 M151 265 Q170 270 180 268" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M46 350 Q100 343 143 349 M251 349 Q300 343 355 350 M72 340 l4 -9 l5 10 M307 338 l5 -10 l5 10" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

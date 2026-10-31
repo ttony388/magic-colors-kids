@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Tower — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="tower-0" d="M139 124 h121 v209 h-121 Z"/>
+<path data-region="roof-0" d="M127 124 L199.5 49 L272 124 Z"/>
+<path data-region="window-0" d="M175.3 185 v-22 a24.200000000000003 24.200000000000003 0 0 1 48.400000000000006 0 v22 Z"/>
+<path d="M147 209 h18 M234 228 h18 M148 257 h20 M232 281 h18" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="gate" d="M170 333 L170 284 Q170 254 199 254 Q228 254 228 284 L228 333 Z"/>
+<path d="M183 279 v53 M199 267 v65 M215 279 v53 M171 308 h56" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="flag" d="M201 73 L201 40 L253 48 L235 58 L253 69 L201 63 Z"/>
+<path d="M201 40 v35" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="approach" d="M170 333 L228 333 L258 366 L143 366 Z"/>
+<path d="M46 350 Q100 343 143 349 M251 349 Q300 343 355 350 M72 340 l4 -9 l5 10 M307 338 l5 -10 l5 10" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Astronaut — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="backpack" d="M119 164 Q112 156 112 176 L112 259 L282 259 L282 167 Q282 158 273 164 Z"/>
+<path data-region="arm-left" d="M146 187 C124 185 113 209 101 244 L121 255 L156 219 Z"/>
+<path data-region="arm-right" d="M253 189 C278 185 286 212 298 238 L280 253 L247 221 Z"/>
+<path data-region="hand-left" d="M93 259 a15 18 0 1 0 30 0 a15 18 0 1 0 -30 0 Z"/>
+<path data-region="hand-right" d="M277 254 a15 18 0 1 0 30 0 a15 18 0 1 0 -30 0 Z"/>
+<path data-region="leg-0" d="M161 271 L187 271 L185 321 L157 321 Z"/>
+<path data-region="foot-0" d="M156 315 Q171 309 185 319 L191 339 Q166 351 146 339 Z"/>
+<path data-region="leg-1" d="M216 271 L242 271 L240 321 L212 321 Z"/>
+<path data-region="foot-1" d="M211 315 Q226 309 240 319 L246 339 Q221 351 201 339 Z"/>
+<path data-region="torso" d="M151 182 Q198 163 249 184 L265 277 Q199 302 138 277 Z"/>
+<path data-region="helmet" d="M138 119 a62 61 0 1 0 124 0 a62 61 0 1 0 -124 0 Z"/>
+<path data-region="visor" d="M157 90 Q200 72 242 90 Q258 120 242 149 Q200 169 157 149 Q142 120 157 90 Z"/>
+<path data-region="chest-console" d="M164 199 L236 199 L236 242 L164 242 Z"/>
+<path data-region="console-dial" d="M174 218 a9 9 0 1 0 18 0 a9 9 0 1 0 -18 0 Z"/>
+<path data-region="flag-patch" d="M219 183 h25 v15 h-25 Z"/>
+<path d="M211 210 h15 M211 221 h15 M159 105 Q175 91 190 94 M157 118 l24 -17 M151 256 Q171 267 174 244 M169 285 h15 M218 285 h15 M98 252 l22 7 M280 247 l21 -7 M158 329 h26 M214 329 h27" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M46 350 Q100 343 143 349 M251 349 Q300 343 355 350 M72 340 l4 -9 l5 10 M307 338 l5 -10 l5 10" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

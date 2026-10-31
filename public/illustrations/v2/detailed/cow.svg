@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Cow — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="tail" d="M287 202 Q327 208 320 253 L310 256 Q316 220 284 214 Z"/>
+<path data-region="far-leg-0" d="M126 269 h19 l-3 54 h-19 Z"/>
+<path data-region="far-leg-1" d="M246 269 h19 l-3 54 h-19 Z"/>
+<path data-region="body" d="M105 193 C141 163 223 159 276 182 C309 199 318 237 296 263 C265 289 200 282 160 268 L117 252 Z"/>
+<path data-region="near-leg-0" d="M148 253 Q160 260 170 254 L165 330 L145 330 Z"/>
+<path d="M146 318 h20 M155 320 v9" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="near-leg-1" d="M271 253 Q283 260 293 254 L288 330 L268 330 Z"/>
+<path d="M269 318 h20 M278 320 v9" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="horn-left" d="M95 146 Q76 125 90 112 Q91 130 106 137 Z"/>
+<path data-region="horn-right" d="M131 136 Q148 125 145 110 Q163 123 144 146 Z"/>
+<path data-region="patch-one" d="M167 179 C143 190 160 212 177 212 C194 213 194 235 210 232 C227 218 212 201 220 178 Q193 171 167 179 Z"/>
+<path data-region="patch-two" d="M266 201 C243 197 240 216 252 226 C267 230 262 257 287 255 Q304 224 286 207 Z"/>
+<path data-region="ear-left" d="M89 153 Q59 135 50 151 Q57 175 86 174 Z"/>
+<path data-region="ear-right" d="M138 151 Q166 133 173 150 Q165 172 142 173 Z"/>
+<path data-region="head" d="M84 160 C86 130 131 128 145 154 L142 204 Q135 234 112 235 Q87 234 83 209 Z"/>
+<path data-region="muzzle" d="M86 211 a27 18 0 1 0 54 0 a27 18 0 1 0 -54 0 Z"/>
+<path data-region="nostril-left" d="M99 211 a4 6 0 1 0 8 0 a4 6 0 1 0 -8 0 Z"/>
+<path data-region="nostril-right" d="M119 211 a4 6 0 1 0 8 0 a4 6 0 1 0 -8 0 Z"/>
+<path data-region="eye-left" d="M91 177 a6 4.32 0 1 0 12 0 a6 4.32 0 1 0 -12 0 Z"/>
+<ellipse cx="98" cy="177" rx="2.6" ry="3.5" fill="#202024" stroke="none" pointer-events="none"/>
+<path data-region="eye-right" d="M127 177 a6 4.32 0 1 0 12 0 a6 4.32 0 1 0 -12 0 Z"/>
+<ellipse cx="134" cy="177" rx="2.6" ry="3.5" fill="#202024" stroke="none" pointer-events="none"/>
+<path d="M101 229 Q113 235 125 228 M117 150 l-5 5 l-5 -3" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M46 350 Q100 343 143 349 M251 349 Q300 343 355 350 M72 340 l4 -9 l5 10 M307 338 l5 -10 l5 10" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

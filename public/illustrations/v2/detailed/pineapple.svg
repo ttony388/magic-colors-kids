@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Pineapple — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="fruit" d="M111 204 C110 158 155 140 202 147 C254 139 287 164 289 209 L283 284 C278 328 245 347 197 346 C147 347 114 324 112 283 Z"/>
+<path data-region="crown-left" d="M174 161 Q126 123 115 80 Q160 97 191 151 Z"/>
+<path data-region="crown-right" d="M209 156 Q247 95 285 85 Q278 126 231 164 Z"/>
+<path data-region="crown-back" d="M180 151 Q164 80 180 43 Q202 75 209 149 Z"/>
+<path data-region="crown-front" d="M183 164 Q196 96 233 57 Q244 103 215 165 Z"/>
+<path data-region="diamond-0-0" d="M145 175 L162 187 L145 199 L128 187 Z"/>
+<path d="M142 189 l3 -5 l3 5" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="diamond-0-1" d="M193 175 L210 187 L193 199 L176 187 Z"/>
+<path d="M190 189 l3 -5 l3 5" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="diamond-0-2" d="M241 175 L258 187 L241 199 L224 187 Z"/>
+<path d="M238 189 l3 -5 l3 5" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="diamond-1-0" d="M157 205 L174 217 L157 229 L140 217 Z"/>
+<path d="M154 219 l3 -5 l3 5" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="diamond-1-1" d="M205 205 L222 217 L205 229 L188 217 Z"/>
+<path d="M202 219 l3 -5 l3 5" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="diamond-1-2" d="M253 205 L270 217 L253 229 L236 217 Z"/>
+<path d="M250 219 l3 -5 l3 5" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="diamond-2-0" d="M145 235 L162 247 L145 259 L128 247 Z"/>
+<path d="M142 249 l3 -5 l3 5" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="diamond-2-1" d="M193 235 L210 247 L193 259 L176 247 Z"/>
+<path d="M190 249 l3 -5 l3 5" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="diamond-2-2" d="M241 235 L258 247 L241 259 L224 247 Z"/>
+<path d="M238 249 l3 -5 l3 5" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="diamond-3-0" d="M157 265 L174 277 L157 289 L140 277 Z"/>
+<path d="M154 279 l3 -5 l3 5" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="diamond-3-1" d="M205 265 L222 277 L205 289 L188 277 Z"/>
+<path d="M202 279 l3 -5 l3 5" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="diamond-3-2" d="M253 265 L270 277 L253 289 L236 277 Z"/>
+<path d="M250 279 l3 -5 l3 5" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="diamond-4-0" d="M145 295 L162 307 L145 319 L128 307 Z"/>
+<path d="M142 309 l3 -5 l3 5" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="diamond-4-1" d="M193 295 L210 307 L193 319 L176 307 Z"/>
+<path d="M190 309 l3 -5 l3 5" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="diamond-4-2" d="M241 295 L258 307 L241 319 L224 307 Z"/>
+<path d="M238 309 l3 -5 l3 5" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M139 107 L181 151 M266 105 L223 154 M183 68 L195 142 M228 82 L204 149" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

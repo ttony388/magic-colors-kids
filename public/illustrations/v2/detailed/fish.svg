@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Fish — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="tail" d="M109 210 C78 185 53 165 39 174 Q61 216 42 262 Q71 264 111 232 Z"/>
+<path data-region="dorsal-fin" d="M144 180 Q170 116 228 133 L256 179 Z"/>
+<path data-region="lower-fin" d="M158 256 L184 294 Q208 286 230 263 Z"/>
+<path data-region="body" d="M92 220 C149 152 252 141 311 193 L350 215 Q356 220 346 226 C298 281 176 297 92 220 Z"/>
+<path data-region="gill" d="M286 178 Q260 220 289 266 Q330 252 349 224 L350 215 Q328 190 286 178 Z"/>
+<path data-region="pectoral-fin" d="M249 223 Q222 212 200 227 Q215 255 242 244 Z"/>
+<path data-region="eye" d="M303 210 a10 7.199999999999999 0 1 0 20 0 a10 7.199999999999999 0 1 0 -20 0 Z"/>
+<ellipse cx="314" cy="210" rx="2.6" ry="3.5" fill="#202024" stroke="none" pointer-events="none"/>
+<path d="M336 230 l12 -5 M54 189 L91 215 M51 248 L92 228 M170 154 L167 173 M190 145 L188 169 M210 145 L214 167 M185 276 L185 267 M201 278 L206 267" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M146 211 q10 8 0 16" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M166 200 q10 8 0 16" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M186 191 q10 8 0 16" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M155 234 q10 8 0 16" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M177 224 q10 8 0 16" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M199 211 q10 8 0 16" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M180 249 q10 8 0 16" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M205 251 q10 8 0 16" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M229 192 q10 8 0 16" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="bubble-0" d="M306 144 a9 9 0 1 0 18 0 a9 9 0 1 0 -18 0 Z"/>
+<path data-region="bubble-1" d="M321 108 a13 13 0 1 0 26 0 a13 13 0 1 0 -26 0 Z"/>
+<path data-region="bubble-2" d="M298 77 a7 7 0 1 0 14 0 a7 7 0 1 0 -14 0 Z"/>
+<g transform="translate(76 333) rotate(0) scale(1.1)">
+<path data-region="seaweed-left" d="M0 0 C-23 -6 -31 -25 -28 -42 C-6 -38 8 -18 0 0 Z"/>
+<path d="M0 0 Q-14 -19 -23 -33 M-11 -18 L-23 -20 M-16 -26 L-16 -34" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+<g transform="translate(80 335) rotate(90) scale(1)">
+<path data-region="seaweed-right" d="M0 0 C-23 -6 -31 -25 -28 -42 C-6 -38 8 -18 0 0 Z"/>
+<path d="M0 0 Q-14 -19 -23 -33 M-11 -18 L-23 -20 M-16 -26 L-16 -34" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+<path d="M40 349 Q165 330 360 350" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

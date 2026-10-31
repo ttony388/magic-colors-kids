@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Rainbow — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="band-0" d="M34 270 A166 166 0 0 1 366 270 L349 270 A149 149 0 0 0 51 270 Z"/>
+<path data-region="band-1" d="M51 270 A149 149 0 0 1 349 270 L332 270 A132 132 0 0 0 68 270 Z"/>
+<path data-region="band-2" d="M68 270 A132 132 0 0 1 332 270 L315 270 A115 115 0 0 0 85 270 Z"/>
+<path data-region="band-3" d="M85 270 A115 115 0 0 1 315 270 L298 270 A98 98 0 0 0 102 270 Z"/>
+<path data-region="band-4" d="M102 270 A98 98 0 0 1 298 270 L281 270 A81 81 0 0 0 119 270 Z"/>
+<path data-region="band-5" d="M119 270 A81 81 0 0 1 281 270 L264 270 A64 64 0 0 0 136 270 Z"/>
+<path data-region="band-6" d="M136 270 A64 64 0 0 1 264 270 L247 270 A47 47 0 0 0 153 270 Z"/>
+<g transform="translate(47 266) scale(1)">
+<path data-region="cloud-left" d="M0 25 C-17 25 -19 7 -5 4 C-4 -13 18 -19 28 -5 C42 -16 60 -6 60 9 C77 4 88 23 72 28 Z"/>
+</g>
+<g transform="translate(286 265) scale(1)">
+<path data-region="cloud-right" d="M0 25 C-17 25 -19 7 -5 4 C-4 -13 18 -19 28 -5 C42 -16 60 -6 60 9 C77 4 88 23 72 28 Z"/>
+</g>
+<path data-region="meadow" d="M30 331 Q101 303 200 327 Q293 307 370 331 L370 366 L30 366 Z"/>
+<g transform="translate(101 326) scale(0.4)">
+<g transform="rotate(0)">
+<path data-region="daisy-left-petal-0" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(60)">
+<path data-region="daisy-left-petal-1" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(120)">
+<path data-region="daisy-left-petal-2" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(180)">
+<path data-region="daisy-left-petal-3" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(240)">
+<path data-region="daisy-left-petal-4" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(300)">
+<path data-region="daisy-left-petal-5" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<path data-region="daisy-left-center" d="M-10 0 a10 10 0 1 0 20 0 a10 10 0 1 0 -20 0 Z"/>
+</g>
+<g transform="translate(309 333) scale(0.4)">
+<g transform="rotate(0)">
+<path data-region="daisy-right-petal-0" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(60)">
+<path data-region="daisy-right-petal-1" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(120)">
+<path data-region="daisy-right-petal-2" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(180)">
+<path data-region="daisy-right-petal-3" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(240)">
+<path data-region="daisy-right-petal-4" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(300)">
+<path data-region="daisy-right-petal-5" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<path data-region="daisy-right-center" d="M-10 0 a10 10 0 1 0 20 0 a10 10 0 1 0 -20 0 Z"/>
+</g>
+<path d="M101 330 v25 M309 337 v22" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>
