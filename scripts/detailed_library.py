@@ -334,6 +334,13 @@ replace(ART['pig'],'tail','M299 221 Q324 227 337 209 L330 204 Q320 218 300 213 Z
 # The fine curl is a non-colorable contour, not an open fill region.
 ART['pig'].parts.insert(-1,'<path d="M334 207 C350 196 340 179 329 186 C317 194 326 207 334 198" fill="none" stroke-width="2.2" pointer-events="none"/>')
 
+# Space hardware refinement: contours stay inside existing fill regions.
+# No region or document identity changes, so saved colors remain registered.
+ink(ART['rocket'],'M176 101 Q187 78 199 66 M164 117 Q200 123 237 117 M161 124 Q200 130 239 124 M161 209 H239 M161 214 H239 M178 220 H222 M178 225 H222 M177 268 L181 279 M189 268 L191 279 M201 268 V279 M213 268 L211 279 M225 268 L221 279 M123 277 Q133 250 145 243 M275 277 Q265 250 254 243 M58 91 Q68 84 77 94 M318 181 Q325 171 334 180')
+for x,y in [(200,140),(200,190),(175,165),(225,165)]:
+ ART['rocket'].parts.append(f'<circle cx="{x}" cy="{y}" r="1.4" fill="#202024" stroke="none" pointer-events="none"/>')
+ink(ART['lander'],'M150 143 L249 143 M133 208 L153 208 M247 208 L267 208 M134 218 V241 H159 M241 218 V241 H266 V218 M177 237 H223 M177 244 H223 M177 251 H223 M181 263 H219 M181 267 H220 M104 300 L116 300 M286 300 L298 300 M148 164 L153 181 M246 164 L251 181 M171 72 Q198 91 226 72 M181 71 Q199 83 216 71 M36 176 L104 189 M36 200 L104 213 M297 189 L364 176 M297 213 L364 200 M132 357 L153 355 M235 342 L247 341')
+
 if __name__=='__main__':
  legacy={p.stem for p in OUT.parent.parent.glob('*.svg')}
  expected=legacy-{'cat','car','mountain'}

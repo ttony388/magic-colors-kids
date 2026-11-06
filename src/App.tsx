@@ -67,8 +67,8 @@ export default function App(){
           <h1>{bg?'Нови рисунки':'New artwork'}</h1>
           <p>{bg?'Избери колко детайли да има твоята рисунка.':'Choose how much detail you want in your picture.'}</p>
           <div className="art-levels" role="group" aria-label={bg?'Детайли':'Art complexity'}>{artLevels.map(level=><button key={level} aria-pressed={artLevel===level} onClick={()=>setArtLevel(level)}>{levelNames[language][level]}</button>)}</div>
-          <div className="page-grid">{reviewSubjects.map(subject=>{const p=reviewPages.find(item=>item.id===`${subject.id}@v2:${artLevel}`)!;return <button className="page-card" key={p.id} onClick={()=>open(p,'art-review')}><img src={asset(p)} alt=""/><strong>{subject[language]}</strong></button>})}</div>
-          <p className="art-review-note">{bg?'Преглед на 3 нови рисунки. Твоите досегашни рисунки са запазени.':'Preview of 3 new illustrations. Your existing drawings are preserved.'}</p>
+          <div className="page-grid">{(artLevel==='detailed'?pages.map(p=>reviewSubjects.find(subject=>subject.id===p.id.split('@')[0])||({id:p.id.split('@')[0],bg:p.title.bg,en:p.title.en})):reviewSubjects).map(subject=>{const p=artLevel==='detailed'?pages.find(item=>item.id===`${subject.id}@v2:detailed`)!:reviewPages.find(item=>item.id===`${subject.id}@v2:${artLevel}`)!;return <button className="page-card" key={p.id} onClick={()=>open(p,'art-review')}><img src={asset(p)} alt=""/><strong>{subject[language]}</strong></button>})}</div>
+          <p className="art-review-note">{artLevel==='detailed'?(bg?'Всички 72 рисунки са достъпни в детайлен стил.':'All 72 pictures are available in Detailed style.'):(bg?'Лесно и Средно: три образеца.':'Easy and Medium: three sample pictures.')}</p>
         </main>}
 
         {screen==='category'&&<main>

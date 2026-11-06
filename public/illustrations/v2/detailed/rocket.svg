@@ -13,5 +13,10 @@
 <path d="M158 236 h87 M172 248 h18 M210 248 h18 M185 148 l13 -3 M190 155 l14 -4" fill="none" stroke-width="1.25" pointer-events="none"/>
 <path data-region="planet" d="M43 101 a23 23 0 1 0 46 0 a23 23 0 1 0 -46 0 Z"/>
 <path data-region="moon" d="M311 182 a16 16 0 1 0 32 0 a16 16 0 1 0 -32 0 Z"/>
+<path d="M176 101 Q187 78 199 66 M164 117 Q200 123 237 117 M161 124 Q200 130 239 124 M161 209 H239 M161 214 H239 M178 220 H222 M178 225 H222 M177 268 L181 279 M189 268 L191 279 M201 268 V279 M213 268 L211 279 M225 268 L221 279 M123 277 Q133 250 145 243 M275 277 Q265 250 254 243 M58 91 Q68 84 77 94 M318 181 Q325 171 334 180" fill="none" stroke-width="1.25" pointer-events="none"/>
+<circle cx="200" cy="140" r="1.4" fill="#202024" stroke="none" pointer-events="none"/>
+<circle cx="200" cy="190" r="1.4" fill="#202024" stroke="none" pointer-events="none"/>
+<circle cx="175" cy="165" r="1.4" fill="#202024" stroke="none" pointer-events="none"/>
+<circle cx="225" cy="165" r="1.4" fill="#202024" stroke="none" pointer-events="none"/>
 </g>
 </svg>

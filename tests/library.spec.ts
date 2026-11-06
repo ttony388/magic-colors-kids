@@ -55,3 +55,17 @@ test('legacy saves keep original geometry and cannot leak colors into Detailed p
   await expect(page.locator('.svg-art svg')).toHaveAttribute('data-art-version','2');
   await expect(page.locator('[data-region="head"]')).toHaveAttribute('fill','#ffffff');
 });
+
+test('Detailed selector exposes all 72 pictures, Easy and Medium keep their samples',async({page})=>{
+ await page.goto('/');
+ await page.getByRole('button',{name:'Нови рисунки · Преглед'}).click();
+ await expect(page.locator('.page-card')).toHaveCount(72);
+ await page.getByRole('button',{name:'Лесно',exact:true}).click();
+ await expect(page.locator('.page-card')).toHaveCount(3);
+ await page.getByRole('button',{name:'Средно',exact:true}).click();
+ await expect(page.locator('.page-card')).toHaveCount(3);
+ await page.getByRole('button',{name:'Детайлно',exact:true}).click();
+ await expect(page.locator('.page-card')).toHaveCount(72);
+ await page.getByRole('button',{name:'Ракета',exact:true}).click();
+ await expect(page.locator('.svg-art svg')).toHaveAttribute('data-complexity','detailed');
+});
