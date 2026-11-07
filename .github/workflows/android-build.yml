@@ -30,14 +30,7 @@ jobs:
           "$SDKMANAGER" "platforms;android-35" "build-tools;35.0.0"
       - run: npx cap sync android
       - name: Build debug APK
-        env:
-          ART_REVIEW: ${{ github.ref_name == 'art-direction-review' }}
-        run: |
-          if [ "$ART_REVIEW" = "true" ]; then
-            ./gradlew assembleDebug --no-daemon -PartReview=true
-          else
-            ./gradlew assembleDebug --no-daemon
-          fi
+        run: ./gradlew assembleDebug --no-daemon
         working-directory: android
       - name: Verify APK
         run: test -s android/app/build/outputs/apk/debug/app-debug.apk

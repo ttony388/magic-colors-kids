@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 import Editor from './features/coloring/Editor';
 import { categories, getDailyPage, nextSurprise, pages, legacyPages, type Page } from './data/pages';
 import { deleteDrawing, listDrawings, type SavedDrawing } from './storage/db';
-import { artLevels, levelNames, reviewPages, reviewSubjects, type ArtLevel } from './data/artwork';
+import { reviewPages } from './data/artwork';
 
 const free:Page={id:'free',category:'free',title:{bg:'Свободно рисуване',en:'Free drawing'},difficulty:'easy',asset:''};
-type Screen='home'|'category'|'editor'|'gallery'|'parents'|'art-review';
+type Screen='home'|'category'|'editor'|'gallery'|'parents';
 const asset=(p:Page)=>`${import.meta.env.BASE_URL}${p.asset.slice(1)}`;
 
 export default function App(){
@@ -20,7 +20,6 @@ export default function App(){
   const [answer,setAnswer]=useState('');
   const [drawings,setDrawings]=useState<SavedDrawing[]>([]);
   const [celebrate,setCelebrate]=useState(false);
-  const [artLevel,setArtLevel]=useState<ArtLevel>('detailed');
   const bg=language==='bg';
 
   useEffect(()=>{localStorage.setItem('language',language);document.documentElement.lang=language},[language]);
@@ -54,21 +53,11 @@ export default function App(){
           <div className="simple-intro"><h1>{bg?'Какво ще оцветиш?':'What will you color?'}</h1>
             <button className="surprise-button" onClick={surprise}><span aria-hidden="true">✦</span>{bg?'ИЗНЕНАДА':'SURPRISE'}<span aria-hidden="true">✦</span></button>
           </div>
-          <button className="art-review-link" onClick={()=>setScreen('art-review')}>{bg?'Нови рисунки · Преглед':'New artwork · Preview'} →</button>
           <div className="section-title"><h2>{bg?'Още картинки':'More pictures'}</h2><span>{pages.length} {bg?'картинки':'pictures'}</span></div>
           <div className="category-grid">{categories.map(c=>{const item=pages.find(p=>p.category===c.id)!;return <button className="category-card" key={c.id} onClick={()=>goCategory(c.id)} style={{background:c.color}}>
             <div className="card-art"><img loading="lazy" src={asset(item)} alt=""/></div><strong>{c[language]}</strong><small>{pages.filter(p=>p.category===c.id).length} {bg?'картинки':'pictures'}</small>
           </button>})}</div>
           <div className="simple-links"><button onClick={()=>open(getDailyPage(new Date()),'home')}>{bg?'Картинка на деня':'Daily picture'} →</button><button onClick={gallery}>{bg?'Моите рисунки':'My drawings'} →</button>{!toddler&&<button onClick={()=>open(free,'home')}>{bg?'Свободно рисуване':'Free drawing'} →</button>}</div>
-        </main>}
-
-        {screen==='art-review'&&<main className="art-review">
-          <button className="back-link" onClick={()=>setScreen('home')}>← {bg?'Назад':'Back'}</button>
-          <h1>{bg?'Нови рисунки':'New artwork'}</h1>
-          <p>{bg?'Избери колко детайли да има твоята рисунка.':'Choose how much detail you want in your picture.'}</p>
-          <div className="art-levels" role="group" aria-label={bg?'Детайли':'Art complexity'}>{artLevels.map(level=><button key={level} aria-pressed={artLevel===level} onClick={()=>setArtLevel(level)}>{levelNames[language][level]}</button>)}</div>
-          <div className="page-grid">{(artLevel==='detailed'?pages.map(p=>reviewSubjects.find(subject=>subject.id===p.id.split('@')[0])||({id:p.id.split('@')[0],bg:p.title.bg,en:p.title.en})):reviewSubjects).map(subject=>{const p=artLevel==='detailed'?pages.find(item=>item.id===`${subject.id}@v2:detailed`)!:reviewPages.find(item=>item.id===`${subject.id}@v2:${artLevel}`)!;return <button className="page-card" key={p.id} onClick={()=>open(p,'art-review')}><img src={asset(p)} alt=""/><strong>{subject[language]}</strong></button>})}</div>
-          <p className="art-review-note">{artLevel==='detailed'?(bg?'Всички 72 рисунки са достъпни в детайлен стил.':'All 72 pictures are available in Detailed style.'):(bg?'Лесно и Средно: три образеца.':'Easy and Medium: three sample pictures.')}</p>
         </main>}
 
         {screen==='category'&&<main>
