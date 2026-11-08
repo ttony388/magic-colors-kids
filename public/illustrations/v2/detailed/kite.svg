@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Kite — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="kite" d="M197 49 L304 154 L200 291 L88 158 Z"/>
+<path data-region="panel-left" d="M197 49 L200 158 L88 158 Z"/>
+<path data-region="panel-right" d="M200 158 L304 154 L200 291 Z"/>
+<path d="M200 291 C273 301 172 344 253 368 M197 49 L200 291 M88 158 L304 154" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="bow-one" d="M221 310 L209 298 L201 320 L221 317 L238 327 L244 306 Z"/>
+<path data-region="bow-two" d="M216 343 L200 332 L195 353 L216 350 L234 359 L239 339 Z"/>
+<g transform="translate(36 73) scale(0.65)">
+<path data-region="cloud-left" d="M0 25 C-17 25 -19 7 -5 4 C-4 -13 18 -19 28 -5 C42 -16 60 -6 60 9 C77 4 88 23 72 28 Z"/>
+</g>
+<g transform="translate(290 259) scale(0.7)">
+<path data-region="cloud-right" d="M0 25 C-17 25 -19 7 -5 4 C-4 -13 18 -19 28 -5 C42 -16 60 -6 60 9 C77 4 88 23 72 28 Z"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Plane — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="far-wing" d="M195 183 L253 67 L279 67 L244 196 Z"/>
+<path data-region="tail-fin" d="M93 211 L62 143 L85 143 L126 208 Z"/>
+<path data-region="fuselage" d="M40 216 C97 211 169 201 246 185 C281 178 319 184 355 204 Q374 217 354 225 C277 245 140 247 40 231 Z"/>
+<path data-region="near-wing" d="M218 212 L155 322 L182 325 L280 220 Z"/>
+<path data-region="tailplane" d="M85 224 L43 265 L62 268 L121 230 Z"/>
+<path data-region="cockpit" d="M305 190 Q330 194 343 202 L316 205 L300 201 Z"/>
+<path data-region="engine" d="M238 254 Q257 246 269 257 L268 280 Q252 293 237 284 Z"/>
+<path data-region="engine-intake" d="M240 281 a13 6 0 1 0 26 0 a13 6 0 1 0 -26 0 Z"/>
+<path data-region="window-0" d="M141 213.0 a6 7 0 1 0 12 0 a6 7 0 1 0 -12 0 Z"/>
+<path data-region="window-1" d="M168 211.11 a6 7 0 1 0 12 0 a6 7 0 1 0 -12 0 Z"/>
+<path data-region="window-2" d="M195 209.22 a6 7 0 1 0 12 0 a6 7 0 1 0 -12 0 Z"/>
+<path data-region="window-3" d="M222 207.33 a6 7 0 1 0 12 0 a6 7 0 1 0 -12 0 Z"/>
+<path data-region="window-4" d="M249 205.44 a6 7 0 1 0 12 0 a6 7 0 1 0 -12 0 Z"/>
+<path data-region="window-5" d="M276 203.55 a6 7 0 1 0 12 0 a6 7 0 1 0 -12 0 Z"/>
+<path d="M203 291 L246 235 M254 98 L226 170 M73 159 L97 204 M54 224 L84 222" fill="none" stroke-width="1.25" pointer-events="none"/>
+<g transform="translate(41 85) scale(0.8)">
+<path data-region="cloud-left" d="M0 25 C-17 25 -19 7 -5 4 C-4 -13 18 -19 28 -5 C42 -16 60 -6 60 9 C77 4 88 23 72 28 Z"/>
+</g>
+<g transform="translate(282 302) scale(0.8)">
+<path data-region="cloud-right" d="M0 25 C-17 25 -19 7 -5 4 C-4 -13 18 -19 28 -5 C42 -16 60 -6 60 9 C77 4 88 23 72 28 Z"/>
+</g>
+</g>
+</svg>

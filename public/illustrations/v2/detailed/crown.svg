@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Crown — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="crown" d="M75 144 L127 181 L159 112 L200 171 L245 112 L275 181 L329 144 L300 286 Q200 321 101 286 Z"/>
+<path data-region="band" d="M101 264 Q200 294 300 264 L300 296 Q200 330 101 296 Z"/>
+<path data-region="center-gem" d="M200 199 L221 224 L200 249 L179 224 Z"/>
+<path data-region="left-gem" d="M121 228 a12 16 0 1 0 24 0 a12 16 0 1 0 -24 0 Z"/>
+<path data-region="right-gem" d="M257 228 a12 16 0 1 0 24 0 a12 16 0 1 0 -24 0 Z"/>
+<path data-region="finial-0" d="M65 134 a10 10 0 1 0 20 0 a10 10 0 1 0 -20 0 Z"/>
+<path data-region="finial-1" d="M149 102 a10 10 0 1 0 20 0 a10 10 0 1 0 -20 0 Z"/>
+<path data-region="finial-2" d="M235 102 a10 10 0 1 0 20 0 a10 10 0 1 0 -20 0 Z"/>
+<path data-region="finial-3" d="M319 134 a10 10 0 1 0 20 0 a10 10 0 1 0 -20 0 Z"/>
+<path d="M115 288 Q200 313 285 288 M92 162 L115 251 M310 163 L287 251 M167 131 L182 158 M238 132 L221 158" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

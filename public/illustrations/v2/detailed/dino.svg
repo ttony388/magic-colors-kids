@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Dino — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="tail" d="M265 224 C301 217 329 198 360 177 Q350 223 299 249 L265 251 Z"/>
+<path data-region="far-leg-1" d="M246 248 L265 246 L264 316 L240 316 Z"/>
+<path data-region="body" d="M122 216 C140 184 217 176 260 200 C295 219 293 257 261 277 Q206 298 143 272 C119 257 108 239 122 216 Z"/>
+<path data-region="neck-head" d="M139 239 Q115 203 116 165 C84 171 58 162 56 140 L57 111 C62 81 125 84 139 115 C151 136 153 166 171 187 L194 208 Z"/>
+<path data-region="jaw" d="M57 142 L114 143 L123 157 Q87 179 63 159 Z"/>
+<path data-region="eye" d="M108 121 a8 5.76 0 1 0 16 0 a8 5.76 0 1 0 -16 0 Z"/>
+<ellipse cx="117" cy="121" rx="2.6" ry="3.5" fill="#202024" stroke="none" pointer-events="none"/>
+<path d="M66 120 h9 M73 144 l5 8 l7 -8 M92 144 l5 8 l7 -8" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="arm" d="M159 205 Q134 197 125 217 L114 233 L127 239 L141 225 L162 228 Z"/>
+<path d="M154 321 v6 M163 321 v6" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="near-leg-1" d="M248 255 Q262 249 275 261 L264 293 L269 329 L237 329 L237 319 L248 310 Z"/>
+<path d="M245 321 v6 M254 321 v6" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M182 262 Q209 273 234 260 M282 232 l11 -4" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M46 350 Q100 343 143 349 M251 349 Q300 343 355 350 M72 340 l4 -9 l5 10 M307 338 l5 -10 l5 10" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="back-spot-one" d="M203 209 a12 8 0 1 0 24 0 a12 8 0 1 0 -24 0 Z"/>
+<path data-region="back-spot-two" d="M236 221 a10 7 0 1 0 20 0 a10 7 0 1 0 -20 0 Z"/>
+</g>
+</svg>

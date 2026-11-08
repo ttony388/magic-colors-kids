@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Robot — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="arm-left" d="M146 187 C124 185 113 209 101 244 L121 255 L156 219 Z"/>
+<path data-region="arm-right" d="M253 189 C278 185 286 212 298 238 L280 253 L247 221 Z"/>
+<path data-region="hand-left" d="M93 259 a15 18 0 1 0 30 0 a15 18 0 1 0 -30 0 Z"/>
+<path data-region="hand-right" d="M277 254 a15 18 0 1 0 30 0 a15 18 0 1 0 -30 0 Z"/>
+<path data-region="leg-0" d="M161 271 L187 271 L185 321 L157 321 Z"/>
+<path data-region="foot-0" d="M156 315 Q171 309 185 319 L191 339 Q166 351 146 339 Z"/>
+<path data-region="leg-1" d="M216 271 L242 271 L240 321 L212 321 Z"/>
+<path data-region="foot-1" d="M211 315 Q226 309 240 319 L246 339 Q221 351 201 339 Z"/>
+<path data-region="torso" d="M151 182 Q198 163 249 184 L265 277 Q199 302 138 277 Z"/>
+<path data-region="head" d="M137 81 Q137 74 146 74 L254 74 Q263 74 263 84 L263 161 Q263 170 254 170 L146 170 Q137 170 137 161 Z"/>
+<path data-region="eye-left" d="M155 117 a14 14 0 1 0 28 0 a14 14 0 1 0 -28 0 Z"/>
+<path data-region="eye-right" d="M217 117 a14 14 0 1 0 28 0 a14 14 0 1 0 -28 0 Z"/>
+<path data-region="mouth" d="M171 145 L229 145 L229 156 L171 156 Z"/>
+<path data-region="panel" d="M161 205 L239 205 L239 255 L161 255 Z"/>
+<path data-region="dial" d="M170 229 a11 11 0 1 0 22 0 a11 11 0 1 0 -22 0 Z"/>
+<path data-region="button" d="M211 228 a7 7 0 1 0 14 0 a7 7 0 1 0 -14 0 Z"/>
+<path data-region="antenna" d="M195 74 L195 51 L205 51 L205 74 Z"/>
+<path data-region="antenna-ball" d="M190 42 a10 10 0 1 0 20 0 a10 10 0 1 0 -20 0 Z"/>
+<path d="M182 147 v7 M194 147 v7 M206 147 v7 M218 147 v7 M170 272 h60 M149 321 h36 M204 321 h36" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M46 350 Q100 343 143 349 M251 349 Q300 343 355 350 M72 340 l4 -9 l5 10 M307 338 l5 -10 l5 10" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

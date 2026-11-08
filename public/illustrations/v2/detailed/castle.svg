@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Castle — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="central-wall" d="M103 206 L294 206 L294 333 L103 333 Z"/>
+<path data-region="keep" d="M145 153 L247 153 L247 333 L145 333 Z"/>
+<path data-region="keep-roof" d="M132 154 L196 75 L260 154 Z"/>
+<path data-region="tower-0" d="M72 164 h60 v169 h-60 Z"/>
+<path data-region="roof-0" d="M60 164 L102.0 89 L144 164 Z"/>
+<path data-region="window-0" d="M90.0 225 v-22 a12.0 12.0 0 0 1 24.0 0 v22 Z"/>
+<path d="M80 249 h18 M106 268 h18 M81 297 h20 M104 321 h18" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="tower-1" d="M297 164 h60 v169 h-60 Z"/>
+<path data-region="roof-1" d="M285 164 L327.0 89 L369 164 Z"/>
+<path data-region="window-1" d="M315.0 225 v-22 a12.0 12.0 0 0 1 24.0 0 v22 Z"/>
+<path d="M305 249 h18 M331 268 h18 M306 297 h20 M329 321 h18" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="gate" d="M170 333 L170 284 Q170 254 199 254 Q228 254 228 284 L228 333 Z"/>
+<path d="M183 279 v53 M199 267 v65 M215 279 v53 M171 308 h56" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="flag" d="M201 73 L201 40 L253 48 L235 58 L253 69 L201 63 Z"/>
+<path d="M201 40 v35" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="approach" d="M170 333 L228 333 L258 366 L143 366 Z"/>
+<path d="M46 350 Q100 343 143 349 M251 349 Q300 343 355 350 M72 340 l4 -9 l5 10 M307 338 l5 -10 l5 10" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

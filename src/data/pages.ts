@@ -1,5 +1,5 @@
 export type Difficulty = 'easy' | 'medium' | 'advanced';
-export type Page = { id: string; category: string; title: { bg: string; en: string }; difficulty: Difficulty; asset: string };
+export type Page = { id: string; category: string; title: { bg: string; en: string }; difficulty: Difficulty; asset: string; artVersion?: 2 };
 export const categories = [
   { id:'animals', bg:'Животни', en:'Animals', color:'#ffc478' },
   { id:'nature', bg:'Природа', en:'Nature', color:'#92dfa0' },
@@ -14,7 +14,7 @@ export const categories = [
   { id:'farm', bg:'Ферма', en:'Farm', color:'#b7df73' },
   { id:'toys', bg:'Играчки', en:'Toys', color:'#ffa9d7' }
 ] as const;
-export const pages: Page[] = [
+export const legacyPages: Page[] = [
   ['cat','animals','Коте','Kitten','easy'], ['dog','animals','Кученце','Puppy','easy'],
   ['rabbit','animals','Зайче','Bunny','easy'], ['turtle','animals','Костенурка','Turtle','easy'],
   ['butterfly','animals','Пеперуда','Butterfly','medium'], ['horse','animals','Конче на поляната','Horse in a meadow','advanced'],
@@ -52,6 +52,11 @@ export const pages: Page[] = [
   ['drum','toys','Барабан','Drum','medium'], ['ball','toys','Шарена топка','Colorful ball','easy'],
   ['blocks','toys','Кубчета','Building blocks','medium'], ['rocking-horse','toys','Люлеещо се конче','Rocking horse','advanced']
 ].map(([id,category,bg,en,difficulty]) => ({ id,category,title:{bg,en},difficulty:difficulty as Difficulty,asset:`/illustrations/${id}.svg` }));
+// Geometry-specific identities keep legacy fills and freehand strokes intact.
+export const pages: Page[] = legacyPages.map(page => ({
+  ...page, id: `${page.id}@v2:detailed`, difficulty: 'advanced',
+  asset: `/illustrations/v2/detailed/${page.id}.svg`, artVersion: 2,
+}));
 export const getDailyPage = (date: Date) => pages[Math.floor(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate())/86400000)%pages.length];
 export function nextSurprise(seen: string[], random = Math.random): { page: Page; seen: string[] } {
   const valid=new Set(pages.map(p=>p.id));

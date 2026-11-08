@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Triceratops — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="tail" d="M265 224 C301 217 329 198 360 177 Q350 223 299 249 L265 251 Z"/>
+<path data-region="far-leg-0" d="M156 248 L175 246 L174 316 L150 316 Z"/>
+<path data-region="far-leg-1" d="M246 248 L265 246 L264 316 L240 316 Z"/>
+<path data-region="body" d="M122 216 C140 184 217 176 260 200 C295 219 293 257 261 277 Q206 298 143 272 C119 257 108 239 122 216 Z"/>
+<path data-region="frill" d="M160 185 L151 157 L133 165 L113 145 L98 161 L78 155 L68 180 L52 186 L62 210 L54 229 L77 243 L112 237 Z"/>
+<path data-region="head" d="M137 200 Q107 175 83 198 L58 229 L41 234 L43 249 Q69 269 103 251 L143 228 Z"/>
+<path data-region="horn-top" d="M92 204 L67 161 L110 198 Z"/>
+<path data-region="horn-front" d="M60 232 L42 211 L75 228 Z"/>
+<path data-region="eye" d="M94 218 a7 5.04 0 1 0 14 0 a7 5.04 0 1 0 -14 0 Z"/>
+<ellipse cx="102" cy="218" rx="2.6" ry="3.5" fill="#202024" stroke="none" pointer-events="none"/>
+<path data-region="near-leg-0" d="M157 255 Q171 249 184 261 L173 293 L178 329 L146 329 L146 319 L157 310 Z"/>
+<path d="M154 321 v6 M163 321 v6" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="near-leg-1" d="M248 255 Q262 249 275 261 L264 293 L269 329 L237 329 L237 319 L248 310 Z"/>
+<path d="M245 321 v6 M254 321 v6" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M182 262 Q209 273 234 260 M282 232 l11 -4" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M46 350 Q100 343 143 349 M251 349 Q300 343 355 350 M72 340 l4 -9 l5 10 M307 338 l5 -10 l5 10" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

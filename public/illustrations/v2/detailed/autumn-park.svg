@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Autumn Park — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(64 63) scale(0.75)">
+<path data-region="cloud" d="M0 25 C-17 25 -19 7 -5 4 C-4 -13 18 -19 28 -5 C42 -16 60 -6 60 9 C77 4 88 23 72 28 Z"/>
+</g>
+<path data-region="sun" d="M286 63 a22 22 0 1 0 44 0 a22 22 0 1 0 -44 0 Z"/>
+<path data-region="far-meadow" d="M30 267 Q100 216 200 253 Q290 215 370 254 L370 365 L30 365 Z"/>
+<g transform="translate(93 296) scale(1.03)">
+<path data-region="left-tree-trunk" d="M-8 0 L-6 -80 L-23 -104 L-14 -109 L2 -88 L20 -117 L27 -111 L9 -76 L11 0 Z"/>
+<path data-region="left-tree-crown" d="M-48 -83 C-73 -83 -82 -112 -60 -128 C-65 -155 -42 -170 -20 -161 C-10 -188 26 -185 39 -161 C67 -169 91 -146 76 -123 C99 -95 67 -67 41 -78 C17 -59 -12 -65 -24 -80 C-33 -74 -44 -76 -48 -83 Z"/>
+<path d="M-40 -131 Q-26 -148 -12 -135 M18 -149 Q33 -160 47 -142 M-22 -100 Q-4 -112 10 -98 M45 -109 Q58 -122 67 -109 M0 -15 L0 -54" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+<g transform="translate(312 293) scale(1.02)">
+<path data-region="right-tree-trunk" d="M-8 0 L-6 -80 L-23 -104 L-14 -109 L2 -88 L20 -117 L27 -111 L9 -76 L11 0 Z"/>
+<path data-region="right-tree-crown" d="M-48 -83 C-73 -83 -82 -112 -60 -128 C-65 -155 -42 -170 -20 -161 C-10 -188 26 -185 39 -161 C67 -169 91 -146 76 -123 C99 -95 67 -67 41 -78 C17 -59 -12 -65 -24 -80 C-33 -74 -44 -76 -48 -83 Z"/>
+<path d="M-40 -131 Q-26 -148 -12 -135 M18 -149 Q33 -160 47 -142 M-22 -100 Q-4 -112 10 -98 M45 -109 Q58 -122 67 -109 M0 -15 L0 -54" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+<path data-region="path" d="M30 320 Q168 279 370 315 L370 347 Q178 316 30 357 Z"/>
+<path data-region="bench-back" d="M141 228 L258 228 L258 265 L141 265 Z"/>
+<path data-region="bench-seat" d="M137 270 L266 270 L277 283 L126 283 Z"/>
+<path data-region="bench-leg-0" d="M144 283 h10 v29 h-10 Z"/>
+<path data-region="bench-leg-1" d="M249 283 h10 v29 h-10 Z"/>
+<path d="M143 240 h113 M143 253 h113" fill="none" stroke-width="1.25" pointer-events="none"/>
+<g transform="translate(97 346) rotate(60) scale(0.5)">
+<path data-region="fallen-leaf-one" d="M0 0 C-23 -6 -31 -25 -28 -42 C-6 -38 8 -18 0 0 Z"/>
+<path d="M0 0 Q-14 -19 -23 -33 M-11 -18 L-23 -20 M-16 -26 L-16 -34" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+<g transform="translate(293 350) rotate(-50) scale(0.5)">
+<path data-region="fallen-leaf-two" d="M0 0 C-23 -6 -31 -25 -28 -42 C-6 -38 8 -18 0 0 Z"/>
+<path d="M0 0 Q-14 -19 -23 -33 M-11 -18 L-23 -20 M-16 -26 L-16 -34" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+<path d="M42 348 l5 -8 l5 8 M331 358 l5 -8 l5 8 M161 351 l5 -8 l5 8" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

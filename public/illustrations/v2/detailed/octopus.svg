@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Octopus — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="arm-1" d="M161 218 C127 212 105 196 78 213 C49 232 36 208 52 197 C27 200 23 233 51 241 C82 250 111 224 153 239 Z"/>
+<path data-region="arm-2" d="M153 235 C112 235 108 271 75 277 C45 280 44 251 61 249 C34 240 27 281 56 292 C91 308 132 264 163 255 Z"/>
+<path data-region="arm-3" d="M164 249 C137 276 146 302 117 319 C98 330 80 311 88 300 C68 314 83 345 111 338 C153 327 163 294 185 270 Z"/>
+<path data-region="arm-4" d="M187 254 C173 292 194 318 175 339 Q161 355 145 342 C149 365 176 370 192 349 C208 326 200 292 212 264 Z"/>
+<path data-region="arm-5" d="M211 253 C230 281 221 318 244 338 C264 355 286 341 279 325 C291 351 264 369 241 351 C213 331 216 304 196 272 Z"/>
+<path data-region="arm-6" d="M229 244 C262 258 268 296 299 301 C319 307 329 287 320 277 C345 291 331 325 301 321 C260 315 251 280 220 267 Z"/>
+<path data-region="arm-7" d="M238 232 C273 219 294 253 323 249 Q347 246 338 227 C360 234 358 263 330 268 C290 275 264 248 234 253 Z"/>
+<path data-region="arm-8" d="M232 214 C264 188 285 216 311 204 Q326 196 316 182 C339 192 328 221 303 223 C271 224 263 214 244 231 Z"/>
+<path data-region="mantle" d="M144 208 C117 164 132 100 181 88 C226 75 268 113 260 163 Q256 190 239 214 C227 241 161 244 144 208 Z"/>
+<path data-region="eye-left" d="M159 189 a11 7.92 0 1 0 22 0 a11 7.92 0 1 0 -22 0 Z"/>
+<ellipse cx="171" cy="189" rx="2.6" ry="3.5" fill="#202024" stroke="none" pointer-events="none"/>
+<path data-region="eye-right" d="M212 189 a11 7.92 0 1 0 22 0 a11 7.92 0 1 0 -22 0 Z"/>
+<ellipse cx="224" cy="189" rx="2.6" ry="3.5" fill="#202024" stroke="none" pointer-events="none"/>
+<path d="M182 214 Q197 225 211 212 M149 144 Q152 120 175 114 M57 230 l14 0 M62 286 l13 -2 M107 330 l11 -5 M179 348 l5 -9 M251 346 l10 2 M302 314 l11 -1 M330 260 l9 -5 M304 216 l9 -4" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="bubble-0" d="M76 94 a10 10 0 1 0 20 0 a10 10 0 1 0 -20 0 Z"/>
+<path data-region="bubble-1" d="M284 131 a13 13 0 1 0 26 0 a13 13 0 1 0 -26 0 Z"/>
+<path data-region="bubble-2" d="M296 74 a16 16 0 1 0 32 0 a16 16 0 1 0 -32 0 Z"/>
+</g>
+</svg>

@@ -1,7 +1,8 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { Page } from '../../data/pages';
 import { deleteDrawing, loadDrawing, saveDrawing, type SavedDrawing } from '../../storage/db';
 import { colors, renderStroke, tools, type Point, type Stroke, type ToolId } from '../../engine/tools';
+import { artFrame, toArtPoint } from '../../engine/artFrame';
 
 type Snapshot = { fills: Record<string,string>; strokes: Stroke[] };
 type Sparkle = { id: number; x: number; y: number; dx: number; dy: number; color: string; size: number };
@@ -20,6 +21,10 @@ export default function Editor({page,language,toddler,sound,onBack,onComplete,on
   const [sparkles,setSparkles]=useState<Sparkle[]>([]);
   const svgRef=useRef<HTMLDivElement>(null); const canvasRef=useRef<HTMLCanvasElement>(null); const active=useRef<Stroke|null>(null);
   const stageRef=useRef<HTMLDivElement>(null);const particleId=useRef(0);const lastTrail=useRef(0);const particleTimers=useRef(new Set<number>());
+  const controlsRef=useRef<HTMLDivElement>(null);
+  const [layout,setLayout]=useState({width:400,height:400,tray:0,trayWidth:0,sideTray:false});
+  const frame=artFrame(layout.width-(layout.sideTray?layout.trayWidth:0),layout.height,layout.sideTray?0:layout.tray);
+  const v2=page.artVersion===2;
   const audioRef=useRef<AudioContext|null>(null);const lastTone=useRef(-1000);
   const saveQueue=useRef<Promise<unknown>>(Promise.resolve());const saveVersion=useRef(0);
   const loadVersion=useRef(0);const completionTriggered=useRef(false);
@@ -32,7 +37,13 @@ export default function Editor({page,language,toddler,sound,onBack,onComplete,on
     loadDrawing(page.id).then(d=>{if(cancelled||version!==loadVersion.current||!d)return;let strokes:Stroke[]=[];try{strokes=JSON.parse(d.strokes)}catch{ /* old drawing */ }setHistory([{fills:d.fills,strokes}]);setCursor(0);setComplete(d.completed);completionTriggered.current=d.completed}).catch(()=>{});
     return()=>{cancelled=true};
   },[page.id,page.asset]);
-  useEffect(()=>{const canvas=canvasRef.current,ctx=canvas?.getContext('2d');if(!canvas||!ctx)return;ctx.clearRect(0,0,400,400);current.strokes.forEach(s=>renderStroke(ctx,s));},[current]);
+  useLayoutEffect(()=>{
+    const stage=stageRef.current,controls=controlsRef.current;if(!stage||!controls||!v2)return;
+    const measure=()=>{const rect=controls.getBoundingClientRect();const sideTray=rect.width<stage.clientWidth*.8&&rect.height>stage.clientHeight*.8;setLayout({width:stage.clientWidth,height:stage.clientHeight,tray:rect.height,trayWidth:rect.width,sideTray})};
+    const observer=new ResizeObserver(measure);observer.observe(stage);observer.observe(controls);measure();
+    return()=>observer.disconnect();
+  },[v2]);
+  useEffect(()=>{drawActive()},[current,layout]);
   useEffect(()=>{if(history.length===1&&cursor===0&&!Object.keys(current.fills).length&&!current.strokes.length&&!complete)return;
     setSaved(false);const version=++saveVersion.current;
     const d:SavedDrawing={id:page.id,fills:current.fills,strokes:JSON.stringify(current.strokes),updatedAt:Date.now(),completed:complete};
@@ -44,7 +55,7 @@ export default function Editor({page,language,toddler,sound,onBack,onComplete,on
     ++loadVersion.current;const version=++saveVersion.current;active.current=null;completionTriggered.current=false;
     if(aliveTimer.current)clearTimeout(aliveTimer.current);
     particleTimers.current.forEach(clearTimeout);particleTimers.current.clear();
-    canvasRef.current?.getContext('2d')?.clearRect(0,0,400,400);
+    const ctx=canvasRef.current?.getContext('2d');if(ctx){ctx.resetTransform();ctx.clearRect(0,0,ctx.canvas.width,ctx.canvas.height)}
     setSparkles([]);setAlive(false);setComplete(false);setHistory([empty()]);setCursor(0);setSizeMenuOpen(false);setSaved(false);onClear();
     saveQueue.current=saveQueue.current.catch(()=>{}).then(()=>deleteDrawing(page.id)).then(()=>{if(version===saveVersion.current)setSaved(true)}).catch(()=>{if(version===saveVersion.current)setSaved(false)});
   }
@@ -82,10 +93,12 @@ export default function Editor({page,language,toddler,sound,onBack,onComplete,on
     const fills={...current.fills,[region]:color};commit({...current,fills});playColorSound();
     if(target&&!completionTriggered.current&&fillableRegions.length>=5&&fillableRegions.filter(id=>fills[id]).length>=Math.ceil(fillableRegions.length*.8))finish();
   }
-  function point(e:React.PointerEvent<HTMLCanvasElement>):Point{const box=e.currentTarget.getBoundingClientRect();return {x:(e.clientX-box.left)*400/box.width,y:(e.clientY-box.top)*400/box.height}}
+  function point(e:React.PointerEvent<HTMLCanvasElement>):Point{const box=e.currentTarget.getBoundingClientRect();return v2?toArtPoint(e.clientX-box.left,e.clientY-box.top,frame):{x:(e.clientX-box.left)*400/box.width,y:(e.clientY-box.top)*400/box.height}}
   function down(e:React.PointerEvent<HTMLCanvasElement>){e.currentTarget.setPointerCapture(e.pointerId);active.current={tool,color,size,opacity,points:[point(e)]};drawActive();playColorSound()}
   function move(e:React.PointerEvent<HTMLCanvasElement>){if(!active.current)return;active.current.points.push(point(e));drawActive();playColorSound()}
-  function drawActive(){const ctx=canvasRef.current?.getContext('2d');if(!ctx||!active.current)return;ctx.clearRect(0,0,400,400);current.strokes.forEach(s=>renderStroke(ctx,s));renderStroke(ctx,active.current)}
+  function drawActive(){const ctx=canvasRef.current?.getContext('2d');if(!ctx)return;ctx.resetTransform();ctx.clearRect(0,0,ctx.canvas.width,ctx.canvas.height);
+    if(v2){const ratio=ctx.canvas.width/layout.width;ctx.setTransform(ratio*frame.side/400,0,0,ratio*frame.side/400,ratio*frame.left,ratio*frame.top)}
+    current.strokes.forEach(s=>renderStroke(ctx,s));if(active.current)renderStroke(ctx,active.current)}
   function up(){if(active.current){commit({...current,strokes:[...current.strokes,active.current]});active.current=null}}
   function exportPng(){const stage=stageRef.current;if(!stage)return;const w=stage.clientWidth,h=stage.clientHeight;
     const out=document.createElement('canvas');out.width=w*2;out.height=h*2;const ctx=out.getContext('2d')!;ctx.scale(2,2);ctx.fillStyle=current.fills.__background||'white';ctx.fillRect(0,0,w,h);
@@ -99,14 +112,17 @@ export default function Editor({page,language,toddler,sound,onBack,onComplete,on
     const timer=window.setTimeout(()=>{setSparkles(prev=>prev.filter(p=>!group.some(g=>g.id===p.id)));particleTimers.current.delete(timer)},850);particleTimers.current.add(timer);
     aliveTimer.current=window.setTimeout(()=>setAlive(false),3000);onComplete()}
   const text=language==='bg';const brush=tool!=='bucket'&&tool!=='magic';
-  return <div className={`editor ${toddler?'toddler':''}`}>
+  return <div className={`editor ${toddler?'toddler':''} ${v2?'art-v2':''}`}>
     <header className="editor-head"><button className="round-button" aria-label={text?'Назад':'Back'} onClick={onBack}>←</button><div><strong>{page.title[language]}</strong><small>{saved?(text?'Запазено':'Saved'):(text?'Запазване…':'Saving…')}</small></div><button className="round-button" aria-label={text?'Изтегли PNG':'Download PNG'} onClick={exportPng}>⇩</button></header>
     <div className="work-area"><div className={`stage ${alive?'alive':''} ${trayOpen?'':'tray-collapsed'}`} ref={stageRef} style={{backgroundColor:current.fills.__background||'#ffffff'}} data-testid="drawing-stage" onPointerMove={e=>emitSparkles(e)} onPointerDown={e=>emitSparkles(e,true)}>
-      {page.id==='free'?<div className="blank-sheet" onPointerDown={fill}/>:<div className="svg-art" ref={svgRef} onPointerDown={fill} dangerouslySetInnerHTML={{__html:paintedArt}}/>}
-      <canvas width="400" height="400" ref={canvasRef} aria-label={text?'Поле за рисуване':'Drawing canvas'} style={{pointerEvents:brush?'auto':'none'}} onPointerDown={down} onPointerMove={move} onPointerUp={up} onPointerCancel={up}/>
+      <div className="artwork-layer" style={{pointerEvents:alive?'none':undefined}}>
+      {(page.id==='free'||v2)&&<div className="blank-sheet" onPointerDown={fill}/>}
+      {page.id!=='free'&&<div className="svg-art" ref={svgRef} onPointerDown={fill} style={v2?{left:frame.left,top:frame.top,width:frame.side,height:frame.side}:undefined} dangerouslySetInnerHTML={{__html:paintedArt}}/>}
+      <canvas width={v2?Math.round(layout.width*Math.min(window.devicePixelRatio,2)):400} height={v2?Math.round(layout.height*Math.min(window.devicePixelRatio,2)):400} ref={canvasRef} aria-label={text?'Поле за рисуване':'Drawing canvas'} style={{pointerEvents:alive?'none':brush?'auto':'none'}} onPointerDown={down} onPointerMove={move} onPointerUp={up} onPointerCancel={up}/>
+      </div>
       <div className="sparkle-layer" aria-hidden="true">{sparkles.map(p=><span key={p.id} className="sparkle" style={{left:`${p.x}%`,top:`${p.y}%`,color:p.color,fontSize:p.size,'--dx':`${p.dx}px`,'--dy':`${p.dy}px`} as React.CSSProperties}>✦</span>)}</div>
     </div></div>
-    <div className={`editor-controls ${trayOpen?'':'collapsed'} ${sizeMenuOpen?'size-open':''}`}><button className="tray-toggle" aria-label={trayOpen?(text?'Скрий инструментите':'Hide tools'):(text?'Покажи инструментите':'Show tools')} onClick={()=>{setTrayOpen(v=>!v);setSizeMenuOpen(false)}}>{trayOpen?'⌄':(text?'🎨 Инструменти':'🎨 Tools')}</button>{trayOpen&&<>
+    <div ref={controlsRef} className={`editor-controls ${trayOpen?'':'collapsed'} ${sizeMenuOpen?'size-open':''}`}><button className="tray-toggle" aria-label={trayOpen?(text?'Скрий инструментите':'Hide tools'):(text?'Покажи инструментите':'Show tools')} onClick={()=>{setTrayOpen(v=>!v);setSizeMenuOpen(false)}}>{trayOpen?'⌄':(text?'🎨 Инструменти':'🎨 Tools')}</button>{trayOpen&&<>
       {sizeMenuOpen&&brush&&<div className="size-popover" role="group" aria-label={text?'Дебелина на линията':'Stroke thickness'}><strong>{text?'Колко дебело?':'How thick?'}</strong><div className="size-options">{strokeSizes.map((value,i)=><button key={value} aria-label={strokeNames[language][i]} aria-pressed={size===value} className={size===value?'selected':''} onClick={()=>{setSize(value);setSizeMenuOpen(false)}}><svg viewBox="0 0 64 52" aria-hidden="true"><path d="M7 39 Q20 9 31 28 T57 15" fill="none" stroke="currentColor" strokeWidth={2+i*3.6} strokeLinecap="round" strokeLinejoin="round"/></svg></button>)}</div></div>}
       <div className="tool-strip" role="toolbar" aria-label={text?'Инструменти':'Tools'}>{tools.map(t=><button key={t.id} aria-label={t[language]} aria-pressed={tool===t.id} className={tool===t.id?'selected':''} onClick={()=>{setTool(t.id);setSizeMenuOpen(t.id!=='bucket'&&t.id!=='magic')}}><img src={`${import.meta.env.BASE_URL}tools/${t.id}.svg`} alt=""/><small>{t[language]}</small></button>)}</div>
       {!toddler&&brush&&<div className="sliders"><label>{text?'Плътност':'Opacity'} <input aria-label="Opacity" type="range" min="20" max="100" value={opacity*100} onChange={e=>setOpacity(+e.target.value/100)}/></label></div>}

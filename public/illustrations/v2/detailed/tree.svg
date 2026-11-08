@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Tree — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(64 63) scale(0.75)">
+<path data-region="cloud" d="M0 25 C-17 25 -19 7 -5 4 C-4 -13 18 -19 28 -5 C42 -16 60 -6 60 9 C77 4 88 23 72 28 Z"/>
+</g>
+<path data-region="sun" d="M286 63 a22 22 0 1 0 44 0 a22 22 0 1 0 -44 0 Z"/>
+<path data-region="far-meadow" d="M30 267 Q100 216 200 253 Q290 215 370 254 L370 365 L30 365 Z"/>
+<g transform="translate(205 326) scale(1.38)">
+<path data-region="oak-trunk" d="M-8 0 L-6 -80 L-23 -104 L-14 -109 L2 -88 L20 -117 L27 -111 L9 -76 L11 0 Z"/>
+<path data-region="oak-crown" d="M-48 -83 C-73 -83 -82 -112 -60 -128 C-65 -155 -42 -170 -20 -161 C-10 -188 26 -185 39 -161 C67 -169 91 -146 76 -123 C99 -95 67 -67 41 -78 C17 -59 -12 -65 -24 -80 C-33 -74 -44 -76 -48 -83 Z"/>
+<path d="M-40 -131 Q-26 -148 -12 -135 M18 -149 Q33 -160 47 -142 M-22 -100 Q-4 -112 10 -98 M45 -109 Q58 -122 67 -109 M0 -15 L0 -54" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+<g transform="translate(88 338) rotate(70) scale(0.7)">
+<path data-region="ground-leaf" d="M0 0 C-23 -6 -31 -25 -28 -42 C-6 -38 8 -18 0 0 Z"/>
+<path d="M0 0 Q-14 -19 -23 -33 M-11 -18 L-23 -20 M-16 -26 L-16 -34" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+<path data-region="acorn" d="M294 329 Q304 343 314 329 L313 318 L296 318 Z"/>
+<path data-region="acorn-cap" d="M292 320 Q303 305 317 320 Z"/>
+<path d="M42 348 l5 -8 l5 8 M331 358 l5 -8 l5 8 M161 351 l5 -8 l5 8" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Cottage — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="side-wall" d="M247 171 L337 192 L337 321 L247 321 Z"/>
+<path data-region="front-wall" d="M70 177 L161 100 L262 177 L262 321 L70 321 Z"/>
+<path data-region="side-roof" d="M161 83 L257 103 L356 186 L263 194 Z"/>
+<path data-region="front-roof" d="M51 179 L161 83 L281 181 L269 194 L161 107 L63 194 Z"/>
+<path data-region="chimney" d="M267 113 L267 65 L292 65 L292 135 Z"/>
+<path data-region="door" d="M135 321 L135 248 Q135 219 161 219 Q188 219 188 248 L188 321 Z"/>
+<path data-region="window-left" d="M87 213 h34 v42 h-34 Z"/>
+<path data-region="window-right" d="M207 213 h34 v42 h-34 Z"/>
+<path data-region="attic-window" d="M143 167 Q143 148 161 148 Q180 148 180 167 L180 188 L143 188 Z"/>
+<path d="M104 214 v40 M88 234 h31 M224 214 v40 M208 234 h31 M161 149 v38 M145 169 h33 M176 273 v9 M281 76 h9 M284 98 h7" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="side-window" d="M280 219 L316 227 L316 267 L280 260 Z"/>
+<path d="M298 224 v40 M281 240 l34 7 M187 116 L276 136 M214 139 L301 159 M237 162 L328 181" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="path" d="M134 322 L187 322 L225 365 L104 365 Z"/>
+<path d="M46 350 Q100 343 143 349 M251 349 Q300 343 355 350 M72 340 l4 -9 l5 10 M307 338 l5 -10 l5 10" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="medium">
+<title id="art-title">Family hatchback — medium coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="car-body" d="M47 233 L64 213 C77 204 89 201 103 199 L134 151 C141 141 151 136 168 135 L234 135 C250 136 261 141 272 154 L309 196 L335 205 C347 209 355 221 355 238 L355 268 Q355 277 342 277 L329 277 C329 248 314 231 291 231 C268 231 253 248 253 277 L147 277 C147 249 132 231 109 231 C86 231 71 249 71 277 L51 277 Q41 277 41 267 L41 249 Q41 239 47 233 Z"/>
+<path data-region="window-left" d="M117 194 L143 157 Q149 150 164 150 L185 150 L185 194 Z"/>
+<path data-region="window-right" d="M199 150 L232 150 Q248 151 258 162 L285 194 L199 194 Z"/>
+<path data-region="wheel-left" d="M80 274 a29 29 0 1 0 58 0 a29 29 0 1 0 -58 0 Z"/>
+<path data-region="wheel-right" d="M262 274 a29 29 0 1 0 58 0 a29 29 0 1 0 -58 0 Z"/>
+<path data-region="hub-left" d="M92 274 a17 17 0 1 0 34 0 a17 17 0 1 0 -34 0 Z"/>
+<path data-region="hub-right" d="M274 274 a17 17 0 1 0 34 0 a17 17 0 1 0 -34 0 Z"/>
+<path data-region="headlight-left" d="M52 222 L77 215 L73 232 L45 239 Z"/>
+<path data-region="headlight-right" d="M333 214 Q345 217 350 229 L333 229 Z"/>
+<path data-region="front-door" d="M109 207 L185 207 L185 264 L158 264 Q155 232 130 224 L109 221 Z"/>
+<path data-region="rear-door" d="M198 207 L281 207 L278 222 Q251 232 243 264 L198 264 Z"/>
+<path data-region="mirror" d="M114 188 L127 188 Q137 190 135 197 Q131 203 115 201 Z"/>
+<path data-region="bumper-front" d="M42 252 L63 252 L63 266 L42 266 Z"/>
+<path data-region="bumper-rear" d="M336 252 L355 252 L355 266 L336 266 Z"/>
+<path d="M163 215 L177 215 M253 215 L267 215 M94 209 L83 213 M307 204 L320 207 M161 273 L241 273" fill="none" stroke-width="1.6" pointer-events="none"/>
+<path data-region="axle-109" d="M104 274 a5 5 0 1 0 10 0 a5 5 0 1 0 -10 0 Z"/>
+<path d="M109 259 L109 267 M109 281 L109 289 M94 274 L102 274 M116 274 L124 274" fill="none" stroke-width="1.6" pointer-events="none"/>
+<path data-region="axle-291" d="M286 274 a5 5 0 1 0 10 0 a5 5 0 1 0 -10 0 Z"/>
+<path d="M291 259 L291 267 M291 281 L291 289 M276 274 L284 274 M298 274 L306 274" fill="none" stroke-width="1.6" pointer-events="none"/>
+</g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Blocks — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="front-0" d="M45 240 h78 v78 h-78 Z"/>
+<path data-region="top-0" d="M45 240 l24 -22 h78 l-24 22 Z"/>
+<path data-region="side-0" d="M123 240 l24 -22 v78 l-24 22 Z"/>
+<path data-region="circle-inset" d="M63 279 a21 21 0 1 0 42 0 a21 21 0 1 0 -42 0 Z"/>
+<path data-region="front-1" d="M150 253 h78 v78 h-78 Z"/>
+<path data-region="top-1" d="M150 253 l24 -22 h78 l-24 22 Z"/>
+<path data-region="side-1" d="M228 253 l24 -22 v78 l-24 22 Z"/>
+<path data-region="triangle-inset" d="M189 269 L211 313 L167 313 Z"/>
+<path data-region="front-2" d="M253 235 h78 v78 h-78 Z"/>
+<path data-region="top-2" d="M253 235 l24 -22 h78 l-24 22 Z"/>
+<path data-region="side-2" d="M331 235 l24 -22 v78 l-24 22 Z"/>
+<path data-region="square-inset" d="M272 254 h40 v40 h-40 Z"/>
+<path data-region="front-3" d="M146 132 h78 v78 h-78 Z"/>
+<path data-region="top-3" d="M146 132 l24 -22 h78 l-24 22 Z"/>
+<path data-region="side-3" d="M224 132 l24 -22 v78 l-24 22 Z"/>
+<path data-region="diamond-inset" d="M185 144 L210 171 L185 198 L160 171 Z"/>
+</g>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Hen — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(106 244) rotate(-22)">
+<path data-region="tail-feather-0" d="M0 0 C-20 -30 -74 -56 -64 -92 C-29 -108 8 -42 13 -7 Z"/>
+<path d="M-48 -82 Q-18 -42 5 -8" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+<g transform="translate(106 244) rotate(0)">
+<path data-region="tail-feather-1" d="M0 0 C-20 -30 -74 -56 -64 -92 C-29 -108 8 -42 13 -7 Z"/>
+<path d="M-48 -82 Q-18 -42 5 -8" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+<g transform="translate(106 244) rotate(22)">
+<path data-region="tail-feather-2" d="M0 0 C-20 -30 -74 -56 -64 -92 C-29 -108 8 -42 13 -7 Z"/>
+<path d="M-48 -82 Q-18 -42 5 -8" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+<path data-region="body" d="M112 215 C141 190 182 202 205 181 L241 172 C266 215 275 263 237 289 C205 311 131 302 108 269 Q91 240 112 215 Z"/>
+<path data-region="neck" d="M205 202 C214 178 206 146 224 131 Q249 121 263 141 C273 164 253 191 258 211 L246 218 L237 211 L226 222 L217 211 Z"/>
+<path data-region="comb" d="M221 133 C211 117 219 100 229 112 C229 90 246 91 249 111 C263 98 276 115 261 135 Z"/>
+<path data-region="beak" d="M261 151 L292 163 L261 173 Z"/>
+<path data-region="wattle" d="M251 174 Q271 178 261 198 Q247 206 246 181 Z"/>
+<path data-region="wing" d="M132 231 C159 210 201 224 226 246 C209 275 163 292 139 265 Q125 249 132 231 Z"/>
+<path data-region="eye" d="M243 148 a6 4.32 0 1 0 12 0 a6 4.32 0 1 0 -12 0 Z"/>
+<ellipse cx="250" cy="148" rx="2.6" ry="3.5" fill="#202024" stroke="none" pointer-events="none"/>
+<path d="M145 239 Q168 232 206 249 M150 251 Q169 251 191 262 M134 276 Q156 294 182 293" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="leg-left" d="M167 296 L177 297 L175 326 L192 334 L188 339 L171 332 L154 340 L150 335 L165 326 Z"/>
+<path data-region="leg-right" d="M210 296 L219 296 L217 323 L236 330 L232 336 L212 329 L199 339 L194 333 L207 323 Z"/>
+<path d="M46 350 Q100 343 143 349 M251 349 Q300 343 355 350 M72 340 l4 -9 l5 10 M307 338 l5 -10 l5 10" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

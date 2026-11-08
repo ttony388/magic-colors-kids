@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="easy">
+<title id="art-title">Kitten in the garden — easy coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="tail" d="M260 307 C304 321 331 305 327 273 C325 250 308 234 315 215 C319 206 328 209 329 217 C325 234 344 249 347 274 C353 317 315 344 267 331 Z"/>
+<path data-region="body" d="M167 189 C158 214 151 249 149 276 C145 305 155 326 181 332 L272 332 C294 321 302 303 293 279 C282 251 259 238 246 207 L233 186 Z"/>
+<path data-region="haunch" d="M257 267 C280 266 295 284 293 303 C292 321 273 331 247 332 L225 332 C220 320 228 312 241 309 C229 293 236 273 257 267 Z"/>
+<path data-region="chest" d="M174 193 C182 209 203 220 226 195 C232 226 232 252 222 278 L182 279 C169 252 165 224 174 193 Z"/>
+<path data-region="paw-left" d="M172 223 C165 237 168 276 160 316 C155 326 160 335 176 335 L193 335 C204 335 209 328 204 320 C196 298 201 267 197 244 C193 224 182 216 172 223 Z"/>
+<path data-region="paw-right" d="M212 224 C203 243 207 290 202 318 C199 328 203 337 216 337 L235 337 C248 336 251 329 244 320 C236 298 239 269 234 246 C231 228 223 218 212 224 Z"/>
+<g transform="translate(32 20) scale(.84)">
+<path data-region="head" d="M136 117 C130 97 128 76 131 54 C149 61 161 76 172 86 C188 81 209 82 225 88 C238 74 250 65 265 60 C268 80 266 102 261 121 C267 138 267 155 259 169 C249 190 230 203 206 209 C183 210 160 200 145 183 C130 167 126 141 136 117 Z"/>
+<path data-region="ear-left" d="M140 74 C149 80 156 86 162 95 L145 111 C142 99 140 87 140 74 Z"/>
+<path data-region="ear-right" d="M253 79 C244 85 238 92 234 98 L254 115 C256 103 256 91 253 79 Z"/>
+<path data-region="muzzle" d="M173 170 C178 159 190 159 200 166 C208 158 220 158 228 166 C240 182 222 195 202 196 C182 197 164 185 173 170 Z"/>
+<path data-region="nose" d="M190 166 Q200 161 211 166 Q207 176 201 177 Q194 176 190 166 Z"/>
+<path d="M150 142 Q162 130 175 142 M220 142 Q233 130 245 142" fill="none" stroke-width="2.6" pointer-events="none"/>
+<ellipse cx="163" cy="141" rx="3" ry="4" fill="#202024" stroke="none" pointer-events="none"/>
+<ellipse cx="232" cy="141" rx="3" ry="4" fill="#202024" stroke="none" pointer-events="none"/>
+<path d="M201 177 L201 183 Q192 190 185 183 M201 183 Q209 190 217 182 M175 174 Q153 166 121 166 M176 182 Q150 181 124 189 M226 173 Q251 164 279 165 M226 181 Q254 180 278 188" fill="none" stroke-width="1.6" pointer-events="none"/>
+</g>
+</g>
+</svg>

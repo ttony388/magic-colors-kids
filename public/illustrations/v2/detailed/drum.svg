@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Drum — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="bottom-rim" d="M78 286 a122 31 0 1 0 244 0 a122 31 0 1 0 -244 0 Z"/>
+<path data-region="side" d="M80 172 Q200 215 320 172 L320 276 Q200 319 80 276 Z"/>
+<path data-region="top-rim" d="M74 163 a126 38 0 1 0 252 0 a126 38 0 1 0 -252 0 Z"/>
+<path data-region="skin" d="M88 161 a112 28 0 1 0 224 0 a112 28 0 1 0 -224 0 Z"/>
+<path data-region="cord-0" d="M93 195 L114 275 L135 195 L130 194 L114 256 L98 194 Z"/>
+<path data-region="cord-1" d="M135 195 L156 275 L177 195 L172 194 L156 256 L140 194 Z"/>
+<path data-region="cord-2" d="M177 195 L198 275 L219 195 L214 194 L198 256 L182 194 Z"/>
+<path data-region="cord-3" d="M219 195 L240 275 L261 195 L256 194 L240 256 L224 194 Z"/>
+<path data-region="cord-4" d="M261 195 L282 275 L303 195 L298 194 L282 256 L266 194 Z"/>
+<path data-region="stick-left" d="M111 69 Q101 61 95 70 Q89 80 102 86 L239 144 L243 137 Z"/>
+<path data-region="stick-right" d="M289 65 Q300 59 306 70 Q311 81 298 85 L163 143 L159 136 Z"/>
+<path d="M112 152 Q193 129 285 152 M100 279 Q200 311 300 279" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

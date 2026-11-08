@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Cupcake — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="wrapper" d="M97 218 L303 218 L279 333 Q201 352 123 333 Z"/>
+<path data-region="icing" d="M91 218 C63 196 88 172 110 174 C94 148 121 126 145 134 C135 105 169 89 191 104 C199 78 230 80 241 107 C274 101 291 127 278 148 C309 150 326 175 307 196 Q333 221 303 236 Q282 249 265 231 Q240 254 215 235 Q187 254 167 234 Q142 250 124 232 Q104 242 91 218 Z"/>
+<path data-region="cherry" d="M181 79 a21 21 0 1 0 42 0 a21 21 0 1 0 -42 0 Z"/>
+<path d="M204 61 Q202 40 223 33 M113 181 Q142 164 166 180 M175 142 Q211 122 246 142 M192 201 Q232 185 264 201 M130 246 L145 324 M158 248 L169 330 M188 249 L191 332 M218 249 L216 332 M246 248 L241 330 M274 246 L264 324" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="icing-drop" d="M100 219 Q108 229 108 250 Q121 265 129 250 L127 230 Z"/>
+<path data-region="wrapper-medallion" d="M181 287 a21 22 0 1 0 42 0 a21 22 0 1 0 -42 0 Z"/>
+<path data-region="medallion-heart" d="M201 283 C190 270 180 286 201 300 C222 286 212 270 201 283 Z"/>
+</g>
+</svg>

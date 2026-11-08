@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Strawberry — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="fruit" d="M85 148 C91 100 158 98 199 124 C251 91 315 107 321 153 C333 221 255 308 201 341 C148 312 70 224 85 148 Z"/>
+<path data-region="calyx" d="M200 136 L140 104 L153 136 L111 145 L159 161 L166 184 L199 155 L231 181 L239 157 L286 142 L243 131 L258 105 Z"/>
+<path data-region="stem" d="M194 132 Q185 93 207 70 L219 76 Q202 102 208 133 Z"/>
+<path data-region="seed-0" d="M111 171 Q103 180 111 186 Q119 180 111 171 Z"/>
+<path data-region="seed-1" d="M150 194 Q142 203 150 209 Q158 203 150 194 Z"/>
+<path data-region="seed-2" d="M196 182 Q188 191 196 197 Q204 191 196 182 Z"/>
+<path data-region="seed-3" d="M241 196 Q233 205 241 211 Q249 205 241 196 Z"/>
+<path data-region="seed-4" d="M287 168 Q279 177 287 183 Q295 177 287 168 Z"/>
+<path data-region="seed-5" d="M126 229 Q118 238 126 244 Q134 238 126 229 Z"/>
+<path data-region="seed-6" d="M178 236 Q170 245 178 251 Q186 245 178 236 Z"/>
+<path data-region="seed-7" d="M223 242 Q215 251 223 257 Q231 251 223 242 Z"/>
+<path data-region="seed-8" d="M269 229 Q261 238 269 244 Q277 238 269 229 Z"/>
+<path data-region="seed-9" d="M159 278 Q151 287 159 293 Q167 287 159 278 Z"/>
+<path data-region="seed-10" d="M202 287 Q194 296 202 302 Q210 296 202 287 Z"/>
+<path data-region="seed-11" d="M240 278 Q232 287 240 293 Q248 287 240 278 Z"/>
+</g>
+</svg>

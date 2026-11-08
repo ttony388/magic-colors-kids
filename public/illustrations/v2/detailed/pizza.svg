@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Pizza — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="cheese" d="M61 121 Q196 70 339 121 L202 339 Z"/>
+<path data-region="crust" d="M51 103 Q197 49 349 103 L339 126 Q198 80 61 126 Z"/>
+<path data-region="tomato-0" d="M92 154 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0 Z"/>
+<path d="M104 150 q8 -9 16 0 M105 160 q7 7 14 0" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="tomato-1" d="M190 130 a21 21 0 1 0 42 0 a21 21 0 1 0 -42 0 Z"/>
+<path d="M203 126 q8 -9 16 0 M204 136 q7 7 14 0" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="tomato-2" d="M259 160 a18 18 0 1 0 36 0 a18 18 0 1 0 -36 0 Z"/>
+<path d="M269 156 q8 -9 16 0 M270 166 q7 7 14 0" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="tomato-3" d="M156 214 a19 19 0 1 0 38 0 a19 19 0 1 0 -38 0 Z"/>
+<path d="M167 210 q8 -9 16 0 M168 220 q7 7 14 0" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="tomato-4" d="M201 266 a16 16 0 1 0 32 0 a16 16 0 1 0 -32 0 Z"/>
+<path d="M209 262 q8 -9 16 0 M210 272 q7 7 14 0" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="mushroom-0" d="M147 150 Q147 125 164 125 Q181 125 181 150 L169 150 L169 164 L159 164 L159 150 Z"/>
+<path data-region="mushroom-1" d="M230 204 Q230 179 247 179 Q264 179 264 204 L252 204 L252 218 L242 218 L242 204 Z"/>
+<path data-region="mushroom-2" d="M162 278 Q162 253 179 253 Q196 253 196 278 L184 278 L184 292 L174 292 L174 278 Z"/>
+<path d="M80 109 Q194 71 322 109 M125 191 l9 7 M222 177 l9 -8 M203 309 l5 9 M275 137 l8 -2" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

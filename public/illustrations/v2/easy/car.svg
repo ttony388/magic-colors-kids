@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="easy">
+<title id="art-title">Family hatchback — easy coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="car-body" d="M47 233 L64 213 C77 204 89 201 103 199 L134 151 C141 141 151 136 168 135 L234 135 C250 136 261 141 272 154 L309 196 L335 205 C347 209 355 221 355 238 L355 268 Q355 277 342 277 L329 277 C329 248 314 231 291 231 C268 231 253 248 253 277 L147 277 C147 249 132 231 109 231 C86 231 71 249 71 277 L51 277 Q41 277 41 267 L41 249 Q41 239 47 233 Z"/>
+<path data-region="window-left" d="M117 194 L143 157 Q149 150 164 150 L185 150 L185 194 Z"/>
+<path data-region="window-right" d="M199 150 L232 150 Q248 151 258 162 L285 194 L199 194 Z"/>
+<path data-region="wheel-left" d="M80 274 a29 29 0 1 0 58 0 a29 29 0 1 0 -58 0 Z"/>
+<path data-region="wheel-right" d="M262 274 a29 29 0 1 0 58 0 a29 29 0 1 0 -58 0 Z"/>
+<path data-region="hub-left" d="M92 274 a17 17 0 1 0 34 0 a17 17 0 1 0 -34 0 Z"/>
+<path data-region="hub-right" d="M274 274 a17 17 0 1 0 34 0 a17 17 0 1 0 -34 0 Z"/>
+<path data-region="headlight-left" d="M52 222 L77 215 L73 232 L45 239 Z"/>
+<path data-region="headlight-right" d="M333 214 Q345 217 350 229 L333 229 Z"/>
+</g>
+</svg>

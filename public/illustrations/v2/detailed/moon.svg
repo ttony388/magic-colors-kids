@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Moon — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="moon" d="M65 207 a137 137 0 1 0 274 0 a137 137 0 1 0 -274 0 Z"/>
+<path data-region="crater-0" d="M107 141 a27 21 0 1 0 54 0 a27 21 0 1 0 -54 0 Z"/>
+<path d="M116.45 141 Q134 122.1 151.55 141" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="crater-1" d="M222 115 a22 15 0 1 0 44 0 a22 15 0 1 0 -44 0 Z"/>
+<path d="M229.7 115 Q244 101.5 258.3 115" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="crater-2" d="M249 227 a31 23 0 1 0 62 0 a31 23 0 1 0 -62 0 Z"/>
+<path d="M259.85 227 Q280 206.3 300.15 227" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="crater-3" d="M119 260 a35 27 0 1 0 70 0 a35 27 0 1 0 -70 0 Z"/>
+<path d="M131.25 260 Q154 235.7 176.75 260" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="crater-4" d="M197 310 a17 10 0 1 0 34 0 a17 10 0 1 0 -34 0 Z"/>
+<path d="M202.95 310 Q214 301.0 225.05 310" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="crater-5" d="M94 214 a13 18 0 1 0 26 0 a13 18 0 1 0 -26 0 Z"/>
+<path d="M98.55 214 Q107 197.8 115.45 214" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="crater-6" d="M207 198 a16 13 0 1 0 32 0 a16 13 0 1 0 -32 0 Z"/>
+<path d="M212.6 198 Q223 186.3 233.4 198" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path d="M91 170 Q87 149 108 128 M273 284 Q298 269 311 246 M190 85 Q211 79 228 85" fill="none" stroke-width="1.25" pointer-events="none"/>
+<g transform="translate(42 328) scale(0.85)">
+<path data-region="passing-cloud" d="M0 25 C-17 25 -19 7 -5 4 C-4 -13 18 -19 28 -5 C42 -16 60 -6 60 9 C77 4 88 23 72 28 Z"/>
+</g>
+</g>
+</svg>

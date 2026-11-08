@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="easy">
+<title id="art-title">Alpine lake and mountain trail — easy coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="sun" d="M290 74 a23 23 0 1 0 46 0 a23 23 0 1 0 -46 0 Z"/>
+<path data-region="cloud" d="M50 91 C36 91 34 76 46 72 C47 59 64 55 72 64 C83 53 99 61 100 73 C116 69 124 85 112 92 Z"/>
+<path data-region="mountain-right" d="M154 228 L214 145 L234 152 L269 110 L306 151 L321 148 L366 227 Z"/>
+<path data-region="snow-right" d="M242 142 L269 110 L302 147 L289 145 L279 158 L266 142 L255 153 Z"/>
+<path data-region="mountain-left" d="M30 240 L70 187 L90 190 L151 99 L185 147 L203 145 L267 240 Z"/>
+<path data-region="snow-left" d="M117 149 L151 99 L185 147 L168 140 L157 159 L145 141 L133 156 Z"/>
+<path data-region="far-shore" d="M30 240 Q71 217 112 230 Q164 214 209 232 Q256 214 301 227 Q333 216 370 233 L370 262 L30 262 Z"/>
+<path data-region="lake" d="M30 262 L370 262 L370 307 Q307 288 261 297 Q217 300 176 318 L30 333 Z"/>
+<path data-region="meadow" d="M30 282 Q92 268 132 289 Q165 307 211 314 Q259 296 294 301 Q334 304 370 321 L370 365 L30 365 Z"/>
+<path data-region="trail" d="M123 365 Q143 340 186 329 Q215 320 211 314 Q231 309 247 307 Q241 326 205 338 Q184 346 174 365 Z"/>
+<path data-region="little-tree-trunk" d="M71 281 L82 281 L84 337 L69 337 Z"/>
+<path data-region="little-tree" d="M76 197 Q67 219 59 229 L66 228 L50 250 L60 248 L42 275 Q75 289 108 275 L91 249 L101 251 L85 228 L93 230 Z"/>
+</g>
+</svg>

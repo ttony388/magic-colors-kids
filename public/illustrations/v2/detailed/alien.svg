@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Alien — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="arm-left" d="M146 187 C124 185 113 209 101 244 L121 255 L156 219 Z"/>
+<path data-region="arm-right" d="M253 189 C278 185 286 212 298 238 L280 253 L247 221 Z"/>
+<path data-region="hand-left" d="M93 259 a15 18 0 1 0 30 0 a15 18 0 1 0 -30 0 Z"/>
+<path data-region="hand-right" d="M277 254 a15 18 0 1 0 30 0 a15 18 0 1 0 -30 0 Z"/>
+<path data-region="leg-0" d="M161 271 L187 271 L185 321 L157 321 Z"/>
+<path data-region="foot-0" d="M156 315 Q171 309 185 319 L191 339 Q166 351 146 339 Z"/>
+<path data-region="leg-1" d="M216 271 L242 271 L240 321 L212 321 Z"/>
+<path data-region="foot-1" d="M211 315 Q226 309 240 319 L246 339 Q221 351 201 339 Z"/>
+<path data-region="torso" d="M151 182 Q198 163 249 184 L265 277 Q199 302 138 277 Z"/>
+<path data-region="head" d="M141 91 C154 51 246 51 261 91 C283 141 243 178 201 186 C157 177 119 139 141 91 Z"/>
+<path data-region="eye-left" d="M150 111 Q178 103 187 135 Q163 147 150 111 Z"/>
+<path data-region="eye-right" d="M213 135 Q222 103 250 111 Q237 147 213 135 Z"/>
+<path d="M187 161 Q200 169 214 160" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="belt" d="M149 262 a52 10 0 1 0 104 0 a52 10 0 1 0 -104 0 Z"/>
+<path data-region="badge" d="M188 211 L200 200 L213 211 L207 228 L194 228 Z"/>
+<path d="M46 350 Q100 343 143 349 M251 349 Q300 343 355 350 M72 340 l4 -9 l5 10 M307 338 l5 -10 l5 10" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

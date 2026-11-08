@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Christmas Tree — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="trunk" d="M185 299 L216 299 L216 343 L185 343 Z"/>
+<path data-region="tree" d="M201 62 Q179 107 149 138 L171 134 L118 194 L144 188 L88 253 L121 247 L65 316 Q200 351 337 316 L281 247 L313 253 L258 188 L282 194 L230 134 L253 138 Z"/>
+<path data-region="star" d="M200 32 L209 51 L230 53 L214 67 L219 88 L200 77 L181 88 L185 67 L170 53 L191 51 Z"/>
+<path d="M152 141 Q193 165 246 145 M122 197 Q186 230 275 200 M95 258 Q188 292 309 257" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="bauble-0" d="M175 124 a12 12 0 1 0 24 0 a12 12 0 1 0 -24 0 Z"/>
+<path d="M187 112 v-7" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="bauble-1" d="M201 190 a12 12 0 1 0 24 0 a12 12 0 1 0 -24 0 Z"/>
+<path d="M213 178 v-7" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="bauble-2" d="M142 223 a12 12 0 1 0 24 0 a12 12 0 1 0 -24 0 Z"/>
+<path d="M154 211 v-7" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="bauble-3" d="M239 244 a12 12 0 1 0 24 0 a12 12 0 1 0 -24 0 Z"/>
+<path d="M251 232 v-7" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="bauble-4" d="M124 294 a12 12 0 1 0 24 0 a12 12 0 1 0 -24 0 Z"/>
+<path d="M136 282 v-7" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="bauble-5" d="M201 306 a12 12 0 1 0 24 0 a12 12 0 1 0 -24 0 Z"/>
+<path d="M213 294 v-7" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="present-left" d="M38 319 L105 319 L105 366 L38 366 Z"/>
+<path data-region="ribbon-left" d="M64 319 h13 v47 h-13 Z"/>
+<path data-region="present-right" d="M284 323 L363 323 L363 366 L284 366 Z"/>
+<path data-region="ribbon-right" d="M316 323 h13 v43 h-13 Z"/>
+<path d="M38 335 h67 M284 338 h79" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

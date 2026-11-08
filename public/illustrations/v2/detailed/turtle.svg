@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Turtle — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path data-region="tail" d="M112 249 Q67 250 54 269 L117 264 Z"/>
+<path data-region="far-foot" d="M237 258 Q270 270 267 293 L241 293 L220 263 Z"/>
+<path data-region="hind-foot" d="M135 248 Q123 278 103 294 L126 304 Q154 283 164 258 Z"/>
+<path data-region="front-foot" d="M230 254 Q223 289 202 307 L229 312 Q253 289 261 260 Z"/>
+<path data-region="neck" d="M262 226 Q284 204 296 187 C315 171 348 183 349 203 Q346 230 301 232 L279 257 Z"/>
+<path data-region="shell" d="M93 246 C101 130 253 114 285 238 Q213 288 93 246 Z"/>
+<path data-region="shell-rim" d="M93 246 Q191 279 285 238 L291 251 Q193 295 89 259 Z"/>
+<path data-region="central-scute" d="M162 164 L206 160 L229 196 L209 235 L166 235 L143 199 Z"/>
+<path d="M162 164 L147 151 M206 160 L218 151 M229 196 L271 199 M209 235 L220 269 M166 235 L148 268 M143 199 L106 200 M112 291 l9 5 M214 299 l11 5 M309 218 Q326 224 340 211" fill="none" stroke-width="1.25" pointer-events="none"/>
+<path data-region="eye" d="M319 198 a7 5.04 0 1 0 14 0 a7 5.04 0 1 0 -14 0 Z"/>
+<ellipse cx="327" cy="198" rx="2.6" ry="3.5" fill="#202024" stroke="none" pointer-events="none"/>
+<path d="M46 350 Q100 343 143 349 M251 349 Q300 343 355 350 M72 340 l4 -9 l5 10 M307 338 l5 -10 l5 10" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

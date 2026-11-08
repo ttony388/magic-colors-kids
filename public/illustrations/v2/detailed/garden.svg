@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="art-title" data-art-version="2" data-complexity="detailed">
+<title id="art-title">Garden — detailed coloring illustration</title>
+<desc>Original closed-region vector line art. White areas can be colored individually.</desc>
+<g fill="#ffffff" stroke="#202024" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(64 63) scale(0.75)">
+<path data-region="cloud" d="M0 25 C-17 25 -19 7 -5 4 C-4 -13 18 -19 28 -5 C42 -16 60 -6 60 9 C77 4 88 23 72 28 Z"/>
+</g>
+<path data-region="sun" d="M286 63 a22 22 0 1 0 44 0 a22 22 0 1 0 -44 0 Z"/>
+<path data-region="far-meadow" d="M30 267 Q100 216 200 253 Q290 215 370 254 L370 365 L30 365 Z"/>
+<path data-region="garden-bed" d="M62 263 Q192 236 336 263 L336 316 Q192 336 62 316 Z"/>
+<path data-region="bed-rim" d="M55 259 Q192 232 343 259 L343 272 Q192 249 55 272 Z"/>
+<path data-region="stem-0" d="M102 198 h6 v85 h-6 Z"/>
+<g transform="translate(105 258) rotate(70) scale(0.65)">
+<path data-region="leaf-0" d="M0 0 C-23 -6 -31 -25 -28 -42 C-6 -38 8 -18 0 0 Z"/>
+<path d="M0 0 Q-14 -19 -23 -33 M-11 -18 L-23 -20 M-16 -26 L-16 -34" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+<g transform="translate(105 198) scale(0.8)">
+<g transform="rotate(0)">
+<path data-region="flower-0-petal-0" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(60)">
+<path data-region="flower-0-petal-1" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(120)">
+<path data-region="flower-0-petal-2" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(180)">
+<path data-region="flower-0-petal-3" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(240)">
+<path data-region="flower-0-petal-4" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(300)">
+<path data-region="flower-0-petal-5" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<path data-region="flower-0-center" d="M-10 0 a10 10 0 1 0 20 0 a10 10 0 1 0 -20 0 Z"/>
+</g>
+<path data-region="stem-1" d="M185 178 h6 v85 h-6 Z"/>
+<g transform="translate(188 238) rotate(70) scale(0.65)">
+<path data-region="leaf-1" d="M0 0 C-23 -6 -31 -25 -28 -42 C-6 -38 8 -18 0 0 Z"/>
+<path d="M0 0 Q-14 -19 -23 -33 M-11 -18 L-23 -20 M-16 -26 L-16 -34" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+<g transform="translate(188 178) scale(1)">
+<g transform="rotate(0)">
+<path data-region="flower-1-petal-0" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(60)">
+<path data-region="flower-1-petal-1" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(120)">
+<path data-region="flower-1-petal-2" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(180)">
+<path data-region="flower-1-petal-3" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(240)">
+<path data-region="flower-1-petal-4" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(300)">
+<path data-region="flower-1-petal-5" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<path data-region="flower-1-center" d="M-10 0 a10 10 0 1 0 20 0 a10 10 0 1 0 -20 0 Z"/>
+</g>
+<path data-region="stem-2" d="M274 205 h6 v85 h-6 Z"/>
+<g transform="translate(277 265) rotate(70) scale(0.65)">
+<path data-region="leaf-2" d="M0 0 C-23 -6 -31 -25 -28 -42 C-6 -38 8 -18 0 0 Z"/>
+<path d="M0 0 Q-14 -19 -23 -33 M-11 -18 L-23 -20 M-16 -26 L-16 -34" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+<g transform="translate(277 205) scale(0.75)">
+<g transform="rotate(0)">
+<path data-region="flower-2-petal-0" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(60)">
+<path data-region="flower-2-petal-1" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(120)">
+<path data-region="flower-2-petal-2" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(180)">
+<path data-region="flower-2-petal-3" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(240)">
+<path data-region="flower-2-petal-4" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<g transform="rotate(300)">
+<path data-region="flower-2-petal-5" d="M-5 -7 C-26 -24 -12 -43 0 -33 C13 -44 27 -25 5 -7 Z"/>
+</g>
+<path data-region="flower-2-center" d="M-10 0 a10 10 0 1 0 20 0 a10 10 0 1 0 -20 0 Z"/>
+</g>
+<path data-region="watering-can" d="M273 305 L326 305 L332 346 L271 346 Z"/>
+<path data-region="spout" d="M274 324 L245 304 L238 310 L272 339 Z"/>
+<path data-region="handle" d="M326 310 C354 302 355 343 331 339 L330 331 C343 334 343 315 327 319 Z"/>
+<path d="M42 348 l5 -8 l5 8 M331 358 l5 -8 l5 8 M161 351 l5 -8 l5 8" fill="none" stroke-width="1.25" pointer-events="none"/>
+</g>
+</svg>

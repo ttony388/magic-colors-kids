@@ -38,3 +38,15 @@ describe('the first playable library',()=>{
     expect(next.seen).toHaveLength(2);
   });
 });
+
+it('defaults to Detailed and preserves independent immutable legacy documents',()=>{
+  const manifest=JSON.parse(readFileSync(new URL('../../docs/art-review/legacy-sha256.json',import.meta.url),'utf8')) as Record<string,string>;
+  for(const page of pages){
+    expect(page.artVersion).toBe(2);
+    expect(page.id).toMatch(/@v2:detailed$/);
+    expect(page.asset).toContain('/v2/detailed/');
+    const id=page.id.split('@')[0];
+    const old=readFileSync(new URL(`../../public/illustrations/${id}.svg`,import.meta.url));
+    expect(createHash('sha256').update(old).digest('hex')).toBe(manifest[`${id}.svg`]);
+  }
+});
